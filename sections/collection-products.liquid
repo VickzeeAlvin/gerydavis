@@ -1,0 +1,162 @@
+{%- liquid
+  assign collection = collections[section.settings.home_featured_products]
+  assign product_limit = section.settings.count | plus: 1
+  if section.settings.mobile_scrollable
+    assign product_limit = section.settings.count
+  endif
+-%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div
+  id="CollectionSection-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-template">
+  {%- if section.settings.title != blank -%}
+    <div class="page-width">
+      <div class="section-header section-header--with-link">
+        <div>
+          <div class="d-flex heading-wd_emoji">
+            {%- if section.settings.icon != blank -%}<span class="emoji__icon h2">{{ section.settings.icon }}</span>{%- endif -%}
+            <h2 class="section-header__title">
+              {{ section.settings.title }}
+            </h2>
+          </div>
+          {%- if section.settings.view_all_link -%}
+          <a href="{{ section.settings.view_all_link }}" class="section-header__link">Shop All {{ section.settings.title }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="page-width{% if section.settings.mobile_scrollable %} page-width--flush-small{% endif %}">
+    <div
+      class="new-grid product-grid{% if section.settings.mobile_scrollable %} scrollable-grid--small{% endif %}"
+      data-view="{% if section.settings.mobile_scrollable %}{% if section.blocks.size == 4 %}small{% else %}scrollable-5{% endif %}{% else %}xsmall{% endif %}">
+      {%- if section.blocks.size == 0 -%}
+
+        {%- liquid
+          for i in (1..product_limit)
+            unless section.settings.mobile_scrollable
+              assign item_classes = ''
+              if forloop.index > section.settings.count
+                assign item_classes = 'hide'
+                assign mod = forloop.index | modulo: 2
+                if mod == 0
+                  assign item_classes = 'medium-up--hide'
+                endif
+              endif
+            endunless
+            render 'onboarding-product-grid-item', i: i, classes: item_classes
+          endfor
+        -%}
+
+      {%- else -%}
+        {%- liquid
+          for block in section.blocks limit: product_limit
+            assign item_classes = ''
+            unless section.settings.mobile_scrollable
+              if forloop.index > section.settings.count
+                assign item_classes = 'hide'
+                assign mod = forloop.index | modulo: 2
+                if mod == 0
+                  assign item_classes = 'medium-up--hide'
+                endif
+              endif
+            endunless
+
+            render 'product-grid-item-for-homepage', product: block.settings.product, collection: collection, classes: item_classes, block: block
+
+            if settings.quick_shop_enable
+              render 'quick-shop-modal', product: block.settings.product
+            endif
+          endfor
+        -%}
+
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Collection Products",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+	  {
+        "type": "text",
+        "id": "icon",
+        "label": "Icon"
+      },
+      {
+        "type": "url",
+        "id": "view_all_link",
+        "label": "Shop All Url"
+      },
+      {
+        "type": "range",
+        "id": "count",
+        "label": "Products",
+        "default": 5,
+        "min": 5,
+        "max": 15,
+        "step": 5
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile_scrollable",
+        "label": "Enable swipe on mobile",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "id": "product",
+            "type": "product",
+            "label": "Product"
+          },
+          {
+            "type": "text",
+            "id": "product_name",
+            "label": "Product Name",
+            "info": "Defaults to product name"
+          },
+		  {
+            "id": "collection",
+            "type": "collection",
+            "label": "Collection"
+          },
+          {
+            "type": "text",
+            "id": "collection_name",
+            "label": "Collection Name",
+            "info": "Defaults to collection name"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Collection Products",
+      "category": "Collection"
+    }]
+  }
+{% endschema %}

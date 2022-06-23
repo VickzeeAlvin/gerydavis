@@ -1,0 +1,24 @@
+{% assign scope = collection.metafields.airf %}
+{% assign sub_collec = scope.sub_collec %}
+{% assign show_at_ri = collection.metafields.airf.show_at_ri %}
+
+{% if sub_collec and sub_collec != blank %}
+<div id="shopify-section-collection-sub_collection" class="sub_collect_hedr shopify-section {% if show_at_ri == "true" %}at_right{% endif %}">
+  <div class="{% unless show_at_ri == "true" %}page-width{% endunless %}">
+    <div class="new-grid scrollable-grid--small" data-view="scrollable" data-type="subcollections">
+        {% for row in sub_collec.rows %}
+        {% for row_field in row %}
+        {% if row_field.key contains "collec_nam" %}
+        {% assign collection_name = scope[row_field.key] %}
+        {% endif %}
+
+        {% if row_field.key contains "sub_colle" %}
+        {% assign collection_handle = collections[scope[row_field.key]] %}
+        {%- render 'collection-grid-item', collection: collection_handle, collection_title: collection_name -%}
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}

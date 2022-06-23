@@ -1,0 +1,192 @@
+<div class="shopify-section-page-faq-template">
+  <div class="page-width page-width--narrow page-content {% if section.settings.enable_sidebar %} enable_sidebar{% endif %}">
+    {%- if section.blocks.size > 0 -%}
+      <div class="left-content">
+        {%- if section.settings.page_title_enable or section.settings.page_content_enable -%}
+        <div class="top_breadCrumbs">
+          {%- render 'breadcrumbs' -%}
+
+          {%- if section.settings.page_title_enable -%}
+          <header class="section-header">
+            <h1 class="section-header__title">{{ page.title }}</h1>
+          </header>
+          {%- endif -%}
+
+          {%- if section.settings.page_content_enable -%}
+          <div class="rte text-spacing">
+            {{ page.content }}
+          </div>
+          {%- endif -%}
+        </div>
+        {%- endif -%}
+        <div class="page-blocks page-blocks--flush" itemscope itemtype="https://schema.org/FAQPage">
+          {%- for block in section.blocks -%}
+          <div {{ block.shopify_attributes }}>
+            {%- case block.type -%}
+            {%- when 'rich-text'-%}
+            {%- render 'page-block-rich-text', section_class: 'index-section--faq', block: block -%}
+
+            {%- when 'question'-%}
+            {%- render 'page-block-faq', block: block -%}
+
+            {%- endcase -%}
+          </div>
+          {%- endfor -%}
+        </div>
+      </div>
+        {%- if section.settings.enable_sidebar -%}
+          <div class="sidebar-links">
+            <div class="sidebar-links-inner">
+            {%- if section.settings.sidebar_heading != blank -%}
+            <header class="section-header">
+              <p class="h2">{{ section.settings.sidebar_heading }}</p>
+            </header>
+            {%- endif -%}
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'sidebar-link'-%}
+                  <div class="sidebar__link-box">
+                    <a href="{{block.settings.url}}" id="{{block.settings.text | handleize }}" class="{{block.settings.text | handleize }}">
+                      <span>{{block.settings.text}}</span>
+                    </a>
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+    {%- endif -%}
+
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Page.faq page",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "page_title_enable",
+        "label": "Show page title"
+      },
+      {
+        "type": "checkbox",
+        "id": "page_content_enable",
+        "label": "Show page content"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_sidebar",
+        "label": "Enable Sidebar"
+      },
+      {
+        "type": "text",
+        "id": "sidebar_heading",
+        "label": "Sidebar Heading"
+      }
+    ],
+    "default": {
+      "blocks": [
+        {
+          "type": "rich-text",
+          "settings": {
+            "title": "Shipping policy"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "title": "Where do you ship to?"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "title": "How long will my order take?"
+          }
+        },
+        {
+          "type": "rich-text",
+          "settings": {
+            "title": "Returns and exchanges"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "title": "How do I ship my order back to you?"
+          }
+        }
+      ]
+    },
+    "blocks": [
+      {
+        "type": "rich-text",
+        "name": "Rich text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Rich text"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>"
+          },
+          {
+            "type": "select",
+            "id": "align_text",
+            "label": "Text alignment",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Centered"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "question",
+        "name": "Question",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Question",
+            "default": "Frequently asked question"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          }
+        ]
+      },
+      {
+        "type": "sidebar-link",
+        "name": "Sidebar Link",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Url"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

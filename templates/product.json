@@ -1,0 +1,240 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart": "",
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "f4be3d52-c8ac-40eb-9c86-f65fa67d90c6": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "price",
+        "f4be3d52-c8ac-40eb-9c86-f65fa67d90c6",
+        "buy_buttons"
+      ],
+      "settings": {
+        "sku_enable": true,
+        "image_position": "left",
+        "image_container_size": "large",
+        "product_image_size": "landscape",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "enable_only_at": true,
+        "enable_made_in": true
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "tab",
+        "contact"
+      ],
+      "settings": {
+        "max_width": true
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like"
+      }
+    },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "more-products-collection": {
+      "type": "more-products-collection",
+      "settings": {
+        "section_title": "Customers also purchased"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "2"
+      }
+    },
+    "165273165135ac6b04": {
+      "type": "newsletter-signup",
+      "blocks": {
+        "a51e96a8-4fe4-4b54-8301-3cfbda651c05": {
+          "type": "left_box",
+          "settings": {
+            "heading": "CONNECT WITH US & SAVE",
+            "sub_heading": "Sign up to receive our emails and get 10% off *",
+            "join__offer": "<p><strong>Want $20 off $150?<\/strong><\/p><p>Join Gerry Davis Sports text alerts to receive occasional special offers. Exclusions apply. <br\/><\/p>",
+            "signup_sms": "Sign up now",
+            "disclaimer": "*First-time subscribers only. Restrictions may apply. Returning subscribers will be resubscribed but will not receive a discount.",
+            "enable_social": true,
+            "btn_color": "#000000",
+            "btn_color_fnt": "#ffffff"
+          }
+        },
+        "f0ed9cdc-64c1-42ba-8b74-9bfa031ec52d": {
+          "type": "right_box",
+          "settings": {
+            "heading": "EARN POINTS. GET REWARDS.",
+            "sub_heading": "Earn points, get rewards - our new loyalty program rewards you for every purchase and other activities!",
+            "detail": "<div class=\"score__boxes\">\n<div class=\"score__box\">\n<strong>GIVE 15%, GET 15%<\/strong>\n<p>Refer friends and colleagues - when they make a purchase they’ll receive 15% and you’ll receive reward points equivalent to 15% off your next order. <a href=\"#smile-referral-program-details\">Get Started<\/a><\/p>\n<\/div>\n<div class=\"score__box\">\n<strong>Earn 1 Point for Every $1 Spent.<\/strong>\n<p>200 Points = $10 Reward or free shipping on your next order.<\/p>\n<\/div>\n<\/div>",
+            "button_label": "SIGN UP FOR FREE",
+            "button_link": "#smile-home",
+            "btn_color": "#d3d3d3",
+            "btn_color_fnt": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "a51e96a8-4fe4-4b54-8301-3cfbda651c05",
+        "f0ed9cdc-64c1-42ba-8b74-9bfa031ec52d"
+      ],
+      "settings": {
+        "left_bg_color": "#0474bb",
+        "left_text_color": "#ffffff",
+        "right_bg_color": "#424242",
+        "right_text_color": "#ffffff"
+      }
+    },
+    "16527325450d8ae1fb": {
+      "type": "services",
+      "blocks": {
+        "1652732545d229f54b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/shipping-plane-gray.png",
+            "image_width": 70,
+            "title": "FREE SHIPPING $99+",
+            "text": "<p>Orders $99+ are eligible for free shipping within the contiguous United States.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1652732545d229f54b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/order-processing-gray.png",
+            "image_width": 70,
+            "title": "FAST ORDER PROCESSING",
+            "text": "<p>We move fast offering same day processing on most orders when placed before 1pm Central.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1652732545d229f54b-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/return-exchange-gray.png",
+            "image_width": 70,
+            "title": "FREE RETURNS* & EXCHANGES",
+            "text": "<p>Free exchanges on all orders and free returns on all orders when you opt for store credit.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "8b40f518-06a5-439e-a1e7-a958e844d1d9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/customization-gray.png",
+            "image_width": 70,
+            "title": "IN-HOUSE CUSTOMIZATION",
+            "text": "<p>In-house customization including embroidery, hemming and heat applications with quick turnarounds.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652732545d229f54b-0",
+        "1652732545d229f54b-1",
+        "1652732545d229f54b-2",
+        "8b40f518-06a5-439e-a1e7-a958e844d1d9"
+      ],
+      "settings": {
+        "description": "FOR AMATEUR OFFICIALS WITH PROFESSIONAL STANDARDS",
+        "title": "<span>We’re here to help amateur sports officials feel confident and look professional. <br>Whether it’s your first game or 5000th, we guarantee you’ll look the part.<\/span>",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "recommendations",
+    "more-products-vendor",
+    "more-products-collection",
+    "recently-viewed",
+    "collection-return",
+    "165273165135ac6b04",
+    "16527325450d8ae1fb"
+  ]
+}

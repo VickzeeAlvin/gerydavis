@@ -1,0 +1,163 @@
+<div class="offers-mobile tabs_details" id="offers">
+  <div class="page-width">
+    <div class="offers-information">
+      {%- if section.settings.heading != blank -%}
+      	<p class="h4">{{section.settings.heading}}</p>
+      {%- endif -%}
+      {%- if section.settings.sub-heading != blank -%}
+      	<p>{{section.settings.sub-heading}}</p>
+      {%- endif -%}
+    </div>
+    
+    <div class="offer-boxes">
+      {%- for block in section.blocks -%}
+      	{%- if block.type == 'text_box' -%}
+          <div class="offer-box" 
+               style="{%- if block.settings.bg_color != blank -%}background-color:{{block.settings.bg_color}};{%- endif -%}{%- if block.settings.text_color != blank -%}color:{{block.settings.text_color}};{%- endif -%}">
+			<div class="offer-image">
+              {%- if block.settings.image != blank -%}
+                {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img class="logo-bar__image lazyload"
+                   data-src="{{ img_url }}"
+                   data-widths="[160, 240, 720, 1020]"
+                   data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                   data-sizes="auto"
+                   alt="{{ block.settings.image.alt }}">
+              {%- else -%}
+                {{ 'logo' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--no-padding' }}
+              {%- endif -%}
+            </div>
+            <div class="offer-content">
+              {%- if block.settings.heading != blank -%}
+              	<p class="h5">{{block.settings.heading}}</p>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+              	<div class="detail">{{block.settings.text}}</div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      	{%- if block.type == 'product-box' -%}
+          <div class="offer-box" 
+               style="{%- if block.settings.bg_color != blank -%}background-color:{{block.settings.bg_color}};{%- endif -%}{%- if block.settings.text_color != blank -%}color:{{block.settings.text_color}};{%- endif -%}">
+			<div class="offer-image">
+              {%- if block.settings.product != blank -%}
+              	{% assign product = block.settings.product %}
+              	{% assign img_url = product.featured_media.preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+                <img class="lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="[160, 200, 280, 360, 540, 720, 900]"
+                  data-aspectratio="{{ img_url.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ img_url.alt | escape }}">
+              {%- else -%}
+                {{ 'logo' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--no-padding' }}
+              {%- endif -%}
+            </div>
+            <div class="offer-content">
+              <p class="h5">FLASH SALE!</p>
+              {%- if block.settings.text != blank -%}
+              	<p>{{block.settings.text}}</p>
+              {%- endif -%}
+              <a href="{{ product.url }}" class="btn btn--primary">BUY NOW</a>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    
+    {%- if section.settings.description != blank -%}
+    <div class="offers-description">
+      {{section.settings.description}}
+    </div>
+    {%- endif -%}
+    
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Offers - Mobile",
+	"class": "index-section-cart",
+    "settings": [
+		{
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+		{
+          "type": "text",
+          "id": "sub-heading",
+          "label": "Sub Heading"
+        },
+		{
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+	],
+    "blocks": [
+	  {
+        "type": "text_box",
+        "name": "Text Box",
+        "settings": [
+		  {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background color"
+          },
+		  {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text color"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "product-box",
+        "name": "Product Box",
+        "settings": [
+          {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background color"
+          },
+		  {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text color"
+          },
+		  {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Sale Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Offers - Mobile"
+      }
+    ]
+  }
+{% endschema %}

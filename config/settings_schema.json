@@ -1,0 +1,2161 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Expanse",
+    "theme_author": "Archetype Themes",
+    "theme_version": "2.5.4",
+    "theme_documentation_url": "https:\/\/archetypethemes.co\/blogs\/expanse",
+    "theme_support_url": "https:\/\/archetypethemes.co\/pages\/support#expanse"
+  },
+  {
+    "name": "t:settings_schema.colors.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header_general"
+      },
+      {
+        "type": "color",
+        "id": "color_body_bg",
+        "label": "t:settings_schema.colors.settings.color_body_bg.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_body_text",
+        "label": "t:settings_schema.colors.settings.color_body_text.label",
+        "default": "#1c1d1d"
+      },
+      {
+        "type": "color",
+        "id": "color_price",
+        "label": "t:settings_schema.colors.settings.color_price.label",
+        "default": "#1c1d1d"
+      },
+      {
+        "type": "color",
+        "id": "color_savings_text",
+        "label": "t:settings_schema.colors.settings.color_savings_text.label",
+        "default": "#ff4e4e"
+      },
+      {
+        "type": "color",
+        "id": "color_borders",
+        "label": "t:settings_schema.colors.settings.color_borders.label",
+        "default": "#1c1d1d"
+      },
+      {
+        "type": "color",
+        "id": "color_button",
+        "label": "t:settings_schema.colors.settings.color_button.label",
+        "default": "#1c1d1d"
+      },
+      {
+        "type": "color",
+        "id": "color_button_text",
+        "label": "t:settings_schema.colors.settings.color_button_text.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_sale_tag",
+        "label": "t:settings_schema.colors.settings.color_sale_tag.label",
+        "default": "#1c1d1d"
+      },
+      {
+        "type": "color",
+        "id": "color_sale_tag_text",
+        "label": "t:settings_schema.colors.settings.color_sale_tag_text.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_cart_dot",
+        "label": "t:settings_schema.colors.settings.color_cart_dot.label",
+        "default": "#ff4f33"
+      },
+      {
+        "type": "color",
+        "id": "color_cart_dot_text",
+        "label": "t:settings_schema.colors.settings.color_cart_dot_text.label",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_small_image_bg",
+        "label": "t:settings_schema.colors.settings.color_small_image_bg.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_large_image_bg",
+        "label": "t:settings_schema.colors.settings.color_large_image_bg.label",
+        "default": "#1c1d1d"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header_header"
+      },
+      {
+        "type": "color",
+        "id": "color_header",
+        "label": "t:settings_schema.colors.settings.color_header.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_header_text",
+        "label": "t:settings_schema.colors.settings.color_header_text.label",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_announcement",
+        "label": "t:settings_schema.colors.settings.color_announcement.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_announcement_text",
+        "label": "t:settings_schema.colors.settings.color_announcement_text.label",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_header_search",
+        "label": "t:settings_schema.colors.settings.color_header_search.label",
+        "default": "#fff"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header_footer"
+      },
+      {
+        "type": "color",
+        "id": "color_footer",
+        "label": "t:settings_schema.colors.settings.color_footer.label",
+        "default": "#111"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_border",
+        "label": "t:settings_schema.colors.settings.color_footer_border.label",
+        "default": "#1c1d1d"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_text",
+        "label": "t:settings_schema.colors.settings.color_footer_text.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header_color_scheme_1"
+      },
+      {
+        "type": "color",
+        "id": "color_scheme_1_bg",
+        "label": "t:settings_schema.colors.settings.color_scheme_1_bg.label",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_scheme_1_text",
+        "label": "t:settings_schema.colors.settings.color_scheme_1_text.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme_1_texture",
+        "label": "t:settings_schema.colors.settings.color_scheme_1_texture.label",
+        "default": "none",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:settings_schema.colors.settings.color_scheme_1_texture.options.none.label"
+          },
+          {
+            "value": "paper.jpg",
+            "label": "t:settings_schema.colors.settings.color_scheme_1_texture.options.paper_jpg.label"
+          },
+          {
+            "value": "swirl",
+            "label": "t:settings_schema.colors.settings.color_scheme_1_texture.options.swirl.label"
+          },
+          {
+            "value": "marble.jpg",
+            "label": "t:settings_schema.colors.settings.color_scheme_1_texture.options.marble_jpg.label"
+          },
+          {
+            "value": "space.jpg",
+            "label": "t:settings_schema.colors.settings.color_scheme_1_texture.options.space_jpg.label"
+          },
+          {
+            "value": "darken",
+            "label": "t:settings_schema.colors.settings.color_scheme_1_texture.options.darken.label"
+          },
+          {
+            "value": "squiggle",
+            "label": "t:settings_schema.colors.settings.color_scheme_1_texture.options.squiggle.label"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header_color_scheme_2"
+      },
+      {
+        "type": "color",
+        "id": "color_scheme_2_bg",
+        "label": "t:settings_schema.colors.settings.color_scheme_2_bg.label",
+        "default": "#ACC6C3"
+      },
+      {
+        "type": "color",
+        "id": "color_scheme_2_text",
+        "label": "t:settings_schema.colors.settings.color_scheme_2_text.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme_2_texture",
+        "label": "t:settings_schema.colors.settings.color_scheme_2_texture.label",
+        "default": "none",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:settings_schema.colors.settings.color_scheme_2_texture.options.none.label"
+          },
+          {
+            "value": "paper.jpg",
+            "label": "t:settings_schema.colors.settings.color_scheme_2_texture.options.paper_jpg.label"
+          },
+          {
+            "value": "swirl",
+            "label": "t:settings_schema.colors.settings.color_scheme_2_texture.options.swirl.label"
+          },
+          {
+            "value": "marble.jpg",
+            "label": "t:settings_schema.colors.settings.color_scheme_2_texture.options.marble_jpg.label"
+          },
+          {
+            "value": "space.jpg",
+            "label": "t:settings_schema.colors.settings.color_scheme_2_texture.options.space_jpg.label"
+          },
+          {
+            "value": "darken",
+            "label": "t:settings_schema.colors.settings.color_scheme_2_texture.options.darken.label"
+          },
+          {
+            "value": "squiggle",
+            "label": "t:settings_schema.colors.settings.color_scheme_2_texture.options.squiggle.label"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header_color_scheme_3"
+      },
+      {
+        "type": "color",
+        "id": "color_scheme_3_bg",
+        "label": "t:settings_schema.colors.settings.color_scheme_3_bg.label",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_scheme_3_text",
+        "label": "t:settings_schema.colors.settings.color_scheme_3_text.label",
+        "default": "#000000"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme_3_texture",
+        "label": "t:settings_schema.colors.settings.color_scheme_3_texture.label",
+        "default": "none",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:settings_schema.colors.settings.color_scheme_3_texture.options.none.label"
+          },
+          {
+            "value": "paper.jpg",
+            "label": "t:settings_schema.colors.settings.color_scheme_3_texture.options.paper_jpg.label"
+          },
+          {
+            "value": "swirl",
+            "label": "t:settings_schema.colors.settings.color_scheme_3_texture.options.swirl.label"
+          },
+          {
+            "value": "marble.jpg",
+            "label": "t:settings_schema.colors.settings.color_scheme_3_texture.options.marble_jpg.label"
+          },
+          {
+            "value": "space.jpg",
+            "label": "t:settings_schema.colors.settings.color_scheme_3_texture.options.space_jpg.label"
+          },
+          {
+            "value": "darken",
+            "label": "t:settings_schema.colors.settings.color_scheme_3_texture.options.darken.label"
+          },
+          {
+            "value": "squiggle",
+            "label": "t:settings_schema.colors.settings.color_scheme_3_texture.options.squiggle.label"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Color scheme 4"
+      },
+      {
+        "type": "color",
+        "id": "color_scheme_4_bg",
+        "label": "Background",
+        "default": "#424242"
+      },
+      {
+        "type": "color",
+        "id": "color_scheme_4_text",
+        "label": "Text",
+        "default": "#fff"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.typography.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.header_headings"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_header_font_family",
+        "label": "t:settings_schema.typography.settings.type_header_font_family.label",
+        "default": "poppins_n7"
+      },
+      {
+        "type": "select",
+        "id": "type_header_spacing",
+        "label": "t:settings_schema.typography.settings.type_header_spacing.label",
+        "default": "25",
+        "options": [
+          {
+            "value": "-75",
+            "label": "-75"
+          },
+          {
+            "value": "-50",
+            "label": "-50"
+          },
+          {
+            "value": "-25",
+            "label": "-25"
+          },
+          {
+            "value": "-10",
+            "label": "-10"
+          },
+          {
+            "value": "0",
+            "label": "0"
+          },
+          {
+            "value": "10",
+            "label": "10"
+          },
+          {
+            "value": "25",
+            "label": "0"
+          },
+          {
+            "value": "50",
+            "label": "50"
+          },
+          {
+            "value": "75",
+            "label": "75"
+          },
+          {
+            "value": "100",
+            "label": "100"
+          },
+          {
+            "value": "150",
+            "label": "150"
+          },
+          {
+            "value": "200",
+            "label": "200"
+          },
+          {
+            "value": "250",
+            "label": "250"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "type_header_base_size",
+        "label": "t:settings_schema.typography.settings.type_header_base_size.label",
+        "default": 32,
+        "min": 22,
+        "max": 60,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "type_header_line_height",
+        "label": "t:settings_schema.typography.settings.type_header_line_height.label",
+        "default": 1.4,
+        "min": 0.8,
+        "max": 2,
+        "step": 0.1
+      },
+      {
+        "type": "checkbox",
+        "id": "type_header_capitalize",
+        "label": "t:settings_schema.typography.settings.type_header_capitalize.label"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.header_body_text"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_base_font_family",
+        "label": "t:settings_schema.typography.settings.type_base_font_family.label",
+        "default": "poppins_n5"
+      },
+      {
+        "type": "select",
+        "id": "type_base_spacing",
+        "label": "t:settings_schema.typography.settings.type_base_spacing.label",
+        "default": "50",
+        "options": [
+          {
+            "value": "-75",
+            "label": "-75"
+          },
+          {
+            "value": "-50",
+            "label": "-50"
+          },
+          {
+            "value": "-25",
+            "label": "-25"
+          },
+          {
+            "value": "-10",
+            "label": "-10"
+          },
+          {
+            "value": "0",
+            "label": "0"
+          },
+          {
+            "value": "10",
+            "label": "10"
+          },
+          {
+            "value": "25",
+            "label": "25"
+          },
+          {
+            "value": "50",
+            "label": "50"
+          },
+          {
+            "value": "75",
+            "label": "75"
+          },
+          {
+            "value": "100",
+            "label": "100"
+          },
+          {
+            "value": "150",
+            "label": "150"
+          },
+          {
+            "value": "200",
+            "label": "200"
+          },
+          {
+            "value": "250",
+            "label": "250"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "type_base_size",
+        "label": "t:settings_schema.typography.settings.type_base_size.label",
+        "default": 16,
+        "min": 12,
+        "max": 20,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "type_base_line_height",
+        "label": "t:settings_schema.typography.settings.type_base_line_height.label",
+        "default": 1.4,
+        "min": 1,
+        "max": 2,
+        "step": 0.1
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.header_navigation"
+      },
+      {
+        "type": "select",
+        "id": "type_navigation_style",
+        "label": "t:settings_schema.typography.settings.type_navigation_style.label",
+        "default": "body",
+        "options": [
+          {
+            "value": "body",
+            "label": "t:settings_schema.typography.settings.type_navigation_style.options.body.label"
+          },
+          {
+            "value": "heading",
+            "label": "t:settings_schema.typography.settings.type_navigation_style.options.heading.label"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "type_navigation_size",
+        "label": "t:settings_schema.typography.settings.type_navigation_size.label",
+        "default": 18,
+        "min": 12,
+        "max": 40,
+        "unit": "px"
+      },
+      {
+        "type": "checkbox",
+        "id": "type_navigation_capitalize",
+        "label": "t:settings_schema.typography.settings.type_navigation_capitalize.label"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.header_language"
+      },
+      {
+        "type": "select",
+        "id": "text_direction",
+        "label": "t:settings_schema.typography.settings.text_direction.label",
+        "default": "ltr",
+        "options": [
+          {
+            "value": "ltr",
+            "label": "t:settings_schema.typography.settings.text_direction.options.ltr.label"
+          },
+          {
+            "value": "rtl",
+            "label": "t:settings_schema.typography.settings.text_direction.options.rtl.label"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.design.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.design.settings.header_general"
+      },
+      {
+        "type": "select",
+        "id": "edges",
+        "label": "t:settings_schema.design.settings.edges.label",
+        "default": "square",
+        "options": [
+          {
+            "value": "square",
+            "label": "t:settings_schema.design.settings.edges.options.square.label"
+          },
+          {
+            "value": "round",
+            "label": "t:settings_schema.design.settings.edges.options.round.label"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "t:settings_schema.design.settings.button_style.label",
+        "default": "square",
+        "options": [
+          {
+            "value": "square",
+            "label": "t:settings_schema.design.settings.button_style.options.square.label"
+          },
+          {
+            "value": "round-slight",
+            "label": "t:settings_schema.design.settings.button_style.options.round-slight.label"
+          },
+          {
+            "value": "round",
+            "label": "t:settings_schema.design.settings.button_style.options.round.label"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.design.settings.header_icons"
+      },
+      {
+        "type": "select",
+        "id": "cart_icon",
+        "label": "t:settings_schema.design.settings.cart_icon.label",
+        "default": "bag-minimal",
+        "options": [
+          {
+            "value": "bag",
+            "label": "t:settings_schema.design.settings.cart_icon.options.bag.label"
+          },
+          {
+            "value": "bag-minimal",
+            "label": "t:settings_schema.design.settings.cart_icon.options.bag-minimal.label"
+          },
+          {
+            "value": "cart",
+            "label": "t:settings_schema.design.settings.cart_icon.options.cart.label"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "icon_weight",
+        "label": "t:settings_schema.design.settings.icon_weight.label",
+        "default": "5px",
+        "options": [
+          {
+            "value": "2px",
+            "label": "t:settings_schema.design.settings.icon_weight.options.2px.label"
+          },
+          {
+            "value": "3px",
+            "label": "t:settings_schema.design.settings.icon_weight.options.3px.label"
+          },
+          {
+            "value": "4px",
+            "label": "t:settings_schema.design.settings.icon_weight.options.4px.label"
+          },
+          {
+            "value": "5px",
+            "label": "t:settings_schema.design.settings.icon_weight.options.5px.label"
+          },
+          {
+            "value": "6px",
+            "label": "t:settings_schema.design.settings.icon_weight.options.6px.label"
+          },
+          {
+            "value": "7px",
+            "label": "t:settings_schema.design.settings.icon_weight.options.7px.label"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "icon_linecaps",
+        "label": "t:settings_schema.design.settings.icon_linecaps.label",
+        "default": "miter",
+        "options": [
+          {
+            "value": "miter",
+            "label": "t:settings_schema.design.settings.icon_linecaps.options.miter.label"
+          },
+          {
+            "value": "round",
+            "label": "t:settings_schema.design.settings.icon_linecaps.options.round.label"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.design.settings.header_animations"
+      },
+      {
+        "type": "checkbox",
+        "id": "animate_page_transitions",
+        "label": "t:settings_schema.design.settings.animate_page_transitions.label",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.products.name",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "superscript_decimals",
+        "label": "t:settings_schema.products.settings.superscript_decimals.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "product_save_amount",
+        "label": "t:settings_schema.products.settings.product_save_amount.label",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "product_save_type",
+        "label": "t:settings_schema.products.settings.product_save_type.label",
+        "default": "dollar",
+        "options": [
+          {
+            "value": "dollar",
+            "label": "t:settings_schema.products.settings.product_save_type.options.dollar.label"
+          },
+          {
+            "value": "percent",
+            "label": "t:settings_schema.products.settings.product_save_type.options.percent.label"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "vendor_enable",
+        "label": "t:settings_schema.products.settings.vendor_enable.label"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.product_tiles.name",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "quick_shop_enable",
+        "label": "t:settings_schema.product_tiles.settings.quick_shop_enable.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "quick_add_enable",
+        "label": "t:settings_schema.product_tiles.settings.quick_add_enable.label",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "product_grid_image_size",
+        "label": "t:settings_schema.product_tiles.settings.product_grid_image_size.label",
+        "default": "square",
+        "options": [
+          {
+            "value": "natural",
+            "label": "t:settings_schema.product_tiles.settings.product_grid_image_size.options.natural.label"
+          },
+          {
+            "value": "square",
+            "label": "t:settings_schema.product_tiles.settings.product_grid_image_size.options.square.label"
+          },
+          {
+            "value": "landscape",
+            "label": "t:settings_schema.product_tiles.settings.product_grid_image_size.options.landscape.label"
+          },
+          {
+            "value": "portrait",
+            "label": "t:settings_schema.product_tiles.settings.product_grid_image_size.options.portrait.label"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "product_grid_image_fill",
+        "label": "t:settings_schema.product_tiles.settings.product_grid_image_fill.label",
+        "info": "t:settings_schema.product_tiles.settings.product_grid_image_fill.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_hover_image",
+        "label": "t:settings_schema.product_tiles.settings.product_hover_image.label",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.product_tiles.settings.header_color_swatches"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_swatches",
+        "label": "t:settings_schema.product_tiles.settings.enable_swatches.label"
+      },
+      {
+        "type": "select",
+        "id": "swatch_style",
+        "label": "t:settings_schema.product_tiles.settings.swatch_style.label",
+        "default": "round",
+        "options": [
+          {
+            "value": "round",
+            "label": "t:settings_schema.product_tiles.settings.swatch_style.options.round.label"
+          },
+          {
+            "value": "square",
+            "label": "t:settings_schema.product_tiles.settings.swatch_style.options.square.label"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "swatch_size",
+        "label": "t:settings_schema.product_tiles.settings.swatch_size.label",
+        "default": 40,
+        "min": 30,
+        "max": 80,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.product_tiles.settings.header_design"
+      },
+      {
+        "type": "select",
+        "id": "product_grid_style",
+        "label": "t:settings_schema.product_tiles.settings.product_grid_style.label",
+        "default": "grey-round",
+        "options": [
+          {
+            "value": "simple",
+            "label": "t:settings_schema.product_tiles.settings.product_grid_style.options.simple.label"
+          },
+          {
+            "value": "grey-round",
+            "label": "t:settings_schema.product_tiles.settings.product_grid_style.options.grey-round.label"
+          },
+          {
+            "value": "grey-square",
+            "label": "t:settings_schema.product_tiles.settings.product_grid_style.options.grey-square.label"
+          },
+          {
+            "value": "gridlines-thick",
+            "label": "t:settings_schema.product_tiles.settings.product_grid_style.options.gridlines-thick.label"
+          },
+          {
+            "value": "gridlines-thin",
+            "label": "t:settings_schema.product_tiles.settings.product_grid_style.options.gridlines-thin.label"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "product_grid_image_margin",
+        "label": "t:settings_schema.product_tiles.settings.product_grid_image_margin.label",
+        "default": 10,
+        "min": 0,
+        "max": 20,
+        "unit": "%"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.product_tiles.settings.header_product_reviews"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.product_tiles.settings.content"
+      },
+      {
+        "type": "checkbox",
+        "label": "t:settings_schema.product_tiles.settings.enable_product_reviews.label",
+        "id": "enable_product_reviews"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.collection_tiles.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.collection_tiles.settings.header_collection_tiles"
+      },
+      {
+        "type": "select",
+        "id": "collection_grid_shape",
+        "label": "t:settings_schema.collection_tiles.settings.collection_grid_shape.label",
+        "default": "circle",
+        "options": [
+          {
+            "value": "circle",
+            "label": "t:settings_schema.collection_tiles.settings.collection_grid_shape.options.circle.label"
+          },
+          {
+            "value": "square",
+            "label": "t:settings_schema.collection_tiles.settings.collection_grid_shape.options.square.label"
+          },
+          {
+            "value": "landscape",
+            "label": "t:settings_schema.collection_tiles.settings.collection_grid_shape.options.landscape.label"
+          },
+          {
+            "value": "portrait",
+            "label": "t:settings_schema.collection_tiles.settings.collection_grid_shape.options.portrait.label"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "collection_grid_image",
+        "label": "t:settings_schema.collection_tiles.settings.collection_grid_image.label",
+        "default": "collection",
+        "options": [
+          {
+            "value": "product",
+            "label": "t:settings_schema.collection_tiles.settings.collection_grid_image.options.product.label"
+          },
+          {
+            "value": "collection",
+            "label": "t:settings_schema.collection_tiles.settings.collection_grid_image.options.collection.label"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "collection_grid_image_margin",
+        "label": "t:settings_schema.collection_tiles.settings.collection_grid_image_margin.label",
+        "default": 10,
+        "min": 0,
+        "max": 20,
+        "unit": "%"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_color_swatches",
+        "label": "Enable color swatches on collection page"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.cart.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.cart.settings.header_cart"
+      },
+      {
+        "type": "select",
+        "id": "cart_type",
+        "label": "t:settings_schema.cart.settings.cart_type.label",
+        "default": "dropdown",
+        "options": [
+          {
+            "value": "page",
+            "label": "t:settings_schema.cart.settings.cart_type.options.page.label"
+          },
+          {
+            "value": "dropdown",
+            "label": "t:settings_schema.cart.settings.cart_type.options.dropdown.label"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_additional_buttons",
+        "label": "t:settings_schema.cart.settings.cart_additional_buttons.label",
+        "info": "t:settings_schema.cart.settings.cart_additional_buttons.info"
+      },
+      {
+        "type": "collection",
+        "id": "cart_collection",
+        "label": "t:settings_schema.cart.settings.cart_collection.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_notes_enable",
+        "label": "t:settings_schema.cart.settings.cart_notes_enable.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_terms_conditions_enable",
+        "label": "t:settings_schema.cart.settings.cart_terms_conditions_enable.label"
+      },
+      {
+        "type": "page",
+        "id": "cart_terms_conditions_page",
+        "label": "t:settings_schema.cart.settings.cart_terms_conditions_page.label"
+      },
+      {
+        "type": "header",
+        "content": "Shipping rate calculator"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_shipping_calculator",
+        "label": "Display shipping rates calculator",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "shipping_calculator_heading",
+        "label": "Shipping Rates Calculator Heading",
+        "default": "Shipping rates calculator"
+      },
+      {
+        "type": "select",
+        "id": "shipping_calculator_default_country",
+        "label": "Shipping Rates Calculator default country selection",
+        "options": [
+          {
+            "value": "",
+            "label": "-- Please Select --"
+          },
+          {
+            "value": "Vietnam",
+            "label": "Vietnam"
+          },
+          {
+            "value": "Canada",
+            "label": "Canada"
+          },
+          {
+            "value": "Australia",
+            "label": "Australia"
+          },
+          {
+            "value": "Afghanistan",
+            "label": "Afghanistan"
+          },
+          {
+            "value": "Aland Islands",
+            "label": "Aland Islands"
+          },
+          {
+            "value": "Albania",
+            "label": "Albania"
+          },
+          {
+            "value": "Algeria",
+            "label": "Algeria"
+          },
+          {
+            "value": "Andorra",
+            "label": "Andorra"
+          },
+          {
+            "value": "Angola",
+            "label": "Angola"
+          },
+          {
+            "value": "Anguilla",
+            "label": "Anguilla"
+          },
+          {
+            "value": "Antigua And Barbuda",
+            "label": "Antigua And Barbuda"
+          },
+          {
+            "value": "Argentina",
+            "label": "Argentina"
+          },
+          {
+            "value": "Armenia",
+            "label": "Armenia"
+          },
+          {
+            "value": "Aruba",
+            "label": "Aruba"
+          },
+          {
+            "value": "Austria",
+            "label": "Austria"
+          },
+          {
+            "value": "Azerbaijan",
+            "label": "Azerbaijan"
+          },
+          {
+            "value": "Bahamas",
+            "label": "Bahamas"
+          },
+          {
+            "value": "Bahrain",
+            "label": "Bahrain"
+          },
+          {
+            "value": "Bangladesh",
+            "label": "Bangladesh"
+          },
+          {
+            "value": "Barbados",
+            "label": "Barbados"
+          },
+          {
+            "value": "Belarus",
+            "label": "Belarus"
+          },
+          {
+            "value": "Belgium",
+            "label": "Belgium"
+          },
+          {
+            "value": "Belize",
+            "label": "Belize"
+          },
+          {
+            "value": "Benin",
+            "label": "Benin"
+          },
+          {
+            "value": "Bermuda",
+            "label": "Bermuda"
+          },
+          {
+            "value": "Bhutan",
+            "label": "Bhutan"
+          },
+          {
+            "value": "Bolivia",
+            "label": "Bolivia"
+          },
+          {
+            "value": "Bosnia And Herzegovina",
+            "label": "Bosnia And Herzegovina"
+          },
+          {
+            "value": "Botswana",
+            "label": "Botswana"
+          },
+          {
+            "value": "Bouvet Island",
+            "label": "Bouvet Island"
+          },
+          {
+            "value": "Brazil",
+            "label": "Brazil"
+          },
+          {
+            "value": "British Indian Ocean Territory",
+            "label": "British Indian Ocean Territory"
+          },
+          {
+            "value": "Brunei",
+            "label": "Brunei"
+          },
+          {
+            "value": "Bulgaria",
+            "label": "Bulgaria"
+          },
+          {
+            "value": "Burkina Faso",
+            "label": "Burkina Faso"
+          },
+          {
+            "value": "Burma",
+            "label": "Burma"
+          },
+          {
+            "value": "Burundi",
+            "label": "Burundi"
+          },
+          {
+            "value": "Cambodia",
+            "label": "Cambodia"
+          },
+          {
+            "value": "Cape Verde",
+            "label": "Cape Verde"
+          },
+          {
+            "value": "Cayman Islands",
+            "label": "Cayman Islands"
+          },
+          {
+            "value": "Central African Republic",
+            "label": "Central African Republic"
+          },
+          {
+            "value": "Chad",
+            "label": "Chad"
+          },
+          {
+            "value": "Chile",
+            "label": "Chile"
+          },
+          {
+            "value": "China",
+            "label": "China"
+          },
+          {
+            "value": "Christmas Island",
+            "label": "Christmas Island"
+          },
+          {
+            "value": "Cocos (Keeling) Islands",
+            "label": "Cocos (Keeling) Islands"
+          },
+          {
+            "value": "Colombia",
+            "label": "Colombia"
+          },
+          {
+            "value": "Comoros",
+            "label": "Comoros"
+          },
+          {
+            "value": "Congo",
+            "label": "Congo"
+          },
+          {
+            "value": "Congo, The Democratic Republic Of The",
+            "label": "Congo, The Democratic Republic Of The"
+          },
+          {
+            "value": "Cook Islands",
+            "label": "Cook Islands"
+          },
+          {
+            "value": "Costa Rica",
+            "label": "Costa Rica"
+          },
+          {
+            "value": "Croatia",
+            "label": "Croatia"
+          },
+          {
+            "value": "Cuba",
+            "label": "Cuba"
+          },
+          {
+            "value": "Curaçao",
+            "label": "Curaçao"
+          },
+          {
+            "value": "Cyprus",
+            "label": "Cyprus"
+          },
+          {
+            "value": "Czech Republic",
+            "label": "Czech Republic"
+          },
+          {
+            "value": "Côte d'Ivoire",
+            "label": "Côte d'Ivoire"
+          },
+          {
+            "value": "Denmark",
+            "label": "Denmark"
+          },
+          {
+            "value": "Djibouti",
+            "label": "Djibouti"
+          },
+          {
+            "value": "Dominica",
+            "label": "Dominica"
+          },
+          {
+            "value": "Dominican Republic",
+            "label": "Dominican Republic"
+          },
+          {
+            "value": "Ecuador",
+            "label": "Ecuador"
+          },
+          {
+            "value": "Egypt",
+            "label": "Egypt"
+          },
+          {
+            "value": "El Salvador",
+            "label": "El Salvador"
+          },
+          {
+            "value": "Equatorial Guinea",
+            "label": "Equatorial Guinea"
+          },
+          {
+            "value": "Eritrea",
+            "label": "Eritrea"
+          },
+          {
+            "value": "Estonia",
+            "label": "Estonia"
+          },
+          {
+            "value": "Ethiopia",
+            "label": "Ethiopia"
+          },
+          {
+            "value": "Falkland Islands (Malvinas)",
+            "label": "Falkland Islands (Malvinas)"
+          },
+          {
+            "value": "Faroe Islands",
+            "label": "Faroe Islands"
+          },
+          {
+            "value": "Fiji",
+            "label": "Fiji"
+          },
+          {
+            "value": "Finland",
+            "label": "Finland"
+          },
+          {
+            "value": "France",
+            "label": "France"
+          },
+          {
+            "value": "French Guiana",
+            "label": "French Guiana"
+          },
+          {
+            "value": "French Polynesia",
+            "label": "French Polynesia"
+          },
+          {
+            "value": "French Southern Territories",
+            "label": "French Southern Territories"
+          },
+          {
+            "value": "Gabon",
+            "label": "Gabon"
+          },
+          {
+            "value": "Gambia",
+            "label": "Gambia"
+          },
+          {
+            "value": "Georgia",
+            "label": "Georgia"
+          },
+          {
+            "value": "Germany",
+            "label": "Germany"
+          },
+          {
+            "value": "Ghana",
+            "label": "Ghana"
+          },
+          {
+            "value": "Gibraltar",
+            "label": "Gibraltar"
+          },
+          {
+            "value": "Greece",
+            "label": "Greece"
+          },
+          {
+            "value": "Greenland",
+            "label": "Greenland"
+          },
+          {
+            "value": "Grenada",
+            "label": "Grenada"
+          },
+          {
+            "value": "Guadeloupe",
+            "label": "Guadeloupe"
+          },
+          {
+            "value": "Guatemala",
+            "label": "Guatemala"
+          },
+          {
+            "value": "Guernsey",
+            "label": "Guernsey"
+          },
+          {
+            "value": "Guinea",
+            "label": "Guinea"
+          },
+          {
+            "value": "Guinea Bissau",
+            "label": "Guinea Bissau"
+          },
+          {
+            "value": "Guyana",
+            "label": "Guyana"
+          },
+          {
+            "value": "Haiti",
+            "label": "Haiti"
+          },
+          {
+            "value": "Heard Island And Mcdonald Islands",
+            "label": "Heard Island And Mcdonald Islands"
+          },
+          {
+            "value": "Holy See (Vatican City State)",
+            "label": "Holy See (Vatican City State)"
+          },
+          {
+            "value": "Honduras",
+            "label": "Honduras"
+          },
+          {
+            "value": "Hong Kong",
+            "label": "Hong Kong"
+          },
+          {
+            "value": "Hungary",
+            "label": "Hungary"
+          },
+          {
+            "value": "Iceland",
+            "label": "Iceland"
+          },
+          {
+            "value": "India",
+            "label": "India"
+          },
+          {
+            "value": "Indonesia",
+            "label": "Indonesia"
+          },
+          {
+            "value": "Iran, Islamic Republic Of",
+            "label": "Iran, Islamic Republic Of"
+          },
+          {
+            "value": "Iraq",
+            "label": "Iraq"
+          },
+          {
+            "value": "Ireland",
+            "label": "Ireland"
+          },
+          {
+            "value": "Isle Of Man",
+            "label": "Isle Of Man"
+          },
+          {
+            "value": "Israel",
+            "label": "Israel"
+          },
+          {
+            "value": "Italy",
+            "label": "Italy"
+          },
+          {
+            "value": "Jamaica",
+            "label": "Jamaica"
+          },
+          {
+            "value": "Japan",
+            "label": "Japan"
+          },
+          {
+            "value": "Jersey",
+            "label": "Jersey"
+          },
+          {
+            "value": "Jordan",
+            "label": "Jordan"
+          },
+          {
+            "value": "Kazakhstan",
+            "label": "Kazakhstan"
+          },
+          {
+            "value": "Kenya",
+            "label": "Kenya"
+          },
+          {
+            "value": "Kiribati",
+            "label": "Kiribati"
+          },
+          {
+            "value": "Korea, Democratic People's Republic Of",
+            "label": "Korea, Democratic People's Republic Of"
+          },
+          {
+            "value": "Kosovo",
+            "label": "Kosovo"
+          },
+          {
+            "value": "Kuwait",
+            "label": "Kuwait"
+          },
+          {
+            "value": "Kyrgyzstan",
+            "label": "Kyrgyzstan"
+          },
+          {
+            "value": "Lao People's Democratic Republic",
+            "label": "Lao People's Democratic Republic"
+          },
+          {
+            "value": "Latvia",
+            "label": "Latvia"
+          },
+          {
+            "value": "Lebanon",
+            "label": "Lebanon"
+          },
+          {
+            "value": "Lesotho",
+            "label": "Lesotho"
+          },
+          {
+            "value": "Liberia",
+            "label": "Liberia"
+          },
+          {
+            "value": "Libyan Arab Jamahiriya",
+            "label": "Libyan Arab Jamahiriya"
+          },
+          {
+            "value": "Liechtenstein",
+            "label": "Liechtenstein"
+          },
+          {
+            "value": "Lithuania",
+            "label": "Lithuania"
+          },
+          {
+            "value": "Luxembourg",
+            "label": "Luxembourg"
+          },
+          {
+            "value": "Macao",
+            "label": "Macao"
+          },
+          {
+            "value": "Macedonia, Republic Of",
+            "label": "Macedonia, Republic Of"
+          },
+          {
+            "value": "Madagascar",
+            "label": "Madagascar"
+          },
+          {
+            "value": "Malawi",
+            "label": "Malawi"
+          },
+          {
+            "value": "Malaysia",
+            "label": "Malaysia"
+          },
+          {
+            "value": "Maldives",
+            "label": "Maldives"
+          },
+          {
+            "value": "Mali",
+            "label": "Mali"
+          },
+          {
+            "value": "Malta",
+            "label": "Malta"
+          },
+          {
+            "value": "Martinique",
+            "label": "Martinique"
+          },
+          {
+            "value": "Mauritania",
+            "label": "Mauritania"
+          },
+          {
+            "value": "Mauritius",
+            "label": "Mauritius"
+          },
+          {
+            "value": "Mayotte",
+            "label": "Mayotte"
+          },
+          {
+            "value": "Mexico",
+            "label": "Mexico"
+          },
+          {
+            "value": "Moldova, Republic of",
+            "label": "Moldova, Republic of"
+          },
+          {
+            "value": "Monaco",
+            "label": "Monaco"
+          },
+          {
+            "value": "Mongolia",
+            "label": "Mongolia"
+          },
+          {
+            "value": "Montenegro",
+            "label": "Montenegro"
+          },
+          {
+            "value": "Montserrat",
+            "label": "Montserrat"
+          },
+          {
+            "value": "Morocco",
+            "label": "Morocco"
+          },
+          {
+            "value": "Mozambique",
+            "label": "Mozambique"
+          },
+          {
+            "value": "Namibia",
+            "label": "Namibia"
+          },
+          {
+            "value": "Nauru",
+            "label": "Nauru"
+          },
+          {
+            "value": "Nepal",
+            "label": "Nepal"
+          },
+          {
+            "value": "Netherlands",
+            "label": "Netherlands"
+          },
+          {
+            "value": "Netherlands Antilles",
+            "label": "Netherlands Antilles"
+          },
+          {
+            "value": "New Caledonia",
+            "label": "New Caledonia"
+          },
+          {
+            "value": "New Zealand",
+            "label": "New Zealand"
+          },
+          {
+            "value": "Nicaragua",
+            "label": "Nicaragua"
+          },
+          {
+            "value": "Niger",
+            "label": "Niger"
+          },
+          {
+            "value": "Nigeria",
+            "label": "Nigeria"
+          },
+          {
+            "value": "Niue",
+            "label": "Niue"
+          },
+          {
+            "value": "Norfolk Island",
+            "label": "Norfolk Island"
+          },
+          {
+            "value": "Norway",
+            "label": "Norway"
+          },
+          {
+            "value": "Oman",
+            "label": "Oman"
+          },
+          {
+            "value": "Pakistan",
+            "label": "Pakistan"
+          },
+          {
+            "value": "Palestinian Territory, Occupied",
+            "label": "Palestinian Territory, Occupied"
+          },
+          {
+            "value": "Panama",
+            "label": "Panama"
+          },
+          {
+            "value": "Papua New Guinea",
+            "label": "Papua New Guinea"
+          },
+          {
+            "value": "Paraguay",
+            "label": "Paraguay"
+          },
+          {
+            "value": "Peru",
+            "label": "Peru"
+          },
+          {
+            "value": "Philippines",
+            "label": "Philippines"
+          },
+          {
+            "value": "Pitcairn",
+            "label": "Pitcairn"
+          },
+          {
+            "value": "Poland",
+            "label": "Poland"
+          },
+          {
+            "value": "Portugal",
+            "label": "Portugal"
+          },
+          {
+            "value": "Qatar",
+            "label": "Qatar"
+          },
+          {
+            "value": "Republic of Cameroon",
+            "label": "Republic of Cameroon"
+          },
+          {
+            "value": "Reunion",
+            "label": "Reunion"
+          },
+          {
+            "value": "Romania",
+            "label": "Romania"
+          },
+          {
+            "value": "Russia",
+            "label": "Russia"
+          },
+          {
+            "value": "Rwanda",
+            "label": "Rwanda"
+          },
+          {
+            "value": "Saint Barthélemy",
+            "label": "Saint Barthélemy"
+          },
+          {
+            "value": "Saint Helena",
+            "label": "Saint Helena"
+          },
+          {
+            "value": "Saint Kitts And Nevis",
+            "label": "Saint Kitts And Nevis"
+          },
+          {
+            "value": "Saint Lucia",
+            "label": "Saint Lucia"
+          },
+          {
+            "value": "Saint Martin",
+            "label": "Saint Martin"
+          },
+          {
+            "value": "Saint Pierre And Miquelon",
+            "label": "Saint Pierre And Miquelon"
+          },
+          {
+            "value": "Samoa",
+            "label": "Samoa"
+          },
+          {
+            "value": "San Marino",
+            "label": "San Marino"
+          },
+          {
+            "value": "Sao Tome And Principe",
+            "label": "Sao Tome And Principe"
+          },
+          {
+            "value": "Saudi Arabia",
+            "label": "Saudi Arabia"
+          },
+          {
+            "value": "Senegal",
+            "label": "Senegal"
+          },
+          {
+            "value": "Serbia",
+            "label": "Serbia"
+          },
+          {
+            "value": "Seychelles",
+            "label": "Seychelles"
+          },
+          {
+            "value": "Sierra Leone",
+            "label": "Sierra Leone"
+          },
+          {
+            "value": "Singapore",
+            "label": "Singapore"
+          },
+          {
+            "value": "Slovakia",
+            "label": "Slovakia"
+          },
+          {
+            "value": "Slovenia",
+            "label": "Slovenia"
+          },
+          {
+            "value": "Solomon Islands",
+            "label": "Solomon Islands"
+          },
+          {
+            "value": "Somalia",
+            "label": "Somalia"
+          },
+          {
+            "value": "South Africa",
+            "label": "South Africa"
+          },
+          {
+            "value": "South Georgia And The South Sandwich Islands",
+            "label": "South Georgia And The South Sandwich Islands"
+          },
+          {
+            "value": "South Korea",
+            "label": "South Korea"
+          },
+          {
+            "value": "Spain",
+            "label": "Spain"
+          },
+          {
+            "value": "Sri Lanka",
+            "label": "Sri Lanka"
+          },
+          {
+            "value": "St. Vincent",
+            "label": "St. Vincent"
+          },
+          {
+            "value": "Sudan",
+            "label": "Sudan"
+          },
+          {
+            "value": "Suriname",
+            "label": "Suriname"
+          },
+          {
+            "value": "Svalbard And Jan Mayen",
+            "label": "Svalbard And Jan Mayen"
+          },
+          {
+            "value": "Swaziland",
+            "label": "Swaziland"
+          },
+          {
+            "value": "Sweden",
+            "label": "Sweden"
+          },
+          {
+            "value": "Switzerland",
+            "label": "Switzerland"
+          },
+          {
+            "value": "Syria",
+            "label": "Syria"
+          },
+          {
+            "value": "Taiwan",
+            "label": "Taiwan"
+          },
+          {
+            "value": "Tajikistan",
+            "label": "Tajikistan"
+          },
+          {
+            "value": "Tanzania, United Republic Of",
+            "label": "Tanzania, United Republic Of"
+          },
+          {
+            "value": "Thailand",
+            "label": "Thailand"
+          },
+          {
+            "value": "Timor Leste",
+            "label": "Timor Leste"
+          },
+          {
+            "value": "Togo",
+            "label": "Togo"
+          },
+          {
+            "value": "Tokelau",
+            "label": "Tokelau"
+          },
+          {
+            "value": "Tonga",
+            "label": "Tonga"
+          },
+          {
+            "value": "Trinidad and Tobago",
+            "label": "Trinidad and Tobago"
+          },
+          {
+            "value": "Tunisia",
+            "label": "Tunisia"
+          },
+          {
+            "value": "Turkey",
+            "label": "Turkey"
+          },
+          {
+            "value": "Turkmenistan",
+            "label": "Turkmenistan"
+          },
+          {
+            "value": "Turks and Caicos Islands",
+            "label": "Turks and Caicos Islands"
+          },
+          {
+            "value": "Tuvalu",
+            "label": "Tuvalu"
+          },
+          {
+            "value": "Uganda",
+            "label": "Uganda"
+          },
+          {
+            "value": "Ukraine",
+            "label": "Ukraine"
+          },
+          {
+            "value": "United Arab Emirates",
+            "label": "United Arab Emirates"
+          },
+          {
+            "value": "United Kingdom",
+            "label": "United Kingdom"
+          },
+          {
+            "value": "United States",
+            "label": "United States"
+          },
+          {
+            "value": "United States Minor Outlying Islands",
+            "label": "United States Minor Outlying Islands"
+          },
+          {
+            "value": "Uruguay",
+            "label": "Uruguay"
+          },
+          {
+            "value": "Uzbekistan",
+            "label": "Uzbekistan"
+          },
+          {
+            "value": "Vanuatu",
+            "label": "Vanuatu"
+          },
+          {
+            "value": "Venezuela",
+            "label": "Venezuela"
+          },
+          {
+            "value": "Virgin Islands, British",
+            "label": "Virgin Islands, British"
+          },
+          {
+            "value": "Wallis And Futuna",
+            "label": "Wallis And Futuna"
+          },
+          {
+            "value": "Western Sahara",
+            "label": "Western Sahara"
+          },
+          {
+            "value": "Yemen",
+            "label": "Yemen"
+          },
+          {
+            "value": "Zambia",
+            "label": "Zambia"
+          },
+          {
+            "value": "Zimbabwe",
+            "label": "Zimbabwe"
+          }
+        ],
+        "default": "Canada"
+      },
+      {
+        "type": "paragraph",
+        "content": "If your customer is logged-in, the country in his default shipping address will be selected. If you are not sure about the spelling to use above, refer to your first checkout page."
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.social_media.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.social_media.settings.header_accounts"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "t:settings_schema.social_media.settings.social_facebook_link.label",
+        "info": "t:settings_schema.social_media.settings.social_facebook_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "t:settings_schema.social_media.settings.social_twitter_link.label",
+        "info": "t:settings_schema.social_media.settings.social_twitter_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "t:settings_schema.social_media.settings.social_pinterest_link.label",
+        "info": "t:settings_schema.social_media.settings.social_pinterest_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "t:settings_schema.social_media.settings.social_instagram_link.label",
+        "info": "t:settings_schema.social_media.settings.social_instagram_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat_link",
+        "label": "t:settings_schema.social_media.settings.social_snapchat_link.label",
+        "info": "t:settings_schema.social_media.settings.social_snapchat_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok_link",
+        "label": "t:settings_schema.social_media.settings.social_tiktok_link.label",
+        "info": "t:settings_schema.social_media.settings.social_tiktok_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "t:settings_schema.social_media.settings.social_tumblr_link.label",
+        "info": "t:settings_schema.social_media.settings.social_tumblr_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_linkedin_link",
+        "label": "t:settings_schema.social_media.settings.social_linkedin_link.label",
+        "info": "t:settings_schema.social_media.settings.social_linkedin_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "t:settings_schema.social_media.settings.social_youtube_link.label",
+        "info": "t:settings_schema.social_media.settings.social_youtube_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "t:settings_schema.social_media.settings.social_vimeo_link.label",
+        "info": "t:settings_schema.social_media.settings.social_vimeo_link.info"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.social_media.settings.header_sharing_options"
+      },
+      {
+        "type": "checkbox",
+        "id": "share_facebook",
+        "label": "t:settings_schema.social_media.settings.share_facebook.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "share_twitter",
+        "label": "t:settings_schema.social_media.settings.share_twitter.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "share_pinterest",
+        "label": "t:settings_schema.social_media.settings.share_pinterest.label",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.favicon.name",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "t:settings_schema.favicon.settings.favicon.label",
+        "info": "t:settings_schema.favicon.settings.favicon.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.search.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "search_type",
+        "label": "t:settings_schema.search.settings.search_type.label",
+        "default": "product,article",
+        "options": [
+          {
+            "value": "product",
+            "label": "t:settings_schema.search.settings.search_type.options.product.label"
+          },
+          {
+            "value": "product,page",
+            "label": "t:settings_schema.search.settings.search_type.options.product_page.label"
+          },
+          {
+            "value": "product,article",
+            "label": "t:settings_schema.search.settings.search_type.options.product_article.label"
+          },
+          {
+            "value": "product,article,page",
+            "label": "t:settings_schema.search.settings.search_type.options.product_article_page.label"
+          },
+          {
+            "value": "product,article,page,collection",
+            "label": "t:settings_schema.search.settings.search_type.options.product_article_page_collection.label"
+          }
+        ]
+      },
+      {
+        "type": "collection",
+        "id": "search_top_collection",
+        "label": "t:settings_schema.search.settings.search_top_collection.label",
+        "info": "t:settings_schema.search.settings.search_top_collection.info"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.search.settings.header_predictive_search"
+      },
+      {
+        "type": "checkbox",
+        "id": "predictive_search_enabled",
+        "label": "t:settings_schema.search.settings.predictive_search_enabled.label",
+        "default": true,
+        "info": "t:settings_schema.search.settings.predictive_search_enabled.info"
+      },
+      {
+        "type": "select",
+        "id": "predictive_image_size",
+        "label": "t:settings_schema.search.settings.predictive_image_size.label",
+        "default": "square",
+        "options": [
+          {
+            "value": "square",
+            "label": "t:settings_schema.search.settings.predictive_image_size.options.square.label"
+          },
+          {
+            "value": "landscape",
+            "label": "t:settings_schema.search.settings.predictive_image_size.options.landscape.label"
+          },
+          {
+            "value": "portrait",
+            "label": "t:settings_schema.search.settings.predictive_image_size.options.portrait.label"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.extras.name",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_breadcrumbs",
+        "label": "t:settings_schema.extras.settings.show_breadcrumbs.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_breadcrumbs_collection_link",
+        "label": "t:settings_schema.extras.settings.show_breadcrumbs_collection_link.label"
+      }
+    ]
+  }
+]

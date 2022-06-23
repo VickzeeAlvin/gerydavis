@@ -1,0 +1,19 @@
+.bold_option_checkbox input[type=checkbox] {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.bold_option_swatch .bold_option_element {
+  display: block !important;
+}
+
+/* .bold_option_value_title {
+    color: white;
+} */
+
+.bold_option_element input[name="properties[Text]"] {
+  border: 1px solid;
+}
+.bold_option_displaytext {
+  display: none;
+}

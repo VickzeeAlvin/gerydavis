@@ -1,0 +1,926 @@
+{%- liquid
+    assign main_menu = linklists[section.settings.main_menu_link_list]
+    assign main_menu_mobile = linklists[section.settings.mobile_link_list] 
+    assign main_menu_mobile_2 = linklists[section.settings.mobile_link_list_2] 
+    assign main_menu_mobile_3 = linklists[section.settings.mobile_link_list_3] 
+    assign main_menu_mobile_4 = linklists[section.settings.main_link_footer] 
+    
+
+  assign logo_alignment = 'left'
+  assign nav_position = 'below'
+
+  if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center'
+    assign nav_position = 'beside'
+  endif
+
+  if section.settings.main_menu_alignment == 'center'
+    assign logo_alignment = 'center'  
+  endif
+
+  assign template_name = template | replace: '.', ' ' | truncatewords: 2, '' | handle
+
+  assign overlay_header = false
+  if template_name == 'index' and section.settings.sticky_index
+    assign overlay_header = true
+  endif
+  if template_name == 'collection' and collection.image and section.settings.sticky_collection
+    assign overlay_header = true
+  endif
+-%}
+
+<style>
+  .site-nav__link {
+    font-size: {{ settings.type_navigation_size }}px;
+    font-weight: 500;
+  }
+  {% if settings.type_navigation_capitalize %}
+  .site-nav__link {
+    text-transform: uppercase;
+  }
+  {% endif %}
+
+  {% if mainmenu.length > 6 %}
+  .site-nav__link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  {% endif %}
+
+  {%- if settings.color_header == settings.color_body_bg or settings.color_body_bg contains settings.color_header -%}
+  .site-header,
+  .site-header__element--sub {
+    box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+  }
+
+  .is-light .site-header,
+  .is-light .site-header__element--sub {
+    box-shadow: none;
+  }
+  {%- endif -%}
+
+  {%- if settings.color_header == settings.color_header_search -%}
+  .site-header__search-form {
+    border: 1px solid {{ settings.color_borders }}
+  }
+  {%- endif -%}
+  .header-item--icons {
+    flex: unset;
+  }
+  .sports_shop {
+    width: 20%;
+  }
+  .header-item--icons {
+    width: 30%;
+  }
+  .header-item--search {
+    max-width: 700px;
+  }
+  .sports_shop {
+    width: auto;
+  }
+  .sports_shop p {
+    margin-bottom: 0px;
+  }
+  .header-item--compress-nav {
+    visibility: visible;
+    width: unset; 
+    opacity: 1;
+  }
+  .header-wrapper--compressed .header-item--compress-nav {
+    width: unset;
+  }
+  .header-section {
+    padding-bottom: unset;
+  }
+  .promo_banner_width {
+    text-align: center;
+    padding: 13px 0px;
+    background-color: {{section.settings.promo_bar_bg}};
+    width: 100%;
+  }
+  .new_promo p {
+    margin-bottom: 0px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing:.01rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .new_promo p a {
+    background-color: #424242;
+    color: white;
+    padding:5px 15px 5px;
+    letter-spacing:.01rem;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  .site-header, .site-header__element--sub {
+    box-shadow: unset; 
+  }
+  .header-wrapper--init .site-header__element--sub {
+    transform: translateY(-100%);
+    display: none;
+  }
+  .slide-nav__link--back .icon {
+    display: none;
+  }
+  .head_sub_menu_backbtn .slide-nav__link--back .icon {
+    display: inline-block;
+  }
+  ul.parent {
+    display: flex;
+    list-style-type: none !important;
+    margin: 0;
+    justify-content: center;
+  }
+  ul.child {
+    list-style-type: none;
+  }
+  .page-width {
+    max-width: 1660px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .announcement-bar--link a {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .dropdown-content {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-left: 0px;
+    top: 20px ;
+  }
+  .new_linklist {
+    padding-right: 30px;
+  }
+  .dropdown .active:hover .dropdown-content {
+    display: block;
+  }
+  ul.parent li {
+    padding: 0px 20px;
+  }
+  ul.parent li a {
+    font-size: 16px;
+  }
+  .header-item--logo, [data-layout="left-center"] .header-item--logo, [data-layout="left-center"] .header-item--icons {
+    flex: 0 0 200px !important;
+    justify-content: center;
+  }
+  .header-layout[data-logo-align=left] .site-header__logo {
+    margin-right: 0px;
+  }
+  .header-item--search {
+    flex: 1 1 40%;
+    max-width: unset;
+  }
+  .mid_display {
+    display:none;
+  }
+  .sports_shop p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .new_linklist .site-nav--has-dropdown:after {
+    content: '';
+    background-image: url(https://cdn.shopify.com/s/files/1/0507/0379/4347/files/arrow__down.svg?v=1634342514);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 19px;
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    margin-left: 5px;
+  }
+  .new_linklist .site-nav--has-dropdown {
+    position: relative;
+    padding-right: 20px;
+  }
+  li.active.child-active {
+    display: flex;
+    align-items: baseline;
+  }
+  .site-nav__item:hover .site-nav__link--underline::after {
+    display:none;
+  }
+  .header-layout, .sports_shop .site-nav__link, .new_linklist .site-nav__dropdown-link, .new_linklist .site-nav__link, .site-header__search-input {
+    font-family: 'brother-1816';
+    font-size:14px;
+  }
+  @media only screen and (min-width: 769px) {
+    .mobile-nav-trigger.is-active path:nth-child(3), .site-nav__compress-menu.is-active path:nth-child(3), .site-nav__compress-menu.is-active rect:nth-child(3) {
+      transform: rotate(-45deg);
+      transform-origin: 15% 50%;
+      width: 26px;
+    }
+    .mobile-nav-trigger.is-active path:first-child, .site-nav__compress-menu.is-active path:first-child, .site-nav__compress-menu.is-active rect:first-child {
+      transform: rotate(45deg);
+      transform-origin: 20% 30%;
+      width: 26px;
+    }
+  }
+  .new_promo {
+    padding: 0 20px;
+    font-family: 'brother-1816';
+  }
+  .navigation_mobile_bottom {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 3px solid #EFEFEF;
+  }
+  .navigation_mobile_bottom .slide-nav li span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .navigation_mobile_bottom .slide-nav li {
+    padding-top: 0px;
+  }
+  .head_sub_menu_backbtn {
+    display: none;
+    flex: 0 0 20%;
+  }
+  .sub_menu_open .mobile-nav-trigger {
+    display: none;
+  }
+  .sub_menu_open .head_sub_menu_backbtn {
+    display: block;
+  }
+  .head_sub_menu_backbtn .slide-nav__link--back > span {
+    color: #424242;
+    font-size: 14px;
+  }
+  .head_sub_menu_backbtn .slide-nav__link--back  {
+    padding: 0;
+  }
+  .head_sub_menu_backbtn .slide-nav__link--back .icon {
+    margin-right: 5px;
+  }
+  .mobile_cross_btn {
+    display: none;
+  }
+  .mobile_fragment {
+    display: none;
+  }
+  .slide-nav__dropdown[data-level="3"] li a span {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .slide-nav__dropdown[data-level="3"] li a  {
+    padding: 
+  }
+  .slide-nav__dropdown[data-level="3"] .slide-nav__link--back > span {
+    color: #EC212A;
+  }
+  .head_sub_menu_backbtn[data-parent=''] {
+    display: none;
+  }
+  .site-header__mobile-nav_search {
+    padding: 10px 20px;
+    border-top: 3px solid #efefef;
+    padding-top: 20px;
+  }
+  .slide-nav__link--back > span {
+    text-transform: uppercase;
+  }
+  .slide-nav__button {
+    color: var(--colorTextBody) !important;
+  }
+  
+  @media only screen and (max-width: 1700px) {
+    .header-layout {
+      justify-content: center;
+    }
+    .site-nav__link--icon {
+      padding-left: 0px !important;
+    }
+  }
+  @media only screen and (max-width: 1500px) {
+    .header-item--search {
+      flex: 1 1 10%;
+    }
+    .header-item--icons {
+      width: 35%;
+    }
+  }
+  @media only screen and (max-width: 1470px) {
+    .sports_shop p {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    .mid_display .icon {
+      width: 60px;
+      height: 25px;
+    }
+    .header-layout {
+      justify-content: space-between;
+    }
+    .search_new {
+      display: block !important;
+      padding-top: 0px;
+    }
+    .header-wrapper:not(.header-wrapper--compressed) [data-nav="below"] .js-search-header {
+      display: block !important;
+      padding-right: 15px;
+    }
+    .header-item--logo, [data-layout="left-center"] .header-item--logo, [data-layout="left-center"] .header-item--icons {
+      flex: 0 0 150px !important;
+    }
+  } 
+  @media only screen and (max-width: 1279px) {
+    .header-item--search {
+      display: none;
+    }
+    .mid_display {
+      display: block;
+    }
+    .header-wrapper--compressed .header-item--compress-nav {
+      transform: inherit;
+    }
+    .header-item--icons {
+      width: 100%;
+    }
+    .site-header__search-form.is-active .site-header__search-btn--cancel {
+      display: block;
+    }
+    .site-header__search-form.is-active {
+      width: calc(100% - 50px);
+    }
+    .sports_shop {
+      width:400px;
+    }
+  }
+  @media only screen and (max-width: 990px) {
+    .new_promo p a {
+      padding: 3px 15px 6px;
+    }
+    .announcement-slider__content {
+      text-align: left;
+    }
+    .new_linklist{
+      display:none;
+    }
+    .sports_shop {
+      width: 500px;
+    }
+    .header-item--icons {
+      width: auto;
+      flex: 0 0 40%;
+    }
+    .sports_shop, .mobile-nav-trigger {
+      width: auto;
+      flex: 0 0 40%;
+    }
+    .mobile-nav-open .mobile_open_hambarger {
+      display: none;
+    }
+    .mobile-nav-open .mobile_cross_btn {
+      display: inline-block;
+    }
+    .mobile-nav-open .mobile_fragment{
+      display: inline-block;
+      flex: 0 0 20%;
+    }
+    .sub_menu_open .mobile_fragment {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .sports_shop {
+      display: none;
+    }
+    .promo_banner_width {
+      top: 70px !important;
+    }
+    .slide-nav__link > span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .site-header__mobile-nav_search {
+      padding: 12px 25px 0;
+    }
+    .site-header__search-input {
+      font-size: 13px !important;
+    }
+    .slide-nav__link--back > span {
+      text-decoration: none;
+      color: #0372BC;
+    }
+    .site-header__element.site-header__element--sub.is-transitioning {
+      display: none !important;
+    }
+    .header-item--icons {
+      flex: 0 0 33%;
+    }
+    .mobile-nav-trigger {
+      flex: 0 0 33%;
+    }
+    .header-item--logo, [data-layout="left-center"] .header-item--logo, [data-layout="left-center"] .header-item--icons {
+      flex: 0 0 33% !important;
+    }
+    .mobile-nav-trigger {
+      flex: 0 0 33%;
+    }
+    .header-item--icons {
+      flex: 0 0 33%;
+    }
+    .mobile-nav-open .mobile_fragment, .head_sub_menu_backbtn {
+      flex: 0 0 33%;
+    }
+    .slide-nav__wrapper .slide-nav__link{
+      padding-left:25px;
+      padding-right:25px;
+    }
+    .site-header__drawer.site-header__mobile-nav {
+      padding: 0 0 20px 0;
+    }
+    .slide-nav__link .icon-chevron-right {
+      width: 13px;
+      height: 13px;
+    }
+    .new_promo p a {
+      margin: 0;
+      background: transparent;
+      padding: 8px 10px;
+    }
+    .promo_banner_width, .new_promo {
+      padding: 0;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .new_linklist {
+      display: none;
+    }
+  }
+</style>
+
+<div data-section-id="{{ section.id }}" data-section-type="header">
+  <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %} header-wrapper--compressed">
+    <header
+            id="SiteHeader"
+            class="site-header{% if settings.type_navigation_style == 'heading' %} site-header--heading-style{% endif %}"
+            data-sticky="{{ section.settings.header_sticky }}"
+            data-overlay="{{ overlay_header }}">
+
+      <div class="site-header__element site-header__element--top">
+        <div class="page-width">
+          <div class="header-layout" data-layout="{{ section.settings.main_menu_alignment }}" data-nav="{{ nav_position }}" data-logo-align="{{ logo_alignment }}">
+            <div class="sports_shop">
+              <div class="header-item header-item--compress-nav small--hide">
+                <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu">
+                  {%comment%}
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path></svg>
+                  {%endcomment%}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" viewBox="3 0 24 24" fill="none">
+                    <rect width="30" height="4" fill="#424242"/>
+                    <rect y="9" width="30" height="4" fill="#424242"/>
+                    <rect y="18" width="30" height="4" fill="#424242"/>
+                  </svg>
+                  {%- for block in section.blocks -%}
+                    {%- if block.type == 'logo' -%}
+                    	<span class="megamenu__hover">{{block.settings.sports-shop-text}} | </span>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </button>
+                {%- for block in section.blocks -%}
+                  {%- if block.type == 'logo' -%}
+                	<p>
+                      <span>  
+                        {%- if block.settings.last-call-url != blank -%}
+                        	<a href="{{block.settings.last-call-url}}">
+                        {%- endif -%}
+                        	{{block.settings.last-call-text}}
+                        {%- if block.settings.last-call-url != blank -%}
+                        	</a>
+                        {%- endif -%}
+                      </span>
+                    </p>
+                  {%- endif -%}
+                {%- endfor -%}
+                
+              </div>
+
+            </div>
+            {%- if nav_position == 'below' and logo_alignment == 'left' -%}
+
+            {%- endif -%}
+
+            <button type="button" aria-controls="MobileNav" class="site-nav__link site-nav__link--icon medium-up--hide mobile-nav-trigger mobile_open_hambarger">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" viewBox="3 0 24 24" fill="none">
+                <rect width="30" height="4" fill="#424242"/>
+                <rect y="9" width="30" height="4" fill="#424242"/>
+                <rect y="18" width="30" height="4" fill="#424242"/>
+              </svg>
+              <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+            </button>
+
+            <button type="button" class="slide-nav__button js-toggle-submenu head_sub_menu_backbtn" id="head_sub_menu_backbtn" data-level="1" data-parent="">
+              <span class="slide-nav__link slide-nav__link--back">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"></path></svg>
+                <span>Back</span>
+              </span>
+            </button>
+
+            <div class="mobile_fragment">
+            </div>
+
+            {%- if logo_alignment == 'left' -%}
+            <div class="header-item header-item--logo">
+              {%- render 'header-logo-block', section: section -%}
+            </div>
+            {%- endif -%}
+
+            {%- if nav_position == 'below' -%}
+            <div class="header-item header-item--search small--hide">
+              {%- if logo_alignment == 'center' -%}
+              <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path></svg>
+                <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+              </button>
+              {%- endif -%}
+
+              {%- render 'header-search' -%}
+            </div>
+            {%- endif -%}
+
+            {%- if nav_position == 'beside' -%}
+            <div class="header-item header-item--navigation{% if section.settings.main_menu_alignment == 'left-center' %} text-center{% endif %}">
+              {%- render 'header-desktop-nav', main_menu: main_menu, nav_position: nav_position, show_mega_products: section.settings.mega_products -%}
+            </div>
+            {%- endif -%}
+
+            {%- if logo_alignment == 'center' -%}
+            <div class="header-item header-item--logo">
+              {%- render 'header-logo-block', section: section -%}
+            </div>
+            {%- endif -%}
+
+            <div class="header-item header-item--icons">
+              {%- render 'header-icons', section: section, nav_position: nav_position -%}
+            </div>
+          </div>
+        </div>
+
+        <div class="site-header__search-container">
+          <div class="page-width">
+            <div class="site-header__search">
+              {%- render 'header-search' -%}
+              <button type="button" class="text-link site-header__search-btn site-header__search-btn--cancel">
+                <span class="medium-up--hide"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M19 17.61l27.12 27.13m0-27.13L19 44.74"/></svg></span>
+                <span class="small--hide">{{ 'general.search.cancel' | t }}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%- if nav_position == 'below' -%}
+      <div class="site-header__element mega-mm site-header__element--sub" data-type="nav">
+        <div class="page-width{% if logo_alignment == 'center' %} text-center{% endif %}">
+
+          {%assign _blocks = section.blocks%}
+          {%assign menu_footer = section.settings%}
+          {% render 'desktop-menu'  main_menu: main_menu , _blocks: _blocks , main_menu_footer: main_menu_mobile_4 %}
+        
+        </div>
+      </div>
+
+      {%if section.settings.promo_text != blank%}
+      <div class="promo_banner_width" id="promo_banner_sec">
+        {%- render 'promo-banner', section: section-%}
+      </div>
+      {%endif%}
+
+      <div class="site-header__element site-header__element--sub" data-type="search">
+        <div class="page-width medium-up--hide">
+          {%- render 'header-search' -%}
+        </div>
+      </div>
+      {%- endif -%}
+
+      <div class="page-width site-header__drawers">
+        <div class="site-header__drawers-container">
+          <div class="site-header__drawer site-header__cart" id="HeaderCart">
+            <div class="site-header__drawer-animate">
+              {%- render 'header-cart-drawer' -%}
+            </div>
+          </div>
+
+          <div class="site-header__drawer site-header__mobile-nav medium-up--hide" id="MobileNav">
+            <div class="site-header__drawer-animate">
+
+              <div class="site-header__mobile-nav_search">
+                {%- liquid
+                      assign dark_search_bg = true
+                      assign lightness = settings.color_header_search | color_brightness
+
+                      if lightness > 100
+                        assign dark_search_bg = false
+                      endif
+                    -%}
+
+                <form action="{{ routes.search_url }}" method="get" role="search"
+                      class="site-header__search-form" data-dark="{{ dark_search_bg }}">
+                  <input type="hidden" name="type" value="{{ settings.search_type }}">
+                  <input type="search" name="q" value="{{ search.terms | escape | replace: '*', '' }}" placeholder="Search all products" class="site-header__search-input" aria-label="{{ 'general.search.placeholder' | t }}">
+                  <button type="submit" class="text-link site-header__search-btn site-header__search-btn--submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 24" fill="none" class="icon icon-search">
+                      <circle cx="10" cy="10" r="8.5" fill="#F1F1F1" stroke="#424242" stroke-width="2"/>
+                      <line x1="17.0607" y1="15.9393" x2="23.4246" y2="22.3033" stroke="#424242" stroke-width="2"/>
+                    </svg>
+                    <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+                  </button>
+
+                  <button type="button" class="text-link site-header__search-btn site-header__search-btn--cancel">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M19 17.61l27.12 27.13m0-27.13L19 44.74"/></svg>
+                    <span class="icon__fallback-text">{{ 'general.accessibility.close' | t }}</span>
+                  </button>
+                </form>
+              </div>
+
+              {%if main_menu_mobile != blank%}
+              	{%- render 'header-mobile-nav', main_menu: main_menu_mobile -%}
+              {%else%}
+              	{%- render 'header-mobile-nav', main_menu: main_menu -%}
+              {%endif%}
+
+              {%if main_menu_mobile_2 != blank%}
+                <div class="second_mobile_menu navigation_mobile_bottom">
+                  {%- render 'header-mobile-nav', main_menu: main_menu_mobile_2 -%}
+                </div>
+              {%endif%}
+
+              {%if main_menu_mobile_3 != blank%}
+                <div class="third_mobile_menu navigation_mobile_bottom">
+                  {%- render 'header-mobile-nav', main_menu: main_menu_mobile_3 -%}
+                </div>
+              {%endif%}
+              
+              {%- if section.settings.header_footer_menu -%}
+              	<div id="MobileNavFooter"></div>
+              {%- endif -%}
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%- if settings.predictive_search_enabled or settings.search_top_collection != blank -%}
+      <div id="SearchResultsWrapper" class="site-header__search-results hide">
+        {%- if settings.search_top_collection != blank -%}
+        {%- assign search_collection = collections[settings.search_top_collection] -%}
+        <div id="TopSearched" class="site-header__search-results-wrapper">
+          <div class="page-width">
+            <div class="h4 site-header__search-title">{{ 'general.search.search_title' | t }}</div>
+          </div>
+          <div class="page-width page-width--flush-small">
+            <div class="new-grid product-grid scrollable-grid--small" data-view="scrollable">
+              {%- for product in search_collection.products limit: 6 -%}
+              {%- if product.metafields.inventory.ShappifyHidden == 'true' or product.tags contains 'hide' -%}{%- continue -%}{%- endif -%}
+              {%- render 'product-grid-item', product: product, no_actions: true -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+        {%- endif -%}
+
+        {%- if settings.predictive_search_enabled -%}
+        <div id="PredictiveWrapper" class="hide" data-image-size="{{ settings.predictive_image_size }}">
+          <div class="page-width">
+            <div id="PredictiveResults" class="predictive-result__layout"></div>
+            <div class="text-center predictive-results__footer">
+              <button type="button" class="btn btn--small" data-predictive-search-button>
+                <small>
+                  {{ 'general.search.view_more' | t }}
+                </small>
+              </button>
+            </div>
+          </div>
+        </div>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+    </header>
+  </div>
+</div>
+
+{% schema %}
+{
+   "name":"Header",
+   "class":"header-section",
+   "settings":[
+      {
+         "type":"link_list",
+         "id":"main_menu_link_list",
+         "label":"Navigation",
+         "default":"main-menu"
+      },
+      {
+         "type":"link_list",
+         "id":"mobile_link_list",
+         "label":"Navigation Mobile",
+         "default":"main-menu"
+      },
+      {
+         "type":"link_list",
+         "id":"main_link_footer",
+         "label":"Main Navigation footer",
+         "default":"main-menu"
+      },
+      {
+         "type":"link_list",
+         "id":"mobile_link_list_2",
+         "label":"Navigation Mobile 2",
+         "default":"main-menu"
+      },
+      {
+         "type":"link_list",
+         "id":"mobile_link_list_3",
+         "label":"Navigation Mobile 3",
+         "default":"main-menu"
+      },
+      {
+         "type":"link_list",
+         "id":"menu_items",
+         "label":"Shop Menu"
+      },
+      {
+         "type":"select",
+         "id":"main_menu_alignment",
+         "label":"Layout",
+         "default":"below",
+         "options":[
+            {
+               "value":"below",
+               "label":"Logo left, menu below"
+            },
+            {
+               "value":"left",
+               "label":"Logo left, menu left"
+            },
+            {
+               "value":"left-center",
+               "label":"Logo left, menu center"
+            },
+            {
+               "value":"center",
+               "label":"Logo center, menu below"
+            }
+         ]
+      },
+      {
+         "type":"checkbox",
+         "id":"mega_products",
+         "label":"Show first product in mega menus",
+         "info":"[Learn more](https://archetypethemes.co/blogs/expanse/how-do-i-create-a-mega-menu)",
+         "default":true
+      },
+      {
+         "type":"checkbox",
+         "id":"header_sticky",
+         "label":"Enable sticky header",
+         "default":true,
+         "info":"Recommended"
+      },
+      {
+         "type":"checkbox",
+         "id":"header_footer_menu",
+         "label":"Show footer content on mobile menu",
+         "default":true,
+         "info":"Recommended"
+      },
+      {
+         "type":"checkbox",
+         "id":"sticky_index",
+         "label":"Overlay header over home page",
+         "default":false
+      },
+      {
+         "type":"checkbox",
+         "id":"sticky_collection",
+         "label":"Overlay header over collection",
+         "info":"(if collection image is enabled)",
+         "default":false
+      },
+      {
+         "type":"header",
+         "content":"Promo text"
+      },
+      {
+         "type":"text",
+         "id":"promo_text",
+         "label":"Desktop Promo Text"
+      },
+      {
+         "type":"text",
+         "id":"promo_text_mobile",
+         "label":"Mobile Promo Text"
+      },
+      {
+         "type":"text",
+         "id":"promo_btn_text",
+         "label":"Button Text"
+      },
+      {
+         "type":"url",
+         "id":"promo_btn_url",
+         "label":"Button Url"
+      },
+      {
+         "type":"color",
+         "id":"promo_btn_color",
+         "label":"Button Color"
+      },
+      {
+         "type":"color",
+         "id":"promo_btn_bg",
+         "label":"Button Background"
+      },
+      {
+         "type":"color",
+         "id":"promo_bar_bg",
+         "label":"Bar Background"
+      }
+   ],
+   "blocks":[
+      {
+         "type":"logo",
+         "name":"Logo",
+         "limit":1,
+         "settings":[
+            {
+               "type":"image_picker",
+               "id":"logo",
+               "label":"Logo"
+            },
+            {
+               "type":"image_picker",
+               "id":"logo-inverted",
+               "label":"White logo",
+               "info":"Used when on top of an image"
+            },
+            {
+               "type":"range",
+               "id":"desktop_logo_width",
+               "label":"Desktop logo width",
+               "default":200,
+               "min":100,
+               "max":400,
+               "step":10,
+               "unit":"px"
+            },
+            {
+               "type":"range",
+               "id":"mobile_logo_width",
+               "label":"Mobile logo width",
+               "default":140,
+               "min":60,
+               "max":200,
+               "step":10,
+               "unit":"px",
+               "info":"Set as a max-width, may appear smaller"
+            },
+			{
+               "type":"text",
+               "id":"sports-shop-text",
+               "label":"Sports Shop Text",
+			   "default": "Sports Shop"
+            },
+			{
+               "type":"text",
+               "id":"last-call-text",
+               "label":"Last Call Text",
+			   "default": "Last Call"
+            },
+			{
+               "type":"url",
+               "id":"last-call-url",
+               "label":"Last Call Url"
+            }
+         ]
+      }
+   ],
+   "default":{
+      "settings":{
+         
+      }
+   }
+}
+{% endschema %}

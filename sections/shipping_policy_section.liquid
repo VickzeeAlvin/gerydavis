@@ -1,0 +1,99 @@
+<div class="page_content">
+  <div class="return_policy_wrapper">
+    <div class="return_policy_parent">
+      <div class="rp_intro">
+        {{section.settings.custom_text_title}}
+      </div>
+      <div class="main_heading">
+        {{section.settings.main_heading}}
+      </div>
+      <div class="accordion">
+        {% for block in section.blocks %}
+          <details class="accordion__item">
+            <summary  class="accordion__head">{{block.settings.rp_heading}}</summary>
+            <div class="accordion__body">
+              <div class="product-text">
+                <div class="pro_title">
+                  <span class="title_text">                             
+                    {{block.settings.rp_details}}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </details>
+        {% endfor %}
+      </div>
+      {%if  section.settings.rp_btn != blank%}
+      <a href="{{section.settings.rp_btn_url}}" class="start_run_button">
+        {{section.settings.rp_btn}}
+      </a>
+      {%endif%}
+    </div>
+  </div>
+  <script>
+    // Fetch all the details element.
+    var details = document.querySelectorAll("details.accordion__item");
+
+    // Add the onclick listeners.
+    details.forEach((targetDetail) => {
+        targetDetail.addEventListener("click", () => {
+            // Close all the details that are not targetDetail.
+            details.forEach((detail) => {
+              if (detail !== targetDetail) {
+                detail.removeAttribute("open");
+              }
+            });
+        });
+    });
+  </script>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Shipping Policy",
+    "settings": [
+      {
+        "id": "custom_text_title",
+        "type": "richtext",
+        "label": "Content"
+      },
+      {
+        "id": "main_heading",
+        "type": "text",
+        "label": "Main heading",
+        "default": "Main Heading"
+      },
+        {
+          "type": "text",
+          "id": "rp_btn",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "rp_btn_url",
+          "label": "Button Url"
+        }
+    ],
+    "blocks": [
+     {
+      "type": "text",
+	  "name": "Shipping Policy",
+      "settings": [
+        {
+          "type": "text",
+          "id": "rp_heading",
+          "label": "Question",
+          "default": "Enter Heading Here"
+        },
+		{
+          "type": "richtext",
+          "id": "rp_details",
+          "label": "Answer"
+        }
+      ]
+     }
+    ]
+  }
+{% endschema %}
+

@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "page_title_enable": true
+      }
+    },
+    "16524868507fc607e7": {
+      "type": "text-columns",
+      "blocks": {
+        "16524868507a135f64-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "REFER & SAVE 15%",
+            "text": "<p>Refer friends and colleagues - when they make a purchase they’ll receive 15% off their order and you’ll receive 15% off your next order!<\/p>",
+            "button_label": "Get started",
+            "button_link": ""
+          }
+        },
+        "16524868507a135f64-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "GET $20 OFF $150+",
+            "text": "<p>Sign up to receive occasional texts alerts. SMS subscribers receive special offers and $20 off their next order $150+. <em>First-time subscribers only. Restrictions may apply.<\/em><\/p>",
+            "button_label": "Sign up",
+            "button_link": ""
+          }
+        },
+        "16524868507a135f64-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "SIGN UP FOR EMAIL, SAVE 10%",
+            "text": "<p>Sign up to receive occasional marketing emails and get 10% off your next order. <em>First-time subscribers only. Restrictions may apply.<\/em><\/p>",
+            "button_label": "Sign up",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16524868507a135f64-0",
+        "16524868507a135f64-1",
+        "16524868507a135f64-2"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "165248693028e690ea": {
+      "type": "rich-text",
+      "blocks": {
+        "1652486930e216910d-0": {
+          "type": "heading",
+          "settings": {
+            "title": "NASO Member Discount"
+          }
+        },
+        "1652486930e216910d-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>While Gerry Davis Sports does not have an official partnership with NASO, we do provide a 10% discount to customers able to prove active membership. To request a discount on your order, please contact our customer care team via live chat.<\/p>"
+          }
+        },
+        "ebbdf12c-6d36-4c99-a064-79dfb4b19141": {
+          "type": "heading",
+          "settings": {
+            "title": "HOW ELSE CAN I RECEIVE DISCOUNTS & PROMOTIONS"
+          }
+        },
+        "35c56dba-5716-4066-acd4-3319e8cdf181": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>From time-to-time we may run site wide promotions but most offers are sent only to subscribers of our email\/sms marketing list and followers of our social channels. All public offers will otherwise be prominantly displayed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1652486930e216910d-0",
+        "1652486930e216910d-1",
+        "ebbdf12c-6d36-4c99-a064-79dfb4b19141",
+        "35c56dba-5716-4066-acd4-3319e8cdf181"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "16524868507fc607e7",
+    "165248693028e690ea"
+  ]
+}

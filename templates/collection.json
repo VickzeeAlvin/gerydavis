@@ -1,0 +1,124 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+          }
+        },
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "small"
+          }
+        },
+        "f4717935-2cc4-4e15-8822-74582c2a57ff": {
+          "type": "tags_group",
+          "settings": {
+            "title": "Style",
+            "tag_list": "1\" Stripes \n2\" Stripes \n2.25\" Stripes",
+            "collapsed": false
+          }
+        },
+        "e288e90d-5dc2-44d0-b6fb-28ee3f83236a": {
+          "type": "tags_group",
+          "settings": {
+            "title": "Sleeve Length",
+            "tag_list": "Short Sleeve\nLong Sleeve",
+            "collapsed": false
+          }
+        },
+        "303e74ab-6602-4165-a500-2c8cd6c6bc13": {
+          "type": "tags_group",
+          "disabled": true,
+          "settings": {
+            "title": "Origin",
+            "tag_list": "United States\nImported",
+            "collapsed": false
+          }
+        },
+        "fc0abd70-06e0-44c0-92cc-eee877120dae": {
+          "type": "tags_group",
+          "disabled": true,
+          "settings": {
+            "title": "Collection",
+            "tag_list": "MLB\nLittle League\nNCAA\nNFL\nNBA",
+            "collapsed": false
+          }
+        },
+        "ddcb1fea-7228-4130-b298-c45d9afb7bd4": {
+          "type": "tags_group",
+          "disabled": true,
+          "settings": {
+            "title": "Brand",
+            "tag_list": "Gerry Davis Sports\nDAVIS\nFechheimer for Gerry Davis\nCliff Keen\nSmitty\nHonig's\nWilson\nChampro\nAll-Star\nSchutt\/Adams\nRichardson\nNew Balance\n3N2\nMarkwort\nForce3\nDiamond\nFechheimer\nUnder Armour",
+            "collapsed": false
+          }
+        },
+        "0fb46b20-a936-4e31-8bb3-5617b3f0e190": {
+          "type": "tags_group",
+          "disabled": true,
+          "settings": {
+            "title": "Size",
+            "tag_list": "XS\nSmall\nMedium\nLarge\nXL\n2XL\n3XL\n4XL\n5XL",
+            "collapsed": false
+          }
+        },
+        "d27051ae-62f8-413e-89fa-b0f3ccfee26d": {
+          "type": "color_group",
+          "disabled": true,
+          "settings": {
+            "title": "Color",
+            "tag_list": "Black\nNavy\nMLB Blue\nPowder Blue\nBurgundy \nHeather Gray \nCharcoal\nSky Blue\nGreen\nBlue\nPink\nRed\nGray\nBright Blue\nMidnight Navy\nColumbia Blue\nBlack\/White\nBlack\/Powder Blue\nNavy\/Powder Blue\nNavy\/Red\nMidnight Navy\/Bright Blue",
+            "collapsed": false
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "collection_description",
+        "product_grid",
+        "f4717935-2cc4-4e15-8822-74582c2a57ff",
+        "e288e90d-5dc2-44d0-b6fb-28ee3f83236a",
+        "303e74ab-6602-4165-a500-2c8cd6c6bc13",
+        "fc0abd70-06e0-44c0-92cc-eee877120dae",
+        "ddcb1fea-7228-4130-b298-c45d9afb7bd4",
+        "0fb46b20-a936-4e31-8bb3-5617b3f0e190",
+        "d27051ae-62f8-413e-89fa-b0f3ccfee26d"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapse_filters": true,
+        "enable_color_swatches": false,
+        "enable_sort": true,
+        "tags_combine": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "recently-viewed"
+  ]
+}

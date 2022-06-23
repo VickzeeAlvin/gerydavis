@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "page-contact-template": {
+      "type": "page-contact-template",
+      "blocks": {
+        "b678b667-e0b2-4fec-9d6b-e8c54d570512": {
+          "type": "rich-text",
+          "settings": {
+            "title": "PRODUCT INQUIRIES",
+            "text": "<p>Need help with a product? Most available information is provided directly on each products page. You can view detailed information, size charts, photos and customer reviews. If you feel there is missing information or need a product suggestion, please contact us.<\/p>",
+            "align_text": "left",
+            "narrow_column": true,
+            "enlarge_text": false
+          }
+        },
+        "4984b5d9-f10b-47d1-90e8-2af569857525": {
+          "type": "rich-text",
+          "settings": {
+            "title": "SHIPPING & ORDER PROCESSING",
+            "text": "<p>For the most accurate order processing and shipping information, please visit our <strong>dedicated shipping policy page<\/strong> and our <strong>frequently asked questions. <\/strong><\/p>",
+            "align_text": "left",
+            "narrow_column": true,
+            "enlarge_text": false
+          }
+        },
+        "876e7c4b-80b3-4604-96ea-11353aaf3a8a": {
+          "type": "rich-text",
+          "settings": {
+            "title": "RETURNS & EXCHANGES",
+            "text": "<p>We provide an easy self-service portal to process your return or exchange. Please visit our <strong>dedicated returns and exchanges policy page <\/strong>and our <strong>frequently asked questions.<\/strong> Still need help or believe there is an error? Please contact us.<\/p>",
+            "align_text": "left",
+            "narrow_column": true,
+            "enlarge_text": false
+          }
+        },
+        "b9e5dff4-707d-443a-9eff-7bf17f06d8b0": {
+          "type": "custom-html",
+          "settings": {
+            "full_width": false,
+            "space_around": true,
+            "code": "<p class=\"h2\">NEED MORE HELP?<\/p>\n<div class=\"buttons-links\">\n<div class=\"sidebar__link-box\">\n              <a href=\"javascript:void(0)\" onclick=\"GorgiasChat.open();\"><span>SELF SERVICE HELP CENTER<\/span><\/a>\n            <\/div>\n<div class=\"sidebar__link-box\">\n              <a href=\"\/pages\/faq\">\n                <span>FAQ<\/span>\n              <\/a>\n            <\/div>\n<\/div>"
+          }
+        },
+        "acb25f1b-2850-46d7-b6a8-9b3de92486b4": {
+          "type": "rich-text",
+          "settings": {
+            "title": "CONTACT OUR CUSTOMER CARE TEAM",
+            "text": "<p>We’re here to help if you still have questions, need assistance or would like to provide feedback. <\/p><p><\/p><p><strong>Phone:<\/strong> 1.800.916.9088<br\/><strong>Text Messaging:<\/strong> 1.920.830.3140<\/p><p><strong>Email: <\/strong>We respond within 1 business day and typically much sooner. <strong>Please do not provided any sensitive financial information via email or live chat.<\/strong><\/p>",
+            "align_text": "left",
+            "narrow_column": true,
+            "enlarge_text": false
+          }
+        },
+        "c8fc0fe1-b16b-43d4-96b9-d0d2abc73afb": {
+          "type": "contact-form",
+          "settings": {
+            "title": "",
+            "text": "",
+            "show_phone": true,
+            "narrow_column": true
+          }
+        },
+        "d6e399a6-a731-4d25-8300-187cad5277a0": {
+          "type": "sidebar-link",
+          "settings": {
+            "text": "SELF SERVICE HELP CENTER",
+            "url": ""
+          }
+        },
+        "55b96bd5-82fb-4028-a877-d86628be405d": {
+          "type": "sidebar-link",
+          "settings": {
+            "text": "FREQUENTLY ASKED QUESTIONS",
+            "url": "shopify:\/\/pages\/faq"
+          }
+        },
+        "627e92ed-3efd-4a1a-b535-631fa3558452": {
+          "type": "sidebar-link",
+          "settings": {
+            "text": "START A RETURN\/EXCHANGE",
+            "url": "https:\/\/gds.loopreturns.com\/#\/"
+          }
+        },
+        "a1e387c4-a32a-47c3-b864-35b48f0e93b6": {
+          "type": "sidebar-link",
+          "settings": {
+            "text": "SIGN UP FOR EMAIL\/SMS",
+            "url": ""
+          }
+        },
+        "70b0ce6b-6c73-46df-a99c-3299f4b92499": {
+          "type": "sidebar-address",
+          "settings": {
+            "heading": "ADDRESS",
+            "richtext": "<p>Gerry Davis Sports, LLC<br\/>2420 W Nordale Dr.<br\/>Appleton, WI 54914<\/p><p><\/p><p><em>This facility is not open to the public. We do not offer walk-ins or local pickup.<\/em><\/p>"
+          }
+        },
+        "9fea9204-d634-4745-aea7-155a13c14c41": {
+          "type": "sidebar-address",
+          "settings": {
+            "heading": "CUSTOMER SERVICE HOURS",
+            "richtext": "<p><strong>Monday - Friday: <\/strong>8am - 5pm Central<\/p><p>We are closed on the following <strong>holidays:<\/strong><\/p><p><\/p><p>- New Year’s Day<br\/>- Memorial Day<br\/>- Independence Day<br\/>- Labor Day<br\/>- Veterans Day<br\/>- Thanksgiving<br\/>- Christmas Eve<br\/>- Christmas Day<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b678b667-e0b2-4fec-9d6b-e8c54d570512",
+        "4984b5d9-f10b-47d1-90e8-2af569857525",
+        "876e7c4b-80b3-4604-96ea-11353aaf3a8a",
+        "b9e5dff4-707d-443a-9eff-7bf17f06d8b0",
+        "acb25f1b-2850-46d7-b6a8-9b3de92486b4",
+        "c8fc0fe1-b16b-43d4-96b9-d0d2abc73afb",
+        "d6e399a6-a731-4d25-8300-187cad5277a0",
+        "55b96bd5-82fb-4028-a877-d86628be405d",
+        "627e92ed-3efd-4a1a-b535-631fa3558452",
+        "a1e387c4-a32a-47c3-b864-35b48f0e93b6",
+        "70b0ce6b-6c73-46df-a99c-3299f4b92499",
+        "9fea9204-d634-4745-aea7-155a13c14c41"
+      ],
+      "settings": {
+        "page_title_enable": true,
+        "page_content_enable": false,
+        "overlaid_header": false,
+        "enable_sidebar": true,
+        "sidebar_heading": "CUSTOMER SERVICE"
+      }
+    }
+  },
+  "order": [
+    "page-contact-template"
+  ]
+}

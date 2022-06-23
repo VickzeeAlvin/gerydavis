@@ -1,0 +1,94 @@
+<style>
+  .podcasts__box h3 {
+    margin: 0 auto 5px;
+    font-weight: 500;
+  }
+  .podcasts__box {
+    margin-bottom: 30px;
+  }
+  .podcasts__list > h2 {
+    padding-top: 30px;
+  }
+  .section-header {
+    margin-bottom: 15px;
+  }
+</style>
+<div class="page-width page-width--narrow page-content">
+  <header class="section-header">
+    <h1 class="section-header__title">{{ page.title }}</h1>
+  </header>
+
+  <div class="rte rte--nomargin">
+    {{ page.content }}
+    
+    <div class="podcasts__list">
+      {% assign scope = page.metafields.airf %}
+      {% assign podcasts_3 = scope.podcasts_3 %}
+      {% if podcasts_3 and podcasts_3 != blank %}
+      <h2><strong>Season 3</strong></h2>
+          {% for row in podcasts_3.rows %}
+            <div class="podcasts__box">
+				{% for row_field in row %}
+					{% if row_field.key contains "podcst3_da" %}
+                      <h3 id="{{row_field.key}}">{{ scope[row_field.key] }}</h3>
+                    {% endif %}
+                    {% if row_field.key contains "podcst3_de" %}
+                      <p id="{{row_field.key}}">{{ scope[row_field.key] }}</p>
+                    {% endif %}
+              	  {% if row_field.key contains "pdcst3_ifr" %}
+                  	<div class="podcast__player" id="{{row_field.key}}">{{ scope[row_field.key] }}</div>
+                  {% endif %}
+              {% endfor %}
+            </div>
+          {% endfor %}
+      {% endif %}
+    </div>
+    
+    <div class="podcasts__list">
+      {% assign scope = page.metafields.airf %}
+      {% assign podcasts_2 = scope.podcasts_2 %}
+      {% if podcasts_2 and podcasts_2 != blank %}
+      <h2><strong>Season 2</strong></h2>
+          {% for row in podcasts_2.rows %}
+            <div class="podcasts__box">
+				{% for row_field in row %}
+					{% if row_field.key contains "podcst2_da" %}
+                      <h3 id="{{row_field.key}}">{{ scope[row_field.key] }}</h3>
+                    {% endif %}
+                    {% if row_field.key contains "podcst2_de" %}
+                      <p id="{{row_field.key}}">{{ scope[row_field.key] }}</p>
+                    {% endif %}
+              	  {% if row_field.key contains "pdcst2_ifr" %}
+                  	<div class="podcast__player" id="{{row_field.key}}">{{ scope[row_field.key] }}</div>
+                  {% endif %}
+              {% endfor %}
+            </div>
+          {% endfor %}
+      {% endif %}
+    </div>
+    
+    <div class="podcasts__list">
+      {% assign scope = page.metafields.airf %}
+      {% assign podcasts_1 = scope.podcasts_1 %}
+      {% if podcasts_1 and podcasts_1 != blank %}
+      <h2><strong>Season 1</strong></h2>
+          {% for row in podcasts_1.rows %}
+            <div class="podcasts__box">
+				{% for row_field in row %}
+					{% if row_field.key contains "podcast_da" %}
+                      <h3 id="{{row_field.key}}">{{ scope[row_field.key] }}</h3>
+                    {% endif %}
+                    {% if row_field.key contains "podcast_de" %}
+                      <p id="{{row_field.key}}">{{ scope[row_field.key] }}</p>
+                    {% endif %}
+              	  {% if row_field.key contains "iframe" %}
+                  	<div class="podcast__player" id="{{row_field.key}}">{{ scope[row_field.key] }}</div>
+                  {% endif %}
+              {% endfor %}
+            </div>
+          {% endfor %}
+      {% endif %}
+    </div>
+
+  </div>
+</div>

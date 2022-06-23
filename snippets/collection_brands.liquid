@@ -1,0 +1,66 @@
+{% assign scope = collection.metafields.airf %}
+{% assign brands = scope.brands %}
+{% if brands and brands != blank %}
+  <div id="shopify-section-collection_brands" class="shopify-section index-section">
+    <div class="collection_logo_list color-scheme-8">
+      <div class="page-width">
+        <div class="section-header small--text-center">
+          <h2 class="section-header__title h2">FEATURED BRANDS</h2>
+        </div>
+        <div class="logo-bar logo-bar--collection_brands">
+          <div class="new-grid product-grid" data-view="6-2">
+            {%- for block in section.blocks -%}
+            {%if block.type == 'brand'%}
+            <div class="grid-item grid-product">
+              <div class="logo-bar__item{% if block.settings.image == blank %} logo-bar__item-svg{% endif %}">
+                {%- if block.settings.link != blank -%}
+                <a href="{{ block.settings.link }}" class="logo-bar__link" aria-label="{{ block.settings.image.alt }}">
+                  {%- endif -%}
+                  {%- if block.settings.image != blank -%}
+                  {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  <img class="logo-bar__image lazyload"
+                       data-src="{{ img_url }}"
+                       data-widths="[360, 540, 720, 1020]"
+                       data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                       data-sizes="auto"
+                       alt="{{ block.settings.image.alt }}">
+                  {%- else -%}
+                  {{ 'logo' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--no-padding' }}
+                  {%- endif -%}
+                  {%- if block.settings.link != blank -%}
+                </a>
+                {%- endif -%}
+              </div>
+            </div>
+            {%endif%}
+            {%- endfor -%}
+            
+            {% for row in brands.rows %}
+                <div class="grid-item grid-product">
+                  <div class="logo-bar__item">
+                    {% for row_field in row %}
+                    
+                    {%- if row_field.key contains "alt_text" and row_field.key != '&nbsp' -%}
+                    	{% assign alt_text = scope[row_field.key] %}
+                    {%- endif -%}
+                    {%- if row_field.key contains "link" and scope[row_field.key] != '&nbsp' -%}
+                    <a href="{{ scope[row_field.key] }}" class="logo-bar__link" aria-label="{{row_field.key}}">
+                      {%- endif -%}
+                      {%- if row_field.key contains "image" and row_field.key != '&nbsp' -%}
+                        <img class="logo-bar__image lazyload" data-src="{{ scope[row_field.key] }}" data-widths="[360, 540, 720, 1020]" data-sizes="auto" alt="{{ alt_text }}">
+                      {%- endif -%}
+                      {%- if row_field.key contains "link" and row_field.key != '&nbsp' -%}
+                    </a>
+                    {%- endif -%}
+                    {% endfor %}
+                  </div>
+                </div>
+                
+            {% endfor %}
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

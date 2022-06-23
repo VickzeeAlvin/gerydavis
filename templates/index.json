@@ -1,0 +1,418 @@
+{
+  "sections": {
+    "1652238447f4385cfe": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "16522384472daeed75-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>ZIG DYNAMICA 2<\/p>",
+            "title_size": 58,
+            "subheading": "",
+            "link": "shopify:\/\/products\/reebok-zig-dynamica-2-matte-basketball-referee-shoe",
+            "link_text": "Matte Black",
+            "link_2": "shopify:\/\/products\/reebok-zig-dynamica-2-patent-leather-basketball-referee-shoe",
+            "link_text_2": "Patent Leather",
+            "color_accent": "#0474bb",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/reebok-zig-banner.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/reebok-zig-dynamica-mobile.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "16522384472daeed75-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "1652298286b0f07f80": {
+      "type": "collection-products",
+      "blocks": {
+        "754e509c-7643-483d-ae7c-beede2bc3f62": {
+          "type": "product",
+          "settings": {
+            "product": "davis-performance-essentials-umpire-shirt",
+            "product_name": "DAVIS PERFORMANCE ESSENTIALS UMPIRE SHIRT",
+            "collection": "baseball-softball-umpire-shirts",
+            "collection_name": "UMPIRE SHIRTS"
+          }
+        },
+        "eee58e99-3eff-46cc-9535-1d85e7af1f84": {
+          "type": "product",
+          "settings": {
+            "product": "davis-charcoal-base-umpire-pants",
+            "product_name": "",
+            "collection": "umpire-pants",
+            "collection_name": "Umpire Pants"
+          }
+        },
+        "cb0685fa-eb07-4326-8b65-e27a1584417d": {
+          "type": "product",
+          "settings": {
+            "product": "wilson-pro-gold-2-umpire-memory-foam-chest-protector-wb5720301",
+            "product_name": "",
+            "collection": "umpire-chest-protectors",
+            "collection_name": ""
+          }
+        },
+        "1d4faf54-22c1-4c60-a232-c71294dc19d6": {
+          "type": "product",
+          "settings": {
+            "product": "all-star-s7-umpire-mask",
+            "product_name": "",
+            "collection": "umpire-masks-helmets",
+            "collection_name": ""
+          }
+        }
+      },
+      "block_order": [
+        "754e509c-7643-483d-ae7c-beede2bc3f62",
+        "eee58e99-3eff-46cc-9535-1d85e7af1f84",
+        "cb0685fa-eb07-4326-8b65-e27a1584417d",
+        "1d4faf54-22c1-4c60-a232-c71294dc19d6"
+      ],
+      "settings": {
+        "title": "BASEBALL & SOFTBALL",
+        "icon": "⚾",
+        "view_all_link": "shopify:\/\/collections\/umpire-apparel-equipment",
+        "count": 5,
+        "mobile_scrollable": true,
+        "divider": false
+      }
+    },
+    "1652298712bce152bc": {
+      "type": "services",
+      "blocks": {
+        "1652298712880f9605-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/shipping-plane.png",
+            "image_width": 70,
+            "title": "FREE SHIPPING $99+",
+            "text": "<p>Orders $99+ are eligible for free shipping within the contiguous United States.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1652298712880f9605-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/order-processing.png",
+            "image_width": 70,
+            "title": "FAST ORDER PROCESSING",
+            "text": "<p>We move fast offering same day processing on most orders when placed before 1pm Central.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1652298712880f9605-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/return-exchange.png",
+            "image_width": 70,
+            "title": "FREE RETURNS* & EXCHANGES",
+            "text": "<p>Free exchanges on all orders and free returns on all orders when you opt for store credit.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "9167ec87-961b-4afe-893d-21667d47419c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/customization.png",
+            "image_width": 70,
+            "title": "IN-HOUSE CUSTOMIZATION",
+            "text": "<p>In-house customization including embroidery, hemming and heat applications with quick turnarounds.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1652298712880f9605-0",
+        "1652298712880f9605-1",
+        "1652298712880f9605-2",
+        "9167ec87-961b-4afe-893d-21667d47419c"
+      ],
+      "settings": {
+        "description": "FOR AMATEUR OFFICIALS WITH PROFESSIONAL STANDARDS",
+        "title": "<h1>We’re here to help amateur sports officials feel confident and look professional. <\/h1><span>Whether it’s your first game or 5000th, we guarantee you’ll look the part.<\/span>",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "4"
+      }
+    },
+    "16522956906ae801aa": {
+      "type": "collection-products",
+      "blocks": {
+        "66c0b8bf-6667-4b5e-8e74-1885051978aa": {
+          "type": "product",
+          "settings": {
+            "product": "smitty-4-way-stretch-black-referee-shorts",
+            "product_name": "",
+            "collection": "lacrosse-referee-shorts",
+            "collection_name": "SHORTS"
+          }
+        },
+        "b6a0cce6-5395-431e-9d4c-7c83389f92ed": {
+          "type": "product",
+          "settings": {
+            "product": "davis-performance-essentials-1-stripe-football-shirt",
+            "product_name": "DAVIS PERFORMANCE ESSENTIALS 1\" SHIRT",
+            "collection": "lacrosse-referee-shirts",
+            "collection_name": "SHIRTS"
+          }
+        },
+        "ba3ca380-c441-40b7-afce-bde5e1eb285f": {
+          "type": "product",
+          "settings": {
+            "product": "3n2-reaction-lo",
+            "product_name": "",
+            "collection": "lacrosse-referee-shoes",
+            "collection_name": "SHOES"
+          }
+        },
+        "9cea88e8-264f-481f-a7fd-858c419b5806": {
+          "type": "product",
+          "settings": {
+            "product": "fox-40-sonik-blast-cmg-whistle",
+            "product_name": "",
+            "collection": "lacrosse-referee-whistles-lanyards",
+            "collection_name": "WHISTLES & LANYARDS"
+          }
+        },
+        "19991967-ab04-4323-8d05-41db4f2ba910": {
+          "type": "product",
+          "settings": {
+            "product": "tandem-referee-penalty-warning-card-wallet",
+            "product_name": "",
+            "collection": "",
+            "collection_name": "PENALTY CARDS"
+          }
+        }
+      },
+      "block_order": [
+        "66c0b8bf-6667-4b5e-8e74-1885051978aa",
+        "b6a0cce6-5395-431e-9d4c-7c83389f92ed",
+        "ba3ca380-c441-40b7-afce-bde5e1eb285f",
+        "9cea88e8-264f-481f-a7fd-858c419b5806",
+        "19991967-ab04-4323-8d05-41db4f2ba910"
+      ],
+      "settings": {
+        "title": "LACROSSE",
+        "icon": "🥍",
+        "view_all_link": "shopify:\/\/collections\/lacrosse-official-apparel-equipment",
+        "count": 5,
+        "mobile_scrollable": true,
+        "divider": false
+      }
+    },
+    "165229568771ed713a": {
+      "type": "newsletter-signup",
+      "blocks": {
+        "29b08f88-418d-4da3-a259-d407ef053861": {
+          "type": "left_box",
+          "settings": {
+            "heading": "CONNECT WITH US & SAVE",
+            "sub_heading": "Sign up to receive our emails and get 10% off *",
+            "join__offer": "<p><strong>Want $20 off $150?<\/strong><\/p><p>Join Gerry Davis Sports text alerts to receive occasional special offers. Exclusions apply. <\/p>",
+            "signup_sms": "Sign up now",
+            "disclaimer": "*First-time subscribers only. Restrictions may apply. Returning subscribers will be resubscribed but will not receive a discount.",
+            "enable_social": true,
+            "btn_color": "#0474bb",
+            "btn_color_fnt": "#ffffff"
+          }
+        },
+        "d2a84073-82fd-4d97-856c-c5528ad0fc31": {
+          "type": "right_box",
+          "settings": {
+            "heading": "EARN POINTS. GET REWARDS.",
+            "sub_heading": "Earn points, get rewards - our new loyalty program rewards you for every purchase and other activities!",
+            "detail": "<div class=\"score__boxes\">\n<div class=\"score__box\">\n<strong>GIVE 15%, GET 15%<\/strong>\n<p>Refer friends and colleagues - when they make a purchase they’ll receive 15% and you’ll receive reward points equivalent to 15% off your next order. <a href=\"#smile-referral-program-details\">Get Started<\/a><\/p>\n<\/div>\n<div class=\"score__box\">\n<strong>Earn 1 Point for Every $1 Spent.<\/strong>\n<p>200 Points = $10 Reward or free shipping on your next order.<\/p>\n<\/div>\n<\/div>",
+            "button_label": "SIGN UP FOR FREE",
+            "button_link": "#smile-home",
+            "btn_color": "#ec212a",
+            "btn_color_fnt": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "29b08f88-418d-4da3-a259-d407ef053861",
+        "d2a84073-82fd-4d97-856c-c5528ad0fc31"
+      ],
+      "settings": {
+        "left_bg_color": "#eeeeee",
+        "left_text_color": "#424242",
+        "right_bg_color": "#424242",
+        "right_text_color": "#ffffff"
+      }
+    },
+    "1652292168db9852ac": {
+      "type": "collection-products",
+      "blocks": {
+        "f36eb428-bf16-4683-9d57-9d1123258785": {
+          "type": "product",
+          "settings": {
+            "product": "davis-all-weather-football-referee-pants",
+            "product_name": "Davis All-Weather Football Referee Pants",
+            "collection": "football-referee-pants",
+            "collection_name": "Pants"
+          }
+        },
+        "b71cdd80-7326-433a-b22e-385e4dd8d41d": {
+          "type": "product",
+          "settings": {
+            "product": "smitty-elite-2-stripe-football-referee-shirt",
+            "product_name": "",
+            "collection": "football-referee-shirts",
+            "collection_name": "Shirts"
+          }
+        },
+        "47c5028c-f18d-42fb-854d-225c7f10cec2": {
+          "type": "product",
+          "settings": {
+            "product": "sport-tek-basketball-referee-jacket",
+            "product_name": "Sport-tek Black Jacket",
+            "collection": "football-referee-jackets",
+            "collection_name": "Jackets"
+          }
+        },
+        "656e83b5-334e-4f15-a2f6-825c511aca5f": {
+          "type": "product",
+          "settings": {
+            "product": "3n2-mofo-turf-trainer",
+            "product_name": "",
+            "collection": "football-referee-shoes",
+            "collection_name": "Shoes"
+          }
+        },
+        "58dd44de-573a-4790-9870-20086bef0d89": {
+          "type": "product",
+          "settings": {
+            "product": "richardson-fitted-black-referee-hat",
+            "product_name": "",
+            "collection": "football-referee-hats",
+            "collection_name": "Hats"
+          }
+        }
+      },
+      "block_order": [
+        "f36eb428-bf16-4683-9d57-9d1123258785",
+        "b71cdd80-7326-433a-b22e-385e4dd8d41d",
+        "47c5028c-f18d-42fb-854d-225c7f10cec2",
+        "656e83b5-334e-4f15-a2f6-825c511aca5f",
+        "58dd44de-573a-4790-9870-20086bef0d89"
+      ],
+      "settings": {
+        "title": "Football",
+        "icon": "🏈",
+        "view_all_link": "shopify:\/\/collections\/football",
+        "count": 5,
+        "mobile_scrollable": true,
+        "divider": false
+      }
+    },
+    "165229213252bf9fa2": {
+      "type": "collection-products",
+      "blocks": {
+        "e3987bad-fcd5-4838-aed9-c44a231f039f": {
+          "type": "product",
+          "settings": {
+            "product": "davis-basketball-referee-pants",
+            "product_name": "",
+            "collection": "basketball-referee-pants-shorts",
+            "collection_name": "Pants"
+          }
+        },
+        "29d5cce6-b245-4a2a-aa44-1e8d4d143f27": {
+          "type": "product",
+          "settings": {
+            "product": "smitty-elite-interlock-gray-pinstripe-referee-shirt",
+            "product_name": "",
+            "collection": "basketball-referee-shirts",
+            "collection_name": "Shirts"
+          }
+        },
+        "9bc8489c-6eae-43cf-a5bb-704aa46974ba": {
+          "type": "product",
+          "settings": {
+            "product": "sport-tek-basketball-referee-jacket",
+            "product_name": "",
+            "collection": "basketball-referee-jackets",
+            "collection_name": "Jackets"
+          }
+        },
+        "358afccb-7975-4020-b77e-9d5eddc869e5": {
+          "type": "product",
+          "settings": {
+            "product": "new-balance-857v2-training-shoe",
+            "product_name": "",
+            "collection": "basketball-referee-shoes",
+            "collection_name": "Shoes"
+          }
+        },
+        "3dedd663-ba8b-498e-b76f-5a28b2f12859": {
+          "type": "product",
+          "settings": {
+            "product": "fox-40-sonik-blast-cmg-whistle",
+            "product_name": "",
+            "collection": "basketball-referee-whistles-lanyards",
+            "collection_name": "Whistles & Lanyards"
+          }
+        }
+      },
+      "block_order": [
+        "e3987bad-fcd5-4838-aed9-c44a231f039f",
+        "29d5cce6-b245-4a2a-aa44-1e8d4d143f27",
+        "9bc8489c-6eae-43cf-a5bb-704aa46974ba",
+        "358afccb-7975-4020-b77e-9d5eddc869e5",
+        "3dedd663-ba8b-498e-b76f-5a28b2f12859"
+      ],
+      "settings": {
+        "title": "Basketball",
+        "icon": "🏀",
+        "view_all_link": "shopify:\/\/collections\/basketball",
+        "count": 5,
+        "mobile_scrollable": true,
+        "divider": false
+      }
+    },
+    "165229100323938131": {
+      "type": "podcast",
+      "settings": {
+        "bg_color": "#82b9df",
+        "image": "shopify:\/\/shop_images\/image_8.jpg",
+        "subheading": "SEASON 2",
+        "heading": "12 FOR 12 WITH GERRY DAVIS: AN UMPIRE PODCAST",
+        "content": "<p>A podcast for umpires, hosted by the umpire who has worked the most playoff games in Major League Baseball history. These 12 minute podcasts with #12 give a look behind the mask of Gerry’s 38-year career in the big leagues.<\/p>",
+        "button_label": "LISTEN TO THE PODCAST",
+        "button_link": "shopify:\/\/pages\/podcast"
+      }
+    }
+  },
+  "order": [
+    "1652238447f4385cfe",
+    "1652298286b0f07f80",
+    "1652298712bce152bc",
+    "16522956906ae801aa",
+    "165229568771ed713a",
+    "1652292168db9852ac",
+    "165229213252bf9fa2",
+    "165229100323938131"
+  ]
+}

@@ -1,0 +1,159 @@
+<!-- {{ 'about-new.css' | asset_url | stylesheet_tag }} -->
+<style>
+.services_boxes {
+    margin: 100px 0;
+}
+  .services_boxes-content {
+  text-align: center;
+  padding: 124px 102px;
+}
+
+.services_boxes-content h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 68px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.services_boxes-content p {
+  font-family: var(--typeBasePrimary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 430px;
+    margin: 0 auto 25px auto;
+    }
+
+.services_boxes-content a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  padding: 21px 40px;
+  display: inline-block;
+  font-family: var(--typeHeaderPrimary);
+    min-width: 215px;
+    }
+.services_boxes-main{
+  display: flex;
+  flex-wrap: wrap;
+}
+.services_boxes-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services_box-img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+</style>
+<div class="services_boxes">
+  <div class="page-width">
+    <div class="grid grid--uniform grid--flush-bottom services_boxes-main">
+      {%- for block in section.blocks -%}
+      <div class="grid__item medium-up--one-half text-left services_boxes-inner">
+        <div class="services_boxes-content" {%- if block.settings.bg_color != blank -%} style="background: {{ block.settings.bg_color }} ;" {%- endif -%}>
+          {%- if block.settings.box_title != blank -%}
+          <h3>{{ block.settings.box_title }}</h3>
+          {%- endif -%}
+          
+          {%- if block.settings.image != blank -%}
+          <div class="services_box-img">
+            {{ block.settings.image }}
+          </div>
+          {%- endif -%}
+          
+          {%- if block.settings.box_content != blank -%}
+          <div class="" {%- if block.settings.text_color != blank -%} style="color: {{ block.settings.text_color }} ;" {%- endif -%}>{{ block.settings.box_content }}</div>
+          {%- endif -%}
+          {%- if block.settings.button_text != blank -%}
+          <a href="{{block.settings.button_url}}" class=""
+             {%- if block.settings.button_bg != blank -%} style="background:{{ block.settings.button_bg }}; color: {{ block.settings.button_text_color }}; "   {%- endif -%}
+             >{{ block.settings.button_text }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "Services Boxes",
+    "settings": [
+    ],
+	"blocks": [
+      {
+      "type": "Servicebox",
+      "name": "Service Box",
+      "settings": [
+      	  {
+              "type": "color",
+              "id": "bg_color",
+              "label": "Background",
+			  "default": "#333333"
+          },
+		  {
+              "type": "color",
+              "id": "text_color",
+              "label": "Text Color",
+			  "default": "#ffffff"
+          },
+          {
+              "type": "text",
+              "id": "box_title",
+              "label": "Heading"
+          },
+          {
+              "type": "textarea",
+              "id": "image",
+              "label": "Image"
+          },
+          {
+              "type": "richtext",
+              "id": "box_content",
+              "label": "Text"
+          },
+          {
+              "type": "text",
+              "id": "button_text",
+              "label": "Button Text"
+          },
+          {
+              "type": "url",
+              "id": "button_url",
+              "label": "Button Url"
+          },
+		  {
+              "type": "color",
+              "id": "button_bg",
+              "label": "Button Background",
+			  "default": "#ffffff"
+          },
+		  {
+              "type": "color",
+              "id": "button_text_color",
+              "label": "Button Text",
+			  "default": "#ffffff"
+          }
+        ]
+      } 
+    ],
+    "presets": [
+      {
+        "name": "Services Boxes"
+      }
+    ]
+  }
+{% endschema %}

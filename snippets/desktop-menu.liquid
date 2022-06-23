@@ -1,0 +1,232 @@
+{{ 'menu.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mega-menu.js' | asset_url }}" defer="defer"></script>
+
+<div class="desktop-menu">
+  <div class="desktop-menu-conent">
+    <div class="desktop-menu-grid">
+
+      <div class="desktop-menu-grid-item menu-grid-first-item">
+        <ul>
+          {% for link in main_menu.links %}
+            <li class="main_child">
+              {% assign aa_handle = link.title | handleize | strip %}
+              {% assign aa_has_childrens =  linklists[aa_handle] %}
+              {% if link.url == '#isbrands' and aa_has_childrens.links != blank %}
+              	{% capture brands_menu %}{% if brands_menu != blank %}{{brands_menu}}++{{aa_handle}}{% endif %}{{aa_handle}}{% endcapture %}
+                <span class="has_brands parents" data-name="{{aa_handle}}" >{{link.title}}</span>
+              {% elsif link.url == '#isbrandslist' and aa_has_childrens.links != blank %}
+                {% capture brands_menulist %}{% if brands_menulist != blank %}{{brands_menulist}}++{{aa_handle}}{% endif %}{{aa_handle}}{% endcapture %}
+                <span class="has_brandslist parents" data-name="{{aa_handle}}" >{{link.title}}</span>
+              {% else %}
+                <a href="{{link.url}}">{{link.title}}</a>
+              {% endif %}
+
+              {% if link.links != blank %}
+                <ul class="children_list">
+                  {% for sub_link in link.links %}
+                    <li class="sub_child">
+                      {% assign ab_handle = sub_link.title | handleize | strip %}
+                      {% assign has_childrens =  linklists[ab_handle] %}
+                      {% if has_childrens.links != blank %}
+                      	{% assign emoji_icon = ''  %}
+                        {% if sub_link.title == 'Baseball & Softball' %}
+							{% assign emoji_icon = '⚾'  %}
+                        {% elsif sub_link.title == 'Basketball' %}
+                              {% assign emoji_icon = '🏀'  %}
+                        {% elsif sub_link.title == 'Football' %}
+                              {% assign emoji_icon = '🏈'  %}
+                        {% elsif sub_link.title == 'Lacrosse' %}
+                              {% assign emoji_icon = '🥍'  %}
+                        {% elsif sub_link.title == 'Soccer' %}
+                              {% assign emoji_icon = '⚽'  %}
+                        {% elsif sub_link.title == 'Swimming' %}
+                              {% assign emoji_icon = '🏊'  %}
+                        {% elsif sub_link.title == 'Track & Field' %}
+                              {% assign emoji_icon = '🏃‍♀️'  %}
+                        {% elsif sub_link.title == 'Volleyball' %}
+                              {% assign emoji_icon = '🏐'  %}
+                        {% elsif sub_link.title == 'Wrestling' %}
+                              {% assign emoji_icon = '🤼'  %}
+                        {% endif %}
+                        <span class="has_subchildrens parents" data-name="{{has_childrens.title}}" >{{emoji_icon}} {{sub_link.title}}</span>
+                        {% capture childrelist %}{% if childrelist != blank %}{{childrelist}}++{{ab_handle}}{% else %}{{ab_handle}}{% endif %}{% endcapture %}
+                      {% else %}
+                        <a href="{{sub_link.url}}">{{sub_link.title}}</a>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        
+        <div class="desktop-menu-grid-item menu-grid-first-footer">
+          <ul class="mega-menu-footer_list">
+            {% for link in main_menu_footer.links %}
+              <li>
+                <a href="{{link.url}}">{{link.title}}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="desktop-menu-grid-item menu-grid-second-item">
+        
+        {% assign brands_menus = brands_menu | split: '++' %}
+        <div class="mega_menu-brands" style="display:none;">
+          {% for brands_menu in brands_menus %}
+            <div class="mega_menu-brand" style="display:none" data-name="{{brands_menu}}">
+              {% assign brands = linklists[brands_menu] %}
+              <h3>{{brands.title}}</h3>
+              <ul>
+                {% for link in brands.links %}
+                  {% if link.url contains 'collection' %}
+                	{% assign lang_code_string = request.locale.iso_code | prepend: '/' | downcase %}
+                    {% assign hh_handle = link.url | remove: '/collections/' | remove: lang_code_string %}
+                    {% assign collection = collections[hh_handle] %}
+                      {% assign profile_im = collection.metafields.airf.profile_im %}
+                      {% if profile_im and profile_im != '&nbsp' %}
+                        <li>
+                          <a href="{{link.url}}"><img alt="{{ profile_im.alt }}" class="lazyload" data-src="{{ profile_im }}" /></a>
+                        </li>
+                      {% endif %}  
+                  {%endif%}
+                {%endfor%}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
+
+        {% assign brands_menus_list = brands_menulist | split: '++' %}
+        <div class="mega_menu-brandslists" style="display:none ;">
+          {% for brands_menu in brands_menus_list %}
+            <div class="mega_menu-brandlist" data-name="{{brands_menus_list}}" style="display: none ;">
+              {% assign brandslist = linklists[brands_menu] %}
+              <h3>{{brandslist.title}}</h3>
+              <ul>
+                {% for link in brandslist.links %}
+                  {% if link.url contains 'collection' %}
+                	{% assign lang_code_string = request.locale.iso_code | prepend: '/' | downcase %}
+                    {% assign hh_handle = link.url | remove: '/collections/' | remove: lang_code_string %}                
+                    {% assign collection = collections[hh_handle] %}
+                      {% assign profile_im = collection.metafields.airf.profile_im %}
+                      {% if profile_im and profile_im != '&nbsp' %}
+                        <li>
+                          <a href="{{link.url}}"><img alt="{{ profile_im.alt }}" class="lazyload" data-src="{{ profile_im }}" /></a>
+                        </li>
+                      {% endif %}  
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="mega_menu-childrens">
+          {% assign childrelist = childrelist | split: '++' %}
+          {% for menu in childrelist %}
+            {% assign menu_item =  linklists[menu] %}
+            <div class="mega-menu-children" data-name="{{menu_item.title}}" style="display:none;">
+              <ul>
+                <li class="main_child">
+                  <a>{{menu_item.title}}</a></li>
+                {% for link in menu_item.links %}
+                {%if menu_item.title != link.title %}
+                <li class="sub_child">
+                  <a href="{{link.url}}">{{link.title}}</a>
+
+                  {%comment%}
+                  {% if link.links != blank %}
+                  <ul class="children_list">
+                    {% for sub_link in link.links %}
+                    <li class="sub_child">
+                      {% assign abc_handle = sub_link.title | handleize | strip %} 
+                      {% assign has_childrens =  linklists[abc_handle] %}
+                      {% if has_childrens.links != blank %}
+                      <span class="has_subchildrens child" data-name="{{has_childrens.title}}">{{sub_link.title}}</span>
+                      {% capture grandchildrelist %}{% if grandchildrelist != blank %}{{grandchildrelist}}++{{abc_handle}}{% else %}{{abc_handle}}{% endif %}{% endcapture %}
+                      {% else %}
+                      <a href="{{sub_link.url}}">{{sub_link.title}}</a>
+                      {% endif %}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                  {%endcomment%}
+
+
+                </li>
+                {%endif%}
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
+        
+      </div>
+
+      <div class="desktop-menu-grid-item menu-grid-third-item">
+        <div class="mega_menu-grandchildrens">
+          {% assign grandchildrelist = grandchildrelist | split: '++' %}
+          {% for menu in childrelist %}
+          {% assign menu_item =  linklists[menu] %}
+          <div class="mega-menu-grandchildren" data-name="{{menu_item.title}}" style="display:none">
+            <div class="mega-menu-singlegrandchildren">
+              {% for link in menu_item.links %}
+                {%assign count = 0%}
+                {%if menu_item.title == link.title %}
+                  {% for sub_link in link.links %}
+                  {%if count == 0%}<ul>{%endif%}
+                    <li class="main_child">
+                      <a href="{{sub_link.url}}">{{sub_link.title}}</a>
+                      {% if link.links != blank %}
+                      <ul class="children_list">
+                        {% for grandsub_link in sub_link.links %}
+                        <li class="sub_child">
+                          <a href="{{grandsub_link.url}}">{{grandsub_link.title}}</a>
+                        </li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+                    </li>
+                  {%assign count = count | plus: 1%}
+                  {%if count == 2%}</ul>{%endif%}
+
+                  {%if count == 2%}
+                    {%assign count = 0%}
+                  {%endif%}
+                {% endfor %}
+              	{%endif%}
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        {% assign brands_menus_list = brands_menulist | split: '++' %}
+        <div class="mega_menu-brandslists_text" style="display: none ;">
+          {% for brands_menu in brands_menus_list %}
+            <div class="mega_menu-brandlist_text" data-name="{{brands_menus_list}}" style="display: none ;">
+              {% assign brandslist = linklists[brands_menu] %}
+              <ul>
+                <li>
+                  <span class="brand_title">ALL BRANDS</span>
+                </li>
+                {% for link in brandslist.links %}
+                  {% if link.url contains 'collection' %}
+                    <li>
+                      <a href="{{link.url}}">{{link.title}}</a> 
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

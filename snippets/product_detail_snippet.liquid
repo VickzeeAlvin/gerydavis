@@ -1,0 +1,74 @@
+<div class="pdp_description product_snippet_wrapper">
+  {% assign sub_title = product.metafields.airf.sub_title %}
+  {% assign infotabdes = product.metafields.airf.infotabdes %}
+  <div class="pro_label">{{product.title}}</div>
+
+  {%comment%}
+	  <div class="pro_sub_title">{{ sub_title }}</div>
+  {%endcomment%}
+  
+  <div class="pro_des">{{product.description}}</div>
+
+  {% assign scope = product.metafields.airf %}
+  {% assign pdpinfotab = scope.pdpinfotab %}
+  {% if pdpinfotab and pdpinfotab != blank %}
+    <div class="product_info_tabs">
+      {% for row in pdpinfotab.rows %}
+      <div class="product_parent product_info_tab">
+        <div class="button_wrapper">
+          <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height is-open" aria-controls="Product-description-{{section.id}}-{{forloop.index}}" aria-expanded="true">
+            <span class="collapsible-trigger__layout">
+              <h2 class="pro_heading">
+                {% for row_field in row %}
+                  {% if row_field.key contains "infotabhea" %}
+                    {{ scope[row_field.key] }}
+                  {% endif %}
+                {% endfor %}
+              </h2>
+              <span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+                <svg class="icon_arrow_down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="10" viewBox="0 0 16 10" fill="none"><rect x="16" width="9.75" height="16" transform="rotate(90 16 0)" fill="url(#arrow_bown_2)"/><defs><pattern id="arrow_bown_2" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0_1211:49" transform="scale(0.025641 0.015625)"/></pattern><image id="image0_1211:49" width="39" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAABACAYAAACZUm7XAAADP0lEQVRogb2aTYhNYRjHf3ObpCyUkslCWWLna0EWs0CxQIh8ZigTTRSNGMqU8Vk+iiumiDGmxvjYjCZESdkoUjTZjI2QBY2kSaTn9N7p3NO9555z3v+ZX01z78w5z/31Pu/9v/d9u3XFYpEIi4HNwAJgAvAW6AZ6gD/Ri/OkPlR7EtAFLIu8XgOwBDgKbAeejZVcwf2eCLyuIBZmOvAUWD3Wcv3AtIT39AEbc3QaxeQagYUp77vl5mWumNz+jC9wE9iSt9wij/tvABuEPmWY3HjPGhYza8VeASb3UVCnF1gjqFOGyV0X1bqjjhmTuySs16ccQZMbBtapCroRlAiWQtjmzF5FQYcJrvQtUgg9vgAc9C0Y4j6w1KdAIfL8JLBPYeYYqLFexxKVM84CO4WC/VlHsJKccdV9PFJhI7hCJWdcA7YKBR+kfRfHyeEWd2Xyp4qZWnLG3RxyMNEcTCKHy0Hl0jSQRDCpnHEPWO7nVEbNmEkjZzx0uzMVsTGTVs54AswDRkSCVVucRc54BcwBfvp5jVKxxVnljHfAXOCXv1tAv9vIj+IjZ3xwgj/83QJeAPNLT3zljEFgNvBFUKsOeAnMRCRnDDnBT4Ja5vQYoZzx2b1JhgS1pgJNSjnjqxN8L6jVrJYzvgOzXGD70JCHXIlvvgXqE1yTBcUObDgPOfuAsEpQp1vd1l6R2F/gvHLkZJtpt87+VsmpWmlsAh4hCuEeoViTO1IL8JW7Aqz3dwrYEz3x8mmrbR23+TsF7AIuR/+YVa7LzQ0FLZXEsspZXKiOWa2VF6v9M62cMi4qtjJMGjllXFRtZZik79ZOoVh7XCvDJBk5i4sdIrEjwLGkF9eSU8ZFK3AmzQ1xcp1CsZakrQxTbc4pWxkbF3FUGrnckz8p0ZE7JxQ75CNGZORs6Hf7OwVYXJzwLVKSaxWKpYqLOExuMnBKJHYY6BDVCuZcs6hWu1IMN3KKhVzWyjA2clM8a3TkIYaT89mZn3bzLBdM7nbGwrZOHshLDCdn+fYv5X3HXfzkSsEdOjemELQ2tuUtRmj5eu7O1QZjrh1xa6U0LuIIL19vgBluY2s/9sWqce4o1c7a7IsKimPVZAD/AX0titj2uj0NAAAAAElFTkSuQmCC"/></defs></svg>
+              </span>
+            </span>
+          </button>
+        </div>
+        <div id="Product-description-{{section.id}}-{{forloop.index}}" class="collapsible-content collapsible-content--all is-open">
+          <div class="collapsible-content__inner rte">
+            <div class="product-text">
+              <div class="pro_title">
+                <span class="title_text">
+                  {% for row_field in row %}
+                  {% if row_field.key contains "pdpinfodes" %}
+                  {{ scope[row_field.key] }}
+                  {% endif %}
+                  {% endfor %}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+  
+  {% assign nedhlptext = product.metafields.airf.nedhlptext %}
+  {% assign buygidtxt = product.metafields.airf.buygidtxt %}
+  {% assign buyigidurl = product.metafields.airf.buyigidurl %}
+  {% assign needhlpurl = product.metafields.airf.needhlpurl %}
+  
+  {%if nedhlptext != blank or  buygidtxt != blank%}
+    <div class="helper_wrapper">
+      <div class="help_parent">
+        {% if nedhlptext and nedhlptext != '&nbsp' %}
+        	<a href="{% if needhlpurl and needhlpurl != '&nbsp' %}{{ needhlpurl }}{%else%}#{% endif %}" class="help_Section">{{ nedhlptext }}</a>
+        {% endif %}
+        {% if buygidtxt and buygidtxt != '&nbsp' %}
+          <a href="{% if buyigidurl and buyigidurl != '&nbsp' %}{{ buyigidurl }}{%else%}#{% endif %}" class="help_inventory">
+            <img class="inventory_image" src="https://cdn.shopify.com/s/files/1/0507/0379/4347/files/gds-cart_1.png?v=1635340264">
+            <div class="inventory_text">{{ buygidtxt }}</div>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  {%endif%}
+</div>

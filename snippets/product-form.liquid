@@ -1,0 +1,245 @@
+{%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- break -%}{%- endif -%}
+{%- form 'product', product, id: form_id, class: 'product-single__form no_bold_options' -%}
+  <div class="bold-options-container">
+    <div class="bold_options" data-product-id="{{ product.id }}"></div>
+  </div>
+
+  <div class="product-block product-block--price" {{ block.shopify_attributes }}>
+
+    {% if current_variant.compare_at_price > current_variant.price %}
+    {%- if settings.product_save_amount -%}
+    {%- if settings.product_save_type == 'dollar' -%}
+    {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money_without_trailing_zeros }}{%- endcapture -%}
+    {%- else -%}
+    {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
+    {%- endif -%}
+    <span data-save-price class="product__price-savings{% if hide_sale_price %} hide{% endif %}">
+      {%- unless hide_sale_price -%}
+      {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+      {%- endunless -%}
+    </span>
+    {%- endif -%}
+    {% endif %}
+
+    <div class="unit_pric_frpack"><span class="unit_pr">Unit Price is <span><span>$10<sup>00</sup></span></span></span></div>
+    <div class="pdp_single_price">
+      <div class="product-single__form-price">
+        {% comment %}
+        <label class="variant__label" for="ProductPrice-{{ section_id }}">
+          {{ 'cart.label.price' | t }}
+        </label>
+        {% endcomment %}
+        {%- assign hide_sale_price = true -%}
+        <span data-product-price
+              class="bold_option_price_display product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
+          {%- unless product.empty? -%}
+          {%- render 'price' with current_variant.price -%}
+          {%- else -%}
+          {%- render 'price' with 1999 -%}
+          {%- endunless -%}
+        </span>
+
+        {%- if product.compare_at_price_max > product.price -%}
+        {%- if current_variant.compare_at_price > current_variant.price -%}
+        {%- assign hide_sale_price = false -%}
+        {%- endif -%}
+        <span
+              data-a11y-price
+              class="visually-hidden"
+              aria-hidden="{{ hide_sale_price }}">
+          {{ 'products.general.regular_price' | t }}
+        </span>
+        <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
+          <span data-compare-price class="product__price product__price--compare">
+            {%- if current_variant.compare_at_price > current_variant.price -%}
+            {%- render 'price' with current_variant.compare_at_price -%}
+            {%- endif -%}
+          </span>
+        </span>
+        <span data-compare-price-a11y class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+        {%- else -%}
+        <span id="PriceA11y-{{ section_id }}" class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+        {%- endif -%}
+
+        <div data-unit-price-wrapper class="product__unit-price{% unless current_variant.unit_price_measurement %} hide{% endunless %}">
+          {%- capture unit_price_base_unit -%}
+          <span data-unit-base>
+            {%- if current_variant.unit_price_measurement -%}
+            {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+            {{ current_variant.unit_price_measurement.reference_value }}
+            {%- endif -%}
+            {{ current_variant.unit_price_measurement.reference_unit }}
+            {%- endif -%}
+          </span>
+          {%- endcapture -%}
+
+          <span data-unit-price>
+            {%- render 'price' with current_variant.unit_price -%}
+          </span>/{{ unit_price_base_unit }}
+        </div>
+      </div>
+      <div class="pdp_single_contact_popup">
+        <a class="side_bar_action" href="/pages/price-match-guarantee" >Price Match Guarantee</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="shopify-payment-terms product__policies">{{ form | payment_terms }}</div>
+
+  <input id="lprop" type="hidden" name="properties[_LPROP]" value="Final Sale" disabled="disabled">
+
+  {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+    <div class="product__policies rte">
+      {%- if shop.taxes_included -%}
+        {{ 'products.product.include_taxes' | t }}
+      {%- endif -%}
+      {%- if shop.shipping_policy.body != blank -%}
+        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- liquid
+    assign enable_dynamic_buttons = false
+    if show_dynamic_checkout and template != 'product.preorder'
+      assign enable_dynamic_buttons = true
+    endif
+  -%}
+
+  {%- if enable_dynamic_buttons -%}
+    <div class="payment-buttons">
+  {%- endif -%}
+
+    {%- liquid
+      assign default_text = 'products.product.add_to_cart' | t
+      assign button_text = 'products.product.add_to_cart' | t
+      if template == 'product.preorder'
+        assign default_text = 'products.product.preorder' | t
+        assign button_text = 'products.product.preorder' | t
+      endif
+      unless current_variant.available
+        assign button_text = 'products.product.sold_out' | t
+      endunless
+    -%}
+      <div class="form_controller">
+        <div class="form_controller_quantity" >
+          <label for="Quantity-{{ section_id }}">{{ 'products.product.quantity' | t }}:</label>
+          <input type="number" id="Quantity-{{ section_id }}-{{ product.id }}"
+                 class="js-qty__num"
+                 value="1"
+                 min="1"
+                 aria-label="quantity"
+                 pattern="[0-9]*"
+                 form="{{ form_id }}"
+                 name="quantity">
+        </div>
+        <button
+          {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+          name="add"
+          data-add-to-cart
+          class="addtocart btn btn--full add-to-cart btn--site-scheme{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
+          {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+          <span data-add-to-cart-text data-default-text="{{ default_text }}">
+            {{ button_text }}
+          </span>
+        </button>
+      </div>
+
+    {%- if enable_dynamic_buttons -%}
+      {{ form | payment_button }}
+    {%- endif -%}
+
+  {%- if enable_dynamic_buttons -%}
+    </div>
+  {%- endif -%}
+
+  <select name="id" data-product-select class="product-single__variants no-js">
+    {%- for variant in product.variants -%}
+      {%- if variant.available -%}
+        <option {% if variant == product.selected_or_first_available_variant %}
+          selected="selected"{% endif %}
+          value="{{ variant.id }}">
+          {{ variant.title }} - {{ variant.price | money_with_currency }}
+        </option>
+      {%- else -%}
+        <option disabled="disabled">
+          {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+        </option>
+      {%- endif -%}
+    {%- endfor -%}
+  </select>
+
+
+  <textarea data-variant-json class="hide" aria-hidden="true" aria-label="Product JSON">
+    {{ product.variants | json }}
+  </textarea>
+  {%- if product.options.size > 1 -%}
+    <textarea data-current-variant-json class="hide" aria-hidden="true" aria-label="Variant JSON">
+      {{ current_variant | json }}
+    </textarea>
+  {%- endif -%}
+{%- endform -%}
+
+
+
+
+<script>
+  var object = {};
+  var listobjct = [];
+  {% for variant in product.variants %}
+  	object['{{ variant.title }}'] = "{{ variant.metafields.airf.est_date }}"
+  {% endfor %}
+
+  for (let x in object) {
+  	listobjct.push({
+      v_title: x,
+      v_metafield:object[x]
+    });
+  }
+  console.log(listobjct,'listobjct')
+  $(document).on('click','.variant-input-wrap[data-index="option1"] .variant-input',function(){
+    var slect_clr = $(this).attr('data-value')
+    setTimeout(function(){
+      $('.unavail_option.disabled').each(function(){
+        var _this = $(this);
+        var size_trgt = $(this).parents('.variant-input').find('input').attr('value');
+        var selected_arry = [];
+        var title_trgt = slect_clr+' / '+size_trgt;
+        selected_arry = listobjct.filter(function (itmm,ndx){
+          return itmm.v_title==title_trgt;
+        });
+        if(selected_arry[0].v_metafield != '' && selected_arry[0].v_metafield != "&nbsp"){
+          _this.find('.av_dte').text(selected_arry[0].v_metafield)
+        }else{
+          _this.find('.av_dte').text('Not Available')
+        }
+      })
+    },500)
+  })
+</script>
+
+<script>
+  BOLD.common.eventEmitter.on('BOLD_OPTIONS_option_products_loaded', function(event){
+    var optionsDiv = document.querySelector('.bold_options');
+    if(optionsDiv.children && optionsDiv.children.length !== 0){
+      var buyItNow = document.querySelectorAll('.shopify-payment-button');
+      console.log(buyItNow);
+      buyItNow.forEach(function(button){
+        button.remove();
+      })
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('load',function(){
+    var optionsDiv = document.querySelector('.bold_options');
+    var productForm = document.querySelector('[id^="AddToCartForm-"]');
+    if (optionsDiv && productForm) {
+      productForm.classList.value = productForm.classList.value.replace('no_bold_options','')
+      if (BOLD.options.app.boot) {
+        BOLD.options.app.boot();
+      }
+    }
+  })
+</script>

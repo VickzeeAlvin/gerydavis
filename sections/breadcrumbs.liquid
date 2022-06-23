@@ -1,0 +1,24 @@
+{%- if section.settings.page_title_enable or section.settings.page_content_enable -%}
+  <div class="page-width page-width--narrow page-content{% if section.blocks.size > 0 %} page-content--with-blocks{% endif %}">
+    {%- render 'breadcrumbs' -%}
+    {%- if section.settings.page_title_enable -%}
+      <header class="section-header m-0">
+        <h1 class="section-header__title">{{ page.title }}</h1>
+      </header>
+    {%- endif -%}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Page.sections page",
+  "tag": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "page_title_enable",
+        "label": "Show page title"
+      }
+    ]
+}
+{% endschema %}

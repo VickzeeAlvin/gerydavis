@@ -1,0 +1,3372 @@
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_body_text": "#424242",
+    "color_price": "#424242",
+    "color_savings_text": "#ba4444",
+    "color_borders": "#f1f1f1",
+    "color_button": "#0474bb",
+    "color_button_text": "#ffffff",
+    "color_sale_tag": "#ba4444",
+    "color_cart_dot": "#ba4444",
+    "color_small_image_bg": "#ffffff",
+    "color_large_image_bg": "#f1f1f1",
+    "color_header": "#ffffff",
+    "color_header_text": "#424242",
+    "color_announcement": "#424242",
+    "color_announcement_text": "#ffffff",
+    "color_header_search": "#efefef",
+    "color_footer": "#ffffff",
+    "color_footer_border": "#efefef",
+    "color_footer_text": "#424242",
+    "color_scheme_1_bg": "#ffffff",
+    "color_scheme_1_text": "#424242",
+    "color_scheme_1_texture": "marble.jpg",
+    "color_scheme_2_bg": "#acc6c3",
+    "color_scheme_2_text": "#ffffff",
+    "color_scheme_2_texture": "swirl",
+    "color_scheme_3_bg": "#ffffff",
+    "color_scheme_3_text": "#000000",
+    "color_scheme_3_texture": "darken",
+    "type_header_font_family": "libre_baskerville_n4",
+    "type_header_spacing": "0",
+    "type_header_base_size": 32,
+    "type_header_line_height": 1.2,
+    "type_header_capitalize": true,
+    "type_base_font_family": "harmonia_sans_n4",
+    "type_base_spacing": "0",
+    "type_base_size": 14,
+    "type_base_line_height": 1.5,
+    "type_navigation_style": "body",
+    "type_navigation_size": 16,
+    "type_navigation_capitalize": true,
+    "edges": "square",
+    "button_style": "square",
+    "cart_icon": "cart",
+    "icon_weight": "3px",
+    "icon_linecaps": "miter",
+    "animate_page_transitions": false,
+    "superscript_decimals": true,
+    "product_save_amount": true,
+    "product_save_type": "percent",
+    "vendor_enable": true,
+    "quick_shop_enable": false,
+    "quick_add_enable": false,
+    "product_grid_image_size": "portrait",
+    "product_grid_image_fill": false,
+    "product_hover_image": false,
+    "enable_swatches": true,
+    "swatch_style": "square",
+    "product_grid_style": "grey-square",
+    "product_grid_image_margin": 10,
+    "enable_product_reviews": false,
+    "collection_grid_shape": "portrait",
+    "collection_grid_image": "collection",
+    "collection_grid_image_margin": 17,
+    "product_color_swatches": true,
+    "cart_type": "page",
+    "cart_additional_buttons": false,
+    "cart_collection": "all",
+    "cart_notes_enable": true,
+    "cart_terms_conditions_enable": false,
+    "shipping_calculator_heading": "ESTIMATE SHIPPING",
+    "shipping_calculator_default_country": "United States",
+    "social_facebook_link": "https:\/\/www.facebook.com\/gerrydavissports\/",
+    "social_twitter_link": "https:\/\/twitter.com\/GerryDavisSport",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/gerrydavissports\/",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "favicon": "shopify:\/\/shop_images\/Frame_2.png",
+    "search_type": "product,article",
+    "show_breadcrumbs": true,
+    "show_breadcrumbs_collection_link": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/gds_loop_270px.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_accent_color": "#424242",
+    "checkout_button_color": "#0474bb",
+    "checkout_error_color": "#ba4444",
+    "variant_type": "button",
+    "enable_payment_button": false,
+    "sku_enable": true,
+    "quantity_enable": true,
+    "inventory_enable": false,
+    "inventory_threshold": 2,
+    "inventory_transfers_enable": false,
+    "surface_pickup_enable": false,
+    "product_zoom_enable": true,
+    "sales_point_1": "",
+    "sales_point_2_icon": "checkmark",
+    "sales_point_2": "",
+    "sales_point_3": "",
+    "sales_point_4": "",
+    "collection_color_swatches": true,
+    "product_contact": false,
+    "color_image_overlay": "#000000",
+    "color_image_overlay_opacity": 0,
+    "color_image_overlay_text_shadow": 28,
+    "type_headers_align_text": false,
+    "type_body_align_text": true,
+    "color_drawer_background": "#ffffff",
+    "color_drawer_text": "#000000",
+    "color_drawer_border": "#e8e8e1",
+    "color_drawer_button": "#111111",
+    "color_drawer_button_text": "#ffffff",
+    "color_modal_overlays": "#e6e6e6",
+    "type_collection_font": "body",
+    "type_collection_size": 18,
+    "collection_grid_style": "below",
+    "collection_grid_text_align": "center",
+    "collection_grid_tint": "#000000",
+    "collection_grid_opacity": 10,
+    "collection_grid_gutter": true,
+    "breadcrumb": false,
+    "predictive_search_show_vendor": true,
+    "predictive_search_show_price": true,
+    "type_product_style": "body",
+    "type_product_capitalize": true,
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "b3aea665-da4b-4695-a449-201d14c65874": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/GDSports_Logo_RGB_web.png",
+              "desktop_logo_width": 120,
+              "mobile_logo_width": 110,
+              "sports-shop-text": "Sports Shop",
+              "last-call-text": "Last Call",
+              "last-call-url": "shopify:\/\/collections\/last-call"
+            }
+          }
+        },
+        "block_order": [
+          "b3aea665-da4b-4695-a449-201d14c65874"
+        ],
+        "settings": {
+          "main_menu_link_list": "mobile-main-nev",
+          "mobile_link_list": "mobile-main-nev",
+          "main_link_footer": "navigation-2",
+          "mobile_link_list_2": "mobile-middle-navigation",
+          "mobile_link_list_3": "mobile-bottom-navigation",
+          "menu_items": "header-main",
+          "main_menu_alignment": "below",
+          "mega_products": true,
+          "header_sticky": true,
+          "header_footer_menu": false,
+          "sticky_index": false,
+          "sticky_collection": false,
+          "promo_text": "Earn 1 Point for Every $1 Spent. 200 Points = $10 Reward.",
+          "promo_text_mobile": "Earn 1 Point for Every $1 Spent. 200 Points = $10 Reward.",
+          "promo_btn_text": "Sign Up",
+          "promo_btn_url": "#smile-home",
+          "promo_btn_color": "#ffffff",
+          "promo_btn_bg": "#424242",
+          "promo_bar_bg": "#ec212a"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_capitalize_first": true,
+          "blog_show_tags": true,
+          "blog_show_date": true,
+          "blog_show_comments": true,
+          "blog_show_author": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "blog_show_rss": false,
+          "blog_show_tags": true,
+          "blog_show_date": true,
+          "blog_show_comments": true,
+          "blog_show_author": false,
+          "blog_image_size": "wide"
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "mode": "disabled",
+          "popup_seconds": 60,
+          "popup_days": 30,
+          "popup_title": "Get 10% off your first purchase.",
+          "popup_text": "<p>Sign up today and we'll send you a 10% discount code towards your first purchase. Some restrictions apply.<\/p>",
+          "color_scheme": "2",
+          "enable_newsletter": true,
+          "button_label": "Optional button",
+          "button_link": "",
+          "enable_button": false
+        }
+      },
+      "collection-header": {
+        "type": "collection-header",
+        "settings": {
+          "enable": true,
+          "collection_image_enable": false,
+          "parallax": false
+        }
+      },
+      "footer-promotions": {
+        "type": "footer-promotions",
+        "settings": {
+          "hide_homepage": false,
+          "image_size": "wide"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "product_recommendations_heading": "You may also like"
+        }
+      },
+      "recently-viewed": {
+        "type": "recently-viewed",
+        "settings": {
+        }
+      },
+      "toolbar": {
+        "type": "toolbar",
+        "blocks": {
+          "e3f97c8a-aada-4421-a86e-e8bb2ea419ba": {
+            "type": "announcement",
+            "settings": {
+              "richtext": "<p>Free Shipping on Orders $99+<\/p>",
+              "richtext_mobile": "<p>Free Shipping Orders $99+<\/p>"
+            }
+          },
+          "d0cff092-d455-4b88-b0ad-2ba95ae42602": {
+            "type": "announcement",
+            "settings": {
+              "richtext": "<p>Free returns & exchanges*<\/p>",
+              "richtext_mobile": "<p>Free returns & exchanges*<\/p>"
+            }
+          },
+          "7ef3d533-9dc9-42bd-ba77-76ff3aede664": {
+            "type": "announcement",
+            "settings": {
+              "richtext": "<p>Super Saver shipping starting at $5.00<\/p>",
+              "richtext_mobile": "<p>Super Saver shipping starting at $5.00<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "e3f97c8a-aada-4421-a86e-e8bb2ea419ba",
+          "d0cff092-d455-4b88-b0ad-2ba95ae42602",
+          "7ef3d533-9dc9-42bd-ba77-76ff3aede664"
+        ],
+        "settings": {
+          "announcement_center": false,
+          "toolbar_social": false,
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "show_currency_flags": false
+        }
+      },
+      "blog-sidebar": {
+        "type": "blog-sidebar",
+        "blocks": {
+          "ff7a549d-af1e-4e72-93c7-326f5ace6fbb": {
+            "type": "article",
+            "settings": {
+            }
+          },
+          "a9c19dcb-3172-4927-b454-954715dfdfbc": {
+            "type": "article",
+            "settings": {
+            }
+          },
+          "a0382939-ffb8-4144-83cc-9565ad819150": {
+            "type": "article",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "ff7a549d-af1e-4e72-93c7-326f5ace6fbb",
+          "a9c19dcb-3172-4927-b454-954715dfdfbc",
+          "a0382939-ffb8-4144-83cc-9565ad819150"
+        ],
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "menu",
+            "settings": {
+              "title": "Company",
+              "menu": "footer",
+              "enable_account_link": false
+            }
+          },
+          "a7fd3b1b-ee0d-4e4d-b116-65e6103fd58b": {
+            "type": "menu",
+            "settings": {
+              "title": "Resources",
+              "menu": "resources",
+              "enable_account_link": false
+            }
+          },
+          "de2c38de-4210-4843-bc37-0bb4bba01391": {
+            "type": "menu",
+            "settings": {
+              "title": "Specialty Shops",
+              "menu": "specialty-shops",
+              "enable_account_link": false
+            }
+          },
+          "84179411-712c-42d4-a654-89a570d303b4": {
+            "type": "menu",
+            "settings": {
+              "title": "Shop By Sports",
+              "menu": "shop-by-sports",
+              "enable_account_link": false
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "a7fd3b1b-ee0d-4e4d-b116-65e6103fd58b",
+          "de2c38de-4210-4843-bc37-0bb4bba01391",
+          "84179411-712c-42d4-a654-89a570d303b4"
+        ],
+        "settings": {
+          "show_newsletter": false,
+          "newsletter_richtext": "<p>Subscribe today and get 10% off your first purchase<\/p>",
+          "footer_main_menu": false,
+          "show_copyright": true,
+          "copyright_text": "",
+          "policies_menu": "terms",
+          "footer_logo": "shopify:\/\/shop_images\/littleleaguelogo.jpg",
+          "disclaimer_text": "<p>Official Umpire Uniform Supplier of the Little League® World Series and Approved Licensee of Little League Umpire Uniforms and Equipment.<br\/>Little League Baseball, Little League, the medallion and the keystone are registered trademarks and service marks belonging exclusively to Little League Baseball, Incorporated.<\/p>"
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "desktop_logo_height": 100,
+          "mobile_logo_height": 60
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "title": "Be the first to know",
+          "show_password_message": false,
+          "text": "",
+          "newsletter_enable": true,
+          "newsletter_placeholder": "Enter your email",
+          "show_share_buttons": true,
+          "show_image": true
+        }
+      },
+      "16336321396e3a0a63": {
+        "type": "text-columns",
+        "disabled": true,
+        "blocks": {
+          "16336321396e3a0a63-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/sb-player-on-base-5fd8e9b50e268_1.jpg",
+              "image_width": 650,
+              "title": "LICENSED LITTLE LEAGUE OFFICIALS APPAREL",
+              "text": "",
+              "button_label": "SHOP NOW",
+              "button_link": "#"
+            }
+          },
+          "16336321396e3a0a63-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/sb-player-on-base-5fd8e9b50e268_1_30da5841-3d6b-49ec-8252-2b6fca77df96.jpg",
+              "image_width": 650,
+              "title": "NCAA SOFTBALL UMPIRE COLLECTION",
+              "text": "",
+              "button_label": "SHOP NOW",
+              "button_link": "shopify:\/\/collections\/ncaa-softball-collection"
+            }
+          }
+        },
+        "block_order": [
+          "16336321396e3a0a63-0",
+          "16336321396e3a0a63-1"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left",
+          "divider": false,
+          "color_scheme": "none"
+        }
+      },
+      "1633635011fa579f03": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "1633635011fa579f03-0": {
+            "type": "hero",
+            "settings": {
+              "top_subheading": "",
+              "title": "<p>ZIG DYNAMICA 2<\/p>",
+              "title_size": 58,
+              "subheading": "",
+              "link": "shopify:\/\/products\/reebok-zig-dynamica-2-matte-basketball-referee-shoe",
+              "link_text": "Matte Black",
+              "link_2": "shopify:\/\/products\/reebok-zig-dynamica-2-patent-leather-basketball-referee-shoe",
+              "link_text_2": "Patent Leather",
+              "color_accent": "#0474bb",
+              "text_align": "vertical-bottom horizontal-left",
+              "image": "shopify:\/\/shop_images\/reebok-zig-banner.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/reebok-zig-dynamica-mobile.jpg",
+              "overlay_opacity": 0,
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "1633635011fa579f03-0"
+        ],
+        "settings": {
+          "full_width": true,
+          "desktop_size": 0,
+          "mobile_size": 0,
+          "style": "arrows",
+          "autoplay": true,
+          "autoplay_speed": 7
+        }
+      },
+      "giftcard-header": {
+        "type": "giftcard-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/gds_loop_400px.png",
+          "desktop_logo_width": 200,
+          "mobile_logo_width": 140
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "12525070-ab31-4b5d-915e-37a81c9831ec": {
+            "type": "rich-text",
+            "settings": {
+              "title": "My Account",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "8c9b85d1-0342-4749-951e-c60b84f92a39": {
+            "type": "question",
+            "settings": {
+              "title": "How do I talk to someone to get some help?",
+              "text": "<p>It's pretty easy! We offer support Monday - Friday between 8-5 CST. You can reach us on <a href=\"javascript:void(0)\" onclick=\"GorgiasChat.open();\">live chat<\/a> or via <a href=\"\/pages\/contact\" title=\"Contact Us\">email<\/a>. We reply to emails within 24 business hours but typically respond quicker.<\/p>"
+            }
+          },
+          "7ad8455c-b04a-4c67-87f4-7b3b7855fa6e": {
+            "type": "question",
+            "settings": {
+              "title": "Can I still speak to someone on the phone?",
+              "text": "<p>Please contact us via <a href=\"javascript:void(0)\" onclick=\"GorgiasChat.open();\">live chat<\/a> or <a href=\"\/pages\/contact\" title=\"Contact Us\">email<\/a>. If it is determined we can best help you over the phone we will give you a call. Please note, orders placed over the phone or email are not eligible for discounts and\/or free shipping.<\/p>"
+            }
+          },
+          "d0e65f4b-6a53-4ddc-884b-3da1dbafc387": {
+            "type": "question",
+            "settings": {
+              "title": "I had an account on your old website. Do I still have an account on the new website?",
+              "text": "<p>All accounts, created before March 9, 2022 still exist but will need to be activated. Go to our <a href=\"\/account\/register\" target=\"_blank\" title=\"\/account\/register\">registration page<\/a> and sign up with the same email you used in the past.<\/p>"
+            }
+          },
+          "5feb8ed4-f7a2-44a9-b6ef-3c0544fe576a": {
+            "type": "question",
+            "settings": {
+              "title": "I lost my password. Can you send it to me?",
+              "text": "<p>All password resets can be done on the <a href=\"\/account\/login?return_url=%2Faccount\" target=\"_blank\" title=\"\/account\/login?return_url=%2Faccount\">login page<\/a> by clicking \"Forgot Password?\". For security purposes, we are unable to reset it for you.<\/p>"
+            }
+          },
+          "26dde62f-59cd-4e44-8c7c-4c4e18a76047": {
+            "type": "question",
+            "settings": {
+              "title": "Do I need an account to place an order?",
+              "text": "<p>No! You can check out as a guest - no need to create an account if you don't want to.<\/p>"
+            }
+          },
+          "5cb5348c-3f8e-4cbd-b581-34c2c66f1e60": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Ordering",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "b7eb70d2-24e7-4d80-a34f-018df09a4093": {
+            "type": "question",
+            "settings": {
+              "title": "Can I order over the phone?",
+              "text": "<p>If you are having trouble checking out one of our team members can help you place your order over the phone. <strong>Please note, orders placed over the phone or email are not eligible for discounts and\/or free shipping.<\/strong><\/p>"
+            }
+          },
+          "133c86be-8607-409b-afb6-3c95e0d7d559": {
+            "type": "question",
+            "settings": {
+              "title": "Did you receive my order?",
+              "text": "<p>If you made it to the thank you page we received your order! Check your email for verification. Didn't receive an email? Please use our <a href=\"javascript:void(0)\" onclick=\"GorgiasChat.open();\">self service help center<\/a> to look up your order information.<\/p>"
+            }
+          },
+          "cb10306b-73ce-4054-a544-8d472006c325": {
+            "type": "question",
+            "settings": {
+              "title": "Can I make a change to my order?",
+              "text": "<p>Maybe! The quickest way to find out is to visit our <a href=\"javascript:void(0)\" onclick=\"GorgiasChat.open();\">self-service help center<\/a> and submit a request.<\/p>"
+            }
+          },
+          "5e5cf31a-51f6-4e43-b42a-a22667bbb2ee": {
+            "type": "question",
+            "settings": {
+              "title": "Can I use two-different payment methods on my order?",
+              "text": "<p>Unfortunately, this is not possible at this time. We can only process a single method of payment.<\/p>"
+            }
+          },
+          "40d87d28-a3b2-45e4-addc-66ff90090769": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Order Status",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "1e79c702-d98d-43e9-bd19-db2740ada1ef": {
+            "type": "question",
+            "settings": {
+              "title": "Why hasn't my order shipped?",
+              "text": "<p>There are typically three reasons that may impact order shipment dates.<br><br>1. Your order included products that require in-house customization. Depending on the service, these orders may take 1-7 days to process and ship.<\/p><p>2. Your order included products that are special order or ship directly from the manufacturer.<\/p><p>3. Your order included free shipping. If we receive a high volume of shipments, we prioritize orders that have expedited and paid shipping methods. <em>(this rarely happens)<\/em><\/p><p>Doesn't answer your question? Visit our <a href=\"javascript:void(0)\" onclick=\"GorgiasChat.open();\">self-service help center<\/a> to send a request to our customer care team or <a href=\"\/pages\/contact\" title=\"Contact Us\">send us an email<\/a> so we can resolve the issue.<\/p>"
+            }
+          },
+          "221bed62-efe2-420d-92a4-1dee2860482b": {
+            "type": "question",
+            "settings": {
+              "title": "When will my order ship?",
+              "text": "<p>We do our best to ship most orders within 24 business hours. Most orders placed before 1pm Central are shipped out the same day. Orders that include expedited shipping are prioritized.<br><br>Orders that include special order items or alterations ship when the order is complete.<\/p><p><\/p>"
+            }
+          },
+          "6550bff5-f021-42a5-834e-191ce83d704d": {
+            "type": "question",
+            "settings": {
+              "title": "When will I get my order?",
+              "text": "<p>This depends on the shipping method chosen at checkout and the products purchased. Please see our detailed <a href=\"\/pages\/shipping-policy\" title=\"Shipping Policy\">shipping information<\/a>.<\/p>"
+            }
+          },
+          "52b1b102-78a7-4720-8f4d-f050cf8b8abb": {
+            "type": "question",
+            "settings": {
+              "title": "Where is my order?",
+              "text": "<p>If your order is already with a carrier, please check the tracking information provided.<\/p><p>If there is a problem with the tracking number or it appears that your package is lost or delayed please contact our customer care team via the <a href=\"javascript:void(0)\" onclick=\"GorgiasChat.open();\">self-service help center<\/a>, live chat or email.<\/p>"
+            }
+          },
+          "75d44729-5029-4460-8a18-f4054244a20c": {
+            "type": "question",
+            "settings": {
+              "title": "Can I see the status of my order that includes embroidery or hemming?",
+              "text": "<p>Unfortunately, at this time we do not have this capabilities to do this. We're looking into a way to provide this information in the future.<\/p>"
+            }
+          },
+          "50246bc2-b2bd-41d0-882c-7186edfc9ae9": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Tracking",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "5e252325-5714-42b6-9294-006cf004fc53": {
+            "type": "question",
+            "settings": {
+              "title": "Where is my tracking number?",
+              "text": "<p>You should receive your tracking number via email or SMS.(depending on what you choose)<\/p><p>Can't find it? You can get it quickly by visiting our <a href=\"javascript:void(0)\" onclick=\"GorgiasChat.open();\">self-service help center<\/a>.<\/p><p>Still having issues? Contact us and we'll get it all sorted out for you.<\/p>"
+            }
+          },
+          "5fc49062-c96c-4500-88a1-d88917eece5c": {
+            "type": "question",
+            "settings": {
+              "title": "My tracking information shows my order was delivered but it is not here. What do I do?",
+              "text": "<p>If you can't find your package, please start here:<br><br>1. Check your tracking information. Sometimes it will provide exactly where the carrier left it.<br>2. If it was shipped with the USPS, check your mailbox.<br>3. Check inconspicuous places. With the increase in package thefts, your carrier may have left it behind a flower pot, behind a bush, etc.<br>4. Did you spouce, children or room mate already grab it?<br>5. Live in an apartment? It could be with the front desk or apartment management.<br>6. Occassionally carriers may have accidently scanned it as delivered prior to arriving. If it was marked as delivered within the last hour, wait to see if this is the case.<br><br>Can't find it, contact us so we can look into it further.<\/p>"
+            }
+          },
+          "page-faq-template-0": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Shipping",
+              "text": "<p>For additional details regarding shipping and order processing, please view our <a href=\"\/pages\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a> page.<\/p>",
+              "align_text": "left"
+            }
+          },
+          "81972c7c-2c5a-460b-b589-34e046188168": {
+            "type": "question",
+            "settings": {
+              "title": "When will my order ship?",
+              "text": "<p>We do our best to ship most orders within 24 business hours. Most orders placed before 1pm Central are shipped out the same day. Orders that include expedited shipping are prioritized.<br><br>Orders that include special order items or alterations ship when the order is complete.<\/p>"
+            }
+          },
+          "642a2bd1-0116-4793-89ca-054675ad0be7": {
+            "type": "question",
+            "settings": {
+              "title": "Why didn't my order qualify for free shipping?",
+              "text": "<p>Only orders $99+ being delivered to the lower 48 are eligible for free shipping. <\/p><p>Some orders are not eligible to be delivered free to PO boxes. (We cannot ship large packages to PO boxes due to the extreme costs)<\/p>"
+            }
+          },
+          "7c816a6a-d2f2-46b8-b7b4-2312aed8d9d2": {
+            "type": "question",
+            "settings": {
+              "title": "How do you calculate shipping rates?",
+              "text": "<p>Most of our shipping options are live rates that are provided directly from the carriers we use. We also have flat rates for orders that we can ship economically. <\/p>"
+            }
+          },
+          "21278e55-eb53-49f9-aa50-74acdbbb542a": {
+            "type": "question",
+            "settings": {
+              "title": "I would like to change my shipping selection. Can I change it after I placed my order?",
+              "text": "<p>Sorry, but once we receive an order we are unable to change the shipping method.<\/p>"
+            }
+          },
+          "6fb18d6d-9c11-44fb-ae66-8d1c8d03a24b": {
+            "type": "question",
+            "settings": {
+              "title": "I did not receive my order when I expected to. Why?",
+              "text": "<p>There could be a wide variety of reasons that you may not have gotten your order in the estimated time frames at checkout. This is typically due to the products ordered, if you ordered on a weekend or during a holiday. <br><br>If your order contained special order items or alterations, it would have been shipped when your order was ready to be completely fulfilled. We do not do partial shipments.<\/p>"
+            }
+          },
+          "00daa03a-7a7c-44a2-a807-14347f85263d": {
+            "type": "question",
+            "settings": {
+              "title": "I paid extra for shipping but it was not delivered in the expected timeframe. What are you going to do about it?",
+              "text": "<p>Shipping times are generally not guaranteed. The only shipping services that have guaranteed transit times are Second Day and Next Day services. These guarantees only apply to orders that are placed before 12pm Central AND do not include any special order items or items with alterations requested.<br><br>If your order should have qualified for a guaranteed delivery time frame, please contact us.<\/p>"
+            }
+          },
+          "27ad5049-5dcf-4342-9be8-5dfce4199295": {
+            "type": "question",
+            "settings": {
+              "title": "How do you ship orders with free shipping?",
+              "text": "<p>Orders that include free shipping are shipped in the most economical way possible. We price shop a variety of carriers include FedEx, UPS, USPS, as well as, smaller regional carriers.<\/p>"
+            }
+          },
+          "16aab0c5-b87c-45ee-a232-c131d1607109": {
+            "type": "question",
+            "settings": {
+              "title": "Why can I take longer to process orders with free shipping?",
+              "text": "<p>Generally orders that include free shipping are out the door within 1 business day. If we receive a high volume of shipments, we prioritize orders that have expedited and paid shipping methods and sometimes this can delay the time frame in which your order may ship. All orders are shipped within 2 business days. <\/p>"
+            }
+          },
+          "007723af-4eb2-48a4-b4b4-8cd2ea3954f2": {
+            "type": "question",
+            "settings": {
+              "title": "I received my order from a different carrier then I thought I would. Why?",
+              "text": "<p>Sometimes, we may need to change the carrier for pricing or availability reasons. Our goal is always to get your order to you as quick and cheaply as possible!<\/p>"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "Do you ship outside of the United States?",
+              "text": "<p><strong>We have temporarily suspended worldwide shipping.<\/strong> We expect to service Canada and Puerto Rico again by April 2022. Worldwide locations will be available by 2023.<\/p>"
+            }
+          },
+          "bf258c7f-65a9-4497-8ae7-8dbd4c59ae76": {
+            "type": "question",
+            "settings": {
+              "title": "Do you offer expedited shipping methods?",
+              "text": "<p>Yes, please see our <a href=\"\/pages\/shipping-policy\" title=\"Shipping Policy\">detailed shipping information<\/a>.<\/p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Returns and exchanges",
+              "text": "<p>For additional details regarding returns and exchanges, please view our <a href=\"\/pages\/returns-exchanges\" title=\"Returns & Exchanges\">Returns & Exchanges policy<\/a> page.<\/p>",
+              "align_text": "left"
+            }
+          },
+          "f406817c-0942-4a8e-8168-67ecd742e49f": {
+            "type": "question",
+            "settings": {
+              "title": "I received my order but there was a problem. (Missing item, wrong size, defect, etc.)",
+              "text": "<p>We're really sorry, let us make it right. Please use our <a href=\"javascript:void(0)\" onclick=\"GorgiasChat.open();\">self-service help center<\/a> to report an issue so we can follow up with you as soon as possible.<\/p>"
+            }
+          },
+          "f48c5f4e-e0d8-409a-b530-085c27bf6d06": {
+            "type": "question",
+            "settings": {
+              "title": "Are all returns free?",
+              "text": "<p>No. Returns are free when you return for store credit. If want to return your items and be refunded to your original payment method we deduct $5 for return shipping fees.<\/p>"
+            }
+          },
+          "08915761-911c-4121-aa71-b4e012bc2054": {
+            "type": "question",
+            "settings": {
+              "title": "Can I exchange an item?",
+              "text": "<p>Of course! Use our <a href=\"https:\/\/returns.gerrydavis.com\" target=\"_blank\" title=\"https:\/\/returns.gerrydavis.com\">returns\/exchange<\/a> portal to start the process.<\/p>"
+            }
+          },
+          "7d2adcef-6df1-4e9d-b636-a2c554ab53b3": {
+            "type": "question",
+            "settings": {
+              "title": "How can I start a return or exchange?",
+              "text": "<p>Visit our <a href=\"https:\/\/gds.loopreturns.com\/#\/\" target=\"_blank\" title=\"https:\/\/gds.loopreturns.com\/#\/\">self-service return center<\/a>.<\/p>"
+            }
+          },
+          "fbfc9f6c-30a6-4ca5-8880-7376aa40e842": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Embroidery & Customization",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "c51d02a0-9723-49ff-8d99-2960833f8c34": {
+            "type": "question",
+            "settings": {
+              "title": "I don't see my association or group as an option for customization. Can you help?",
+              "text": "<p>Please contact us via <a href=\"\/pages\/contact\" title=\"Contact Us\">email<\/a> to determine whether or not we can assist!<\/p>"
+            }
+          },
+          "1d8831a9-5360-496e-8b7e-895f38c3c1f8": {
+            "type": "question",
+            "settings": {
+              "title": "How quickly do you hem pants?",
+              "text": "<p>We're able to hem pants within 2-3 business days. Pants can be hemmed within 1 business day for a rush processing fee.<\/p>"
+            }
+          },
+          "3092507c-3730-4077-8465-dc7e30dc13b7": {
+            "type": "question",
+            "settings": {
+              "title": "Can I return my pants if the inseam I requested is incorrect?",
+              "text": "<p>Yes - we guarantee our inseam accuracy with a +\/- half inch tolerance. Our historical accuracy is above 99%. <\/p>"
+            }
+          },
+          "cb8d5f4e-38a0-42a0-af3f-eb00ee93e6e6": {
+            "type": "question",
+            "settings": {
+              "title": "Can I send in my apparel\/pants for customization?",
+              "text": "<p>This is not a service we offer at this point in time.<\/p>"
+            }
+          },
+          "f485d6fb-2a8c-4a50-96c6-685286475e3f": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Wholesale\/Brick And Mortar",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "9b85cb78-cfde-4e49-a513-42ae30203fd6": {
+            "type": "question",
+            "settings": {
+              "title": "Can I purchase Gerry Davis Sports\/DAVIS products for resale?",
+              "text": "<p>We offer a limited set of our apparel for wholesale\/retail. If you are located outside of the United States or run a brick & mortar store please contact us for additional information. <\/p>"
+            }
+          },
+          "8598f65b-2663-484f-b225-d953915f990d": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Custom Apparel",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "f50f7c60-68b7-4db2-aace-6c9e618bc3b5": {
+            "type": "question",
+            "settings": {
+              "title": "Can you develop custom apparel?",
+              "text": "<p>While we cannot manufacture any one-off pieces for individuals, we are happy to work with your group or association to design and develop custom apparel.<\/p>"
+            }
+          },
+          "1090558d-8d62-4039-80cc-362d13aa3204": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Promos & Discounts",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "4f44c002-559e-4283-8356-8cf63a9ebe95": {
+            "type": "question",
+            "settings": {
+              "title": "Do you have any promotional codes I can use?",
+              "text": "<p>We occasionally offer discounts to email\/SMS subscribers and followers of our social media pages. All other available promotions can be found <a href=\"\/pages\/discounts\" title=\"Discounts & Promotional Codes\">here<\/a>.<\/p>"
+            }
+          },
+          "fcd8cf64-01eb-46a5-93cf-42bf344f140a": {
+            "type": "question",
+            "settings": {
+              "title": "I am a member of NASO, do I receive a discount?",
+              "text": "<p>We offer a 10% discount to NASO members who can provide valid, active membership.<\/p>"
+            }
+          },
+          "f6849bff-2631-477c-80e3-2d6b5b93a39b": {
+            "type": "question",
+            "settings": {
+              "title": "Do you offer Law Enforcement & Military Discounts",
+              "text": "<p>Yes - at checkout you will be able to verify your eligibility with GovX. This discount cannot be combined with any other offer.<\/p>"
+            }
+          },
+          "7348f89a-5c61-46b9-ac71-237c9fcdab96": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Marketing",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "ab03acd7-46e5-463a-ba21-fca86aa552be": {
+            "type": "question",
+            "settings": {
+              "title": "Can I request a physical catalog?",
+              "text": "<p>We no long produce a full paper catalog. Please find the most up-to-date product and details on our website and please reach out to customer service with any questions.<\/p>"
+            }
+          },
+          "88bc77d4-96eb-4328-8fe6-b9417e1231dc": {
+            "type": "question",
+            "settings": {
+              "title": "How can I sign up for email marketing?",
+              "text": "<p>Click \"Sign up for Email\/SMS\" to the right!<\/p>"
+            }
+          },
+          "9ef0ae9e-6241-41a2-a4b8-44b1254be198": {
+            "type": "question",
+            "settings": {
+              "title": "How often do you send marketing emails?",
+              "text": "<p>This is up to you! You can change your delivery preferences based on how often you do\/or don't want to hear from us. <\/p>"
+            }
+          },
+          "4eb9998a-4350-42b8-8c41-8327bc54a0dd": {
+            "type": "question",
+            "settings": {
+              "title": "How can I unsubscribe from your marketing emails?",
+              "text": "<p>All emails sent by GerryDavis.com include a link at the bottom of the email to unsubscribe. Please note, this is only for marketing emails. If you unsubscribe for marketing emails you will still receive transactional emails and legal\/privacy updates.<\/p>"
+            }
+          },
+          "c7221b9d-425c-4d6e-820f-2f22a491f3b2": {
+            "type": "question",
+            "settings": {
+              "title": "How can I sign up for SMS notifications?",
+              "text": "<p>Click \"Sign up for Email\/SMS\" to the right!<\/p>"
+            }
+          },
+          "ce97281e-ecbb-442f-871d-061fd3ad7fb6": {
+            "type": "question",
+            "settings": {
+              "title": "How often do you send SMS notifications?",
+              "text": "<p>This is up to you! You can change your delivery preferences based on how often you do\/or don't want to hear from us. <\/p>"
+            }
+          },
+          "a8e8aab0-af47-48e2-8f47-a2c3155b4d31": {
+            "type": "question",
+            "settings": {
+              "title": "How do I unsubscribe from SMS notifications?",
+              "text": "<p>Reply \"STOP\" to be removed from our SMS communications.<\/p>"
+            }
+          },
+          "5704e269-a89f-4246-aeb3-08513cbd25e1": {
+            "type": "question",
+            "settings": {
+              "title": "Do you share or sell my information with 3rd parties?",
+              "text": "<p>NO - we never share your information with 3rd parties unless they are specifically a software provider necessary to provide communications. For more details, please see our full privacy policy.<\/p>"
+            }
+          },
+          "75d77a20-aa40-468d-a599-1d9810c83f93": {
+            "type": "question",
+            "settings": {
+              "title": "Why am I still getting email communication?",
+              "text": "<p>Unsubscribing from marketing emails will only prevent you from receiving marketing specific emails. You will continue to receive transactional emails if you place a new order or if we change our terms of use, privacy policy, etc. <\/p><p><strong>NOTE:<\/strong> Review requests are considered transactional emails but you can unsubscribe from them!<\/p>"
+            }
+          },
+          "a0140c23-f526-41a4-8e6c-0c65e5cea357": {
+            "type": "sidebar-link",
+            "settings": {
+              "text": "SELF SERVICE HELP CENTER",
+              "url": "#"
+            }
+          },
+          "1a301913-45ec-472c-8266-8e8cbe9cd294": {
+            "type": "sidebar-link",
+            "settings": {
+              "text": "SHIPPING METHODS & POLICIES",
+              "url": "shopify:\/\/pages\/shipping-policy"
+            }
+          },
+          "569bd337-4d78-49b1-9ee6-1e884aba3a52": {
+            "type": "sidebar-link",
+            "disabled": true,
+            "settings": {
+              "text": "RETURNS & EXCHANGE POLICIES",
+              "url": ""
+            }
+          },
+          "bd89d672-7fa1-459b-87a4-31161af48227": {
+            "type": "sidebar-link",
+            "settings": {
+              "text": "START A RETURN\/EXCHANGE",
+              "url": "https:\/\/gds.loopreturns.com\/#\/"
+            }
+          },
+          "eaa5834b-f991-4bd1-abe4-8c01d95c2441": {
+            "type": "sidebar-link",
+            "settings": {
+              "text": "SIGN UP FOR EMAIL\/SMS",
+              "url": "#"
+            }
+          },
+          "1786dd7a-eede-47cb-b343-c4c7b1a4177b": {
+            "type": "sidebar-link",
+            "settings": {
+              "text": "CONTACT US",
+              "url": "shopify:\/\/pages\/contact"
+            }
+          }
+        },
+        "block_order": [
+          "12525070-ab31-4b5d-915e-37a81c9831ec",
+          "8c9b85d1-0342-4749-951e-c60b84f92a39",
+          "7ad8455c-b04a-4c67-87f4-7b3b7855fa6e",
+          "d0e65f4b-6a53-4ddc-884b-3da1dbafc387",
+          "5feb8ed4-f7a2-44a9-b6ef-3c0544fe576a",
+          "26dde62f-59cd-4e44-8c7c-4c4e18a76047",
+          "5cb5348c-3f8e-4cbd-b581-34c2c66f1e60",
+          "b7eb70d2-24e7-4d80-a34f-018df09a4093",
+          "133c86be-8607-409b-afb6-3c95e0d7d559",
+          "cb10306b-73ce-4054-a544-8d472006c325",
+          "5e5cf31a-51f6-4e43-b42a-a22667bbb2ee",
+          "40d87d28-a3b2-45e4-addc-66ff90090769",
+          "1e79c702-d98d-43e9-bd19-db2740ada1ef",
+          "221bed62-efe2-420d-92a4-1dee2860482b",
+          "6550bff5-f021-42a5-834e-191ce83d704d",
+          "52b1b102-78a7-4720-8f4d-f050cf8b8abb",
+          "75d44729-5029-4460-8a18-f4054244a20c",
+          "50246bc2-b2bd-41d0-882c-7186edfc9ae9",
+          "5e252325-5714-42b6-9294-006cf004fc53",
+          "5fc49062-c96c-4500-88a1-d88917eece5c",
+          "page-faq-template-0",
+          "81972c7c-2c5a-460b-b589-34e046188168",
+          "642a2bd1-0116-4793-89ca-054675ad0be7",
+          "7c816a6a-d2f2-46b8-b7b4-2312aed8d9d2",
+          "21278e55-eb53-49f9-aa50-74acdbbb542a",
+          "6fb18d6d-9c11-44fb-ae66-8d1c8d03a24b",
+          "00daa03a-7a7c-44a2-a807-14347f85263d",
+          "27ad5049-5dcf-4342-9be8-5dfce4199295",
+          "16aab0c5-b87c-45ee-a232-c131d1607109",
+          "007723af-4eb2-48a4-b4b4-8cd2ea3954f2",
+          "page-faq-template-1",
+          "bf258c7f-65a9-4497-8ae7-8dbd4c59ae76",
+          "page-faq-template-3",
+          "f406817c-0942-4a8e-8168-67ecd742e49f",
+          "f48c5f4e-e0d8-409a-b530-085c27bf6d06",
+          "08915761-911c-4121-aa71-b4e012bc2054",
+          "7d2adcef-6df1-4e9d-b636-a2c554ab53b3",
+          "fbfc9f6c-30a6-4ca5-8880-7376aa40e842",
+          "c51d02a0-9723-49ff-8d99-2960833f8c34",
+          "1d8831a9-5360-496e-8b7e-895f38c3c1f8",
+          "3092507c-3730-4077-8465-dc7e30dc13b7",
+          "cb8d5f4e-38a0-42a0-af3f-eb00ee93e6e6",
+          "f485d6fb-2a8c-4a50-96c6-685286475e3f",
+          "9b85cb78-cfde-4e49-a513-42ae30203fd6",
+          "8598f65b-2663-484f-b225-d953915f990d",
+          "f50f7c60-68b7-4db2-aace-6c9e618bc3b5",
+          "1090558d-8d62-4039-80cc-362d13aa3204",
+          "4f44c002-559e-4283-8356-8cf63a9ebe95",
+          "fcd8cf64-01eb-46a5-93cf-42bf344f140a",
+          "f6849bff-2631-477c-80e3-2d6b5b93a39b",
+          "7348f89a-5c61-46b9-ac71-237c9fcdab96",
+          "ab03acd7-46e5-463a-ba21-fca86aa552be",
+          "88bc77d4-96eb-4328-8fe6-b9417e1231dc",
+          "9ef0ae9e-6241-41a2-a4b8-44b1254be198",
+          "4eb9998a-4350-42b8-8c41-8327bc54a0dd",
+          "c7221b9d-425c-4d6e-820f-2f22a491f3b2",
+          "ce97281e-ecbb-442f-871d-061fd3ad7fb6",
+          "a8e8aab0-af47-48e2-8f47-a2c3155b4d31",
+          "5704e269-a89f-4246-aeb3-08513cbd25e1",
+          "75d77a20-aa40-468d-a599-1d9810c83f93",
+          "a0140c23-f526-41a4-8e6c-0c65e5cea357",
+          "1a301913-45ec-472c-8266-8e8cbe9cd294",
+          "569bd337-4d78-49b1-9ee6-1e884aba3a52",
+          "bd89d672-7fa1-459b-87a4-31161af48227",
+          "eaa5834b-f991-4bd1-abe4-8c01d95c2441",
+          "1786dd7a-eede-47cb-b343-c4c7b1a4177b"
+        ],
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": false,
+          "enable_sidebar": true,
+          "sidebar_heading": "Customer Service"
+        }
+      },
+      "shipping_policy_section": {
+        "type": "shipping_policy_section",
+        "blocks": {
+          "f9d4536d-10f0-4eff-ae96-aea0640372aa": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Rush Processing",
+              "rp_details": "<p>For an additional fee most orders with customized apparel can be rushed. This fee is dynamic and changes based on demand and is charged per customized item. (if you need 3 items rushed, you will be charged 3 rush fees)<\/p><p><\/p><p>Rush orders are completed within one business day when that order is submitted before 4:00pm Central on the prior business day. Orders placed after 4:00pm Central are processed within two business days. <\/p><p><br\/>If you have any questions please reach out to our customer care team.<\/p>"
+            }
+          },
+          "ccd45b18-6ff2-486f-b0a6-6b731a20f810": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Order Processing",
+              "rp_details": "<p>Orders placed before 12:00pm Central are typically shipped the same business day. Orders that include products that require alteration or in-house customization will ship when the order is complete. The estimated processing time for customized products are indicated on the respective product page.<\/p><p>Orders with expedited shipping methods including Second and Next Day air are processed as soon as possible and most orders ship the same day when placed before 2:30pm Central.<\/p><p>Orders that include free shipping may take 1-2 additional business days to process when shipping volumes are heavy.<\/p>"
+            }
+          },
+          "3aeb232f-39c5-4b55-8b9a-af9efd78e09b": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Order Tracking",
+              "rp_details": "<p>When your order ships, you will receive an email with tracking information that can be used to track your package through delivery.<\/p>"
+            }
+          },
+          "2a0a053f-ff98-4ad0-975b-65d2ec13e12f": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Shipping Insurance",
+              "rp_details": "<p>Gerry Davis Sports offers shipping insurance provided by Route. Route offers shipping protection which extends insurance for online purchases that are lost or damaged in transit, or stolen immediately after the carrier’s proof of delivery where Route traces the transportation. This third-party insurance can be added in the shopping cart before checking out.<\/p>"
+            }
+          },
+          "1a37cfeb-d0df-4b17-923d-a3c3c3af2e46": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Free Shipping",
+              "rp_details": "<p>Orders $99+ are eligible for free shipping within the contiguous United States. <\/p><p>We use the most cost effective shipping method possible and provide estimated delivery timeframes during checkout. <\/p><p>Orders placed over the phone, live chat or email are not eligible for free shipping.<\/p>"
+            }
+          },
+          "44f3008f-abb0-4432-9e23-6ddefa58595f": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Super Saver Shipping",
+              "rp_details": "<p>Our Super Saver shipping is an economical shipping option for packages under 1 lb. shipping within the contiguous United States. Delivery times average 3-10 business days and start at $3.00. Actual rates are provided during checkout.<\/p>"
+            }
+          },
+          "e63445a4-e921-44d2-85d9-20689229c4ef": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Standard Economy",
+              "rp_details": "<p>Our Standard Economy shipping option is the most affordable shipping option we offer for packages greater than 1 lb. Delivery in the contiguous United States is typically between 3-7 business days. Shipping costs are determined at checkout and are based on the estimated package weight and destination. <\/p>"
+            }
+          },
+          "bb58c317-05e6-45b2-90d7-e6bae2748e16": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Expedited Economy",
+              "rp_details": "<p>Our Expedited Economy shipping option is the quickest ground shipping option we offer for packages greater than 1 lb. Delivery in the contiguous United States is typically between 2-4 business days. Shipping costs are determined at checkout and are based on the estimated package weight and destination. <\/p>"
+            }
+          },
+          "6529eac1-38fe-43fc-adb3-a66e805049db": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Second Day Air",
+              "rp_details": "<p>Delivery within 2 business days when your order is placed before 2:30 pm Central. Shipping costs are determined at checkout and are based on the estimated package weight and destination. <\/p>"
+            }
+          },
+          "221da2dd-cb85-412e-9b71-185dcdebbffb": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Standard Overnight",
+              "rp_details": "<p>Delivery next business day when your order is placed before 2:30 pm Central. Shipping costs are determined at checkout and are based on the estimated package weight and destination. <\/p>"
+            }
+          },
+          "ffe9bb84-e255-42b2-8d6e-cd79c7c61f67": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Priority Overnight",
+              "rp_details": "<p>Delivery next business day before 10:30 am local time when your order is placed before 2:30 pm Central. Shipping costs are determined at checkout and are based on the estimated package weight and destination. <\/p>"
+            }
+          },
+          "3cf9afd6-417b-4bd8-a366-756cedb16326": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Shipping Refunds",
+              "rp_details": "<p>Gerry Davis Sports is unable to provide refunds on any shipping charges unless the carrier has failed to deliver on time if it is a guaranteed service. If you return or refuse any package you will not be credit for those shipping charges. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "f9d4536d-10f0-4eff-ae96-aea0640372aa",
+          "ccd45b18-6ff2-486f-b0a6-6b731a20f810",
+          "3aeb232f-39c5-4b55-8b9a-af9efd78e09b",
+          "2a0a053f-ff98-4ad0-975b-65d2ec13e12f",
+          "1a37cfeb-d0df-4b17-923d-a3c3c3af2e46",
+          "44f3008f-abb0-4432-9e23-6ddefa58595f",
+          "e63445a4-e921-44d2-85d9-20689229c4ef",
+          "bb58c317-05e6-45b2-90d7-e6bae2748e16",
+          "6529eac1-38fe-43fc-adb3-a66e805049db",
+          "221da2dd-cb85-412e-9b71-185dcdebbffb",
+          "ffe9bb84-e255-42b2-8d6e-cd79c7c61f67",
+          "3cf9afd6-417b-4bd8-a366-756cedb16326"
+        ],
+        "settings": {
+          "custom_text_title": "<p>We’re serious about this game. We serve amateur sports officials across the world, and make it easier than ever to get the pro look. When you place your order, we move fast, and offer free shipping on orders over $99.<\/p>",
+          "main_heading": "Shipping Details & Policies",
+          "rp_btn": "INTERNATIONAL SHIPPING",
+          "rp_btn_url": ""
+        }
+      },
+      "return_policy_section": {
+        "type": "return_policy_section",
+        "blocks": {
+          "7cb7fecf-3d49-40a3-81fb-e1f7b66f5567": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Customized or Altered Products",
+              "rp_details": "<p>All customized and\/or altered products are final sale with the exception of alteration errors outside of normal tolerance levels or due to manufacturer defects.<\/p><p>Inseam alterations have a standard tolerance level of +\/- ½ (0.50) inch.<\/p>"
+            }
+          },
+          "fbc05b30-07f6-42b4-a4c6-f7b13684c4bb": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Personal Use Items & Intimates",
+              "rp_details": "<p>All cups, supporters, compression or baselayer bottoms and whistles are final sale. Due to the nature of these products, we are unable to repackage and resell them.<\/p>"
+            }
+          },
+          "9dcd085b-a8f9-43d5-9995-996eeb794b05": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Special Orders",
+              "rp_details": "<p>All special order items are final sale unless otherwise noted.<\/p>"
+            }
+          },
+          "375a84fc-f4f5-4b82-8a4d-987070646b4d": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Defective Products",
+              "rp_details": "<p>If you believe your item is defective and it is beyond the eligible return or exchange window please contact our customer care team with a description of your issue including photos\/video of the issue. If the item is deemed defective, we will work with the manufacture to remedy the issue and either issue a replacement or provide a refund in the method of store credit.<\/p>"
+            }
+          },
+          "a80000a8-ecef-4c66-b32c-d7e472be83a0": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Oversized Items",
+              "rp_details": "<p>Some oversized items like equipment bags may not be eligible for free returns or exchanges. If an items is not eligible for free returns or exchanges, it will be noted on the product page.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "7cb7fecf-3d49-40a3-81fb-e1f7b66f5567",
+          "fbc05b30-07f6-42b4-a4c6-f7b13684c4bb",
+          "9dcd085b-a8f9-43d5-9995-996eeb794b05",
+          "375a84fc-f4f5-4b82-8a4d-987070646b4d",
+          "a80000a8-ecef-4c66-b32c-d7e472be83a0"
+        ],
+        "settings": {
+          "custom_text_title": "<p><strong>Returns<\/strong><\/p><p>Gerry Davis Sports accepts returns of unworn, unwashed, unaltered and undamaged merchandise (see exceptions below) for a refund within 30 days of receiving your order <strong>OR<\/strong> for store credit within 60 days of receiving your order. Returns for <em>store credit are <\/em><em><strong>FREE<\/strong><\/em> and returns for refunds are $7.99 for a return label.<\/p><p><strong>Exchanges<\/strong><\/p><p>Gerry Davis Sports accepts exchanges of unworn, unwashed, unaltered and undamaged merchandise (see exceptions below) within 60 days of receiving your order. Exchanges are <em><strong>FREE<\/strong><\/em> within the contiguous United States when using our self-service returns portal.<\/p>",
+          "main_heading": "Exceptions and Special Policies",
+          "rp_btn": "START RETURN OR EXCHANGE",
+          "rp_btn_url": "https:\/\/gds.loopreturns.com\/#\/"
+        }
+      },
+      "price_match_guarantee_section": {
+        "type": "price_match_guarantee_section",
+        "blocks": {
+          "64e6ce92-1f33-469d-9663-9905c9728009": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Other online retailers",
+              "rp_details": "<p>The online prices of retailers not listed above will be considered on a case-by-case basis.<\/p>"
+            }
+          },
+          "db36337f-fd02-41ab-a2e9-2ad9b8904e40": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "International orders",
+              "rp_details": "<p>Price match is not available on any international orders unless it is from the above list of qualifying online retailers.<\/p>"
+            }
+          },
+          "50cba292-8614-42ce-81c8-3d67d20c707a": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Coupons and promotional codes",
+              "rp_details": "<p>We do not match competitors' coupons. Also, customers can either use a coupon or price match to a lower price, but not both. We do not allow a coupon to be used on a product that has a price match.<\/p>"
+            }
+          },
+          "0a5f25d6-120f-438a-9e0e-8ee7df8288a7": {
+            "type": "text",
+            "settings": {
+              "rp_heading": "Shipping",
+              "rp_details": "<p>If a qualifying online retailer charges shipping on orders over $99 or on the product in question this charge will be taken into consideration when price matching.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "64e6ce92-1f33-469d-9663-9905c9728009",
+          "db36337f-fd02-41ab-a2e9-2ad9b8904e40",
+          "50cba292-8614-42ce-81c8-3d67d20c707a",
+          "0a5f25d6-120f-438a-9e0e-8ee7df8288a7"
+        ],
+        "settings": {
+          "custom_text_title": "<p><strong>Price Match Guarantee<\/strong><\/p><p>We'll match the prices of online competitors for immediately available new products (excludes final sale or open bag\/box items). <\/p><p>1. The product must be a matching brand, model number and color to qualify. The product must also be new in the manufacturers original product packaging.<\/p><p>2. We match these qualifying online retailers: ump-attire.com, purchaseofficials.com, honigs.com, smitteez.com and anthem-sports.com.<\/p><p>To request a price match guarantee please email us or use live chat.<\/p>",
+          "main_heading": "Exceptions and Special Policies",
+          "rp_btn": "REQUEST A PRICE MATCH",
+          "rp_btn_url": "shopify:\/\/pages\/contact"
+        }
+      }
+    },
+    "content_for_index": [
+      "1633635011fa579f03",
+      "16336321396e3a0a63"
+    ],
+    "blocks": {
+      "1635509917df7f3a2e": {
+        "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "disabled": false,
+        "settings": {
+          "show_preview_data": false
+        }
+      }
+    }
+  },
+  "presets": {
+    "Classic": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_price": "#1c1d1d",
+      "color_savings_text": "#ba4444",
+      "color_borders": "#e8e8e1",
+      "color_button": "#313652",
+      "color_button_text": "#ffffff",
+      "color_sale_tag": "#ba4444",
+      "color_cart_dot": "#ba4444",
+      "color_small_image_bg": "#ffffff",
+      "color_large_image_bg": "#e7e7e7",
+      "color_header": "#313652",
+      "color_header_text": "#ffffff",
+      "color_header_search": "#ffffff",
+      "color_footer": "#f9f9fb",
+      "color_footer_border": "#e8e8e1",
+      "color_footer_text": "#242430",
+      "color_scheme_1_bg": "#ffffff",
+      "color_scheme_1_text": "#000000",
+      "color_scheme_1_texture": "marble.jpg",
+      "color_scheme_2_bg": "#acc6c3",
+      "color_scheme_2_text": "#ffffff",
+      "color_scheme_2_texture": "swirl",
+      "color_scheme_3_bg": "#ffffff",
+      "color_scheme_3_text": "#000000",
+      "color_scheme_3_texture": "darken",
+      "type_header_font_family": "libre_baskerville_n4",
+      "type_header_spacing": "0",
+      "type_header_base_size": 36,
+      "type_header_line_height": 1.2,
+      "type_header_capitalize": false,
+      "type_base_font_family": "harmonia_sans_n4",
+      "type_base_spacing": "25",
+      "type_base_size": 16,
+      "type_base_line_height": 1.5,
+      "type_navigation_style": "body",
+      "type_navigation_size": 14,
+      "type_navigation_capitalize": true,
+      "button_style": "square",
+      "cart_icon": "cart",
+      "icon_weight": "4px",
+      "icon_linecaps": "miter",
+      "superscript_decimals": true,
+      "product_grid_style": "grey-square",
+      "product_grid_image_margin": 10,
+      "collection_grid_shape": "circle",
+      "collection_grid_image": "product",
+      "collection_grid_image_margin": 17,
+      "vendor_enable": true,
+      "quick_shop_enable": true,
+      "quick_add_enable": true,
+      "product_grid_image_size": "square",
+      "product_grid_image_fill": true,
+      "product_hover_image": true,
+      "variant_type": "button",
+      "enable_payment_button": true,
+      "sku_enable": true,
+      "quantity_enable": false,
+      "inventory_enable": true,
+      "inventory_transfers_enable": true,
+      "surface_pickup_enable": true,
+      "product_zoom_enable": true,
+      "sales_point_3": "Carbon neutral",
+      "product_color_swatches": true,
+      "collection_color_swatches": true,
+      "product_contact": true,
+      "enable_product_reviews": true,
+      "cart_type": "dropdown",
+      "cart_additional_buttons": false,
+      "cart_notes_enable": false,
+      "cart_terms_conditions_enable": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "show_breadcrumbs": false,
+      "show_breadcrumbs_collection_link": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#111111",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "predictive_search_show_vendor": true,
+      "predictive_search_show_price": true,
+      "type_product_style": "body",
+      "type_product_capitalize": true,
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 0,
+      "color_image_overlay_text_shadow": 28,
+      "type_headers_align_text": false,
+      "type_body_align_text": true,
+      "color_announcement": "#000000",
+      "color_announcement_text": "#ffffff",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#e6e6e6",
+      "type_collection_font": "body",
+      "type_collection_size": 18,
+      "collection_grid_style": "below",
+      "collection_grid_text_align": "center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 10,
+      "collection_grid_gutter": true,
+      "breadcrumb": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "below",
+            "mega_products": true,
+            "header_sticky": true,
+            "sticky_index": false,
+            "sticky_collection": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_capitalize_first": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "1499789718857": {
+          "type": "featured-collections",
+          "blocks": {
+            "1499789718857-0": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "deff6d8f-5200-4686-b6aa-bcfff90ddeef": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-1": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-2": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-3": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "e2697eb6-4ee1-4531-8beb-f000e64b262c": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "bdee223b-343e-40da-97f5-d2f936098982": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "87af0dc3-6ea7-4a4e-a530-47a86583d1d9": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "e15fd0c4-d11d-498d-8146-bf6198f0f9c4": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "62c4462c-e69d-4b80-9b86-e137c4fd84cf": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "3a8d8b83-f7c4-4265-aaae-55621028d824": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "9d71d183-dc21-4253-9b92-e2eaaff7bef9": {
+              "type": "collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1499789718857-0",
+            "deff6d8f-5200-4686-b6aa-bcfff90ddeef",
+            "1499789718857-1",
+            "1499789718857-2",
+            "1499789718857-3",
+            "e2697eb6-4ee1-4531-8beb-f000e64b262c"
+          ],
+          "settings": {
+            "divider": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "enabled",
+            "popup_seconds": 60,
+            "popup_days": 30,
+            "popup_title": "Get 10% off your first purchase.",
+            "popup_text": "<p>Sign up today and we&#x27;ll send you a 10% discount code towards your first purchase. Some restrictions apply.<\/p>",
+            "color_scheme": "2",
+            "enable_newsletter": true,
+            "button_label": "Optional button",
+            "enable_button": false
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+            "enable": true,
+            "collection_image_enable": true,
+            "parallax": false
+          }
+        },
+        "1525115199973": {
+          "type": "blog-posts",
+          "settings": {
+            "title": "From the journal",
+            "blog": "news",
+            "blog_show_tags": true,
+            "blog_show_date": false,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "blog_image_size": "wide",
+            "divider": false
+          }
+        },
+        "1525295772132": {
+          "type": "featured-collection",
+          "settings": {
+            "count": 5,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "footer-promotions": {
+          "type": "footer-promotions",
+          "blocks": {
+            "footer-promotions-0": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "color_scheme": "1"
+              }
+            },
+            "footer-promotions-1": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "color_scheme": "none"
+              }
+            },
+            "footer-promotions-2": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "color_scheme": "2"
+              }
+            }
+          },
+          "block_order": [
+            "footer-promotions-0",
+            "footer-promotions-1",
+            "footer-promotions-2"
+          ],
+          "settings": {
+            "hide_homepage": false,
+            "image_size": "wide"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "product_recommendations_heading": "You may also like"
+          }
+        },
+        "recently-viewed": {
+          "type": "recently-viewed",
+          "settings": {
+          }
+        },
+        "toolbar": {
+          "type": "toolbar",
+          "settings": {
+            "toolbar_social": false,
+            "show_locale_selector": false,
+            "show_currency_selector": false
+          }
+        },
+        "16154004051a1fa86e": {
+          "type": "featured-collection",
+          "settings": {
+            "count": 5,
+            "mobile_scrollable": false,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "blog-sidebar": {
+          "type": "blog-sidebar",
+          "blocks": {
+            "ff7a549d-af1e-4e72-93c7-326f5ace6fbb": {
+              "type": "article",
+              "settings": {
+              }
+            },
+            "a9c19dcb-3172-4927-b454-954715dfdfbc": {
+              "type": "article",
+              "settings": {
+              }
+            },
+            "a0382939-ffb8-4144-83cc-9565ad819150": {
+              "type": "article",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "ff7a549d-af1e-4e72-93c7-326f5ace6fbb",
+            "a9c19dcb-3172-4927-b454-954715dfdfbc",
+            "a0382939-ffb8-4144-83cc-9565ad819150"
+          ],
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "fe6a67a0-686e-435b-a946-f28802053c97": {
+              "type": "contact",
+              "settings": {
+                "phone": "+1 800 123 1234",
+                "enable_social": true
+              }
+            },
+            "c296bc3e-1d7f-4750-b993-050176521596": {
+              "type": "payment",
+              "settings": {
+                "show_payment_icons": true,
+                "show_locale_selector": true,
+                "show_currency_selector": true
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "fe6a67a0-686e-435b-a946-f28802053c97",
+            "c296bc3e-1d7f-4750-b993-050176521596"
+          ],
+          "settings": {
+            "show_newsletter": true,
+            "newsletter_richtext": "<p>Subscribe today and get 10% off your first purchase<\/p>",
+            "show_copyright": true,
+            "copyright_text": "",
+            "policies_menu": "policies"
+          }
+        },
+        "16166970499d200586": {
+          "type": "promo-grid",
+          "blocks": {
+            "8fcbacfa-2b4f-4197-a9c7-d2c9cce20ef5": {
+              "type": "banner",
+              "settings": {
+                "color_scheme": "2"
+              }
+            },
+            "39d950a6-389b-415c-b815-62cfd8e07480": {
+              "type": "product",
+              "settings": {
+                "enable_price": true,
+                "width": "50",
+                "color_scheme": "1"
+              }
+            },
+            "a6ec910f-4f19-440b-8963-596f8c2e1ca8": {
+              "type": "product",
+              "settings": {
+                "enable_price": true,
+                "width": "50",
+                "color_scheme": "1"
+              }
+            }
+          },
+          "block_order": [
+            "8fcbacfa-2b4f-4197-a9c7-d2c9cce20ef5",
+            "39d950a6-389b-415c-b815-62cfd8e07480",
+            "a6ec910f-4f19-440b-8963-596f8c2e1ca8"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "16167068142513abfa": {
+          "type": "logo-list",
+          "blocks": {
+            "16167068142513abfa-0": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "16167068142513abfa-1": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "16167068142513abfa-2": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "16167068142513abfa-3": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "052533e5-a371-4932-a016-34def42383db": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "ba0ef081-a41c-4913-a3db-412ecb522875": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "28f0d3a8-34e2-4ab3-aed2-005079fb606c": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "9a3e96b5-aa08-4445-9220-c9d3f38ebb1f": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "a8344f31-4814-45bb-bcbe-344add4a8906": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "68c87a86-7a8c-4bfe-ae97-6e35be8bd1e1": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "3220078b-da32-490e-aad7-343808280226": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "11926c01-2a95-4f6f-b2fc-42255d8237e5": {
+              "type": "logo_image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "16167068142513abfa-0",
+            "16167068142513abfa-1",
+            "16167068142513abfa-2",
+            "16167068142513abfa-3",
+            "052533e5-a371-4932-a016-34def42383db",
+            "ba0ef081-a41c-4913-a3db-412ecb522875"
+          ],
+          "settings": {
+            "title": "Popular brands",
+            "divider": false
+          }
+        },
+        "password-header": {
+          "type": "password-header",
+          "settings": {
+            "desktop_logo_height": 100,
+            "mobile_logo_height": 60
+          }
+        },
+        "password-content": {
+          "type": "password-content",
+          "settings": {
+            "title": "Be the first to know",
+            "show_password_message": false,
+            "text": "",
+            "newsletter_enable": true,
+            "newsletter_placeholder": "Enter your email",
+            "show_share_buttons": true,
+            "show_image": true
+          }
+        },
+        "161789469679fffe6b": {
+          "type": "slideshow-split",
+          "blocks": {
+            "161789469679fffe6b-2": {
+              "type": "slide",
+              "settings": {
+                "title_size": 60,
+                "link_text_2": "",
+                "text_position": "right",
+                "indent_image": false,
+                "focal_point": "center center",
+                "color_scheme": "1"
+              }
+            },
+            "161789469679fffe6b-1": {
+              "type": "slide",
+              "settings": {
+                "top_subheading": "",
+                "title_size": 60,
+                "text_position": "left",
+                "indent_image": false,
+                "focal_point": "center center",
+                "color_scheme": "2"
+              }
+            },
+            "161789469679fffe6b-0": {
+              "type": "slide",
+              "settings": {
+                "title_size": 70,
+                "text_position": "left",
+                "indent_image": true,
+                "focal_point": "center center",
+                "color_scheme": "1"
+              }
+            }
+          },
+          "block_order": [
+            "161789469679fffe6b-2",
+            "161789469679fffe6b-1",
+            "161789469679fffe6b-0"
+          ],
+          "settings": {
+            "full_width": true,
+            "height": 600,
+            "height_mobile": 450,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "161789690258ed465f": {
+          "type": "newsletter",
+          "settings": {
+            "color_scheme": "2"
+          }
+        },
+        "1617897211fa46356d": {
+          "type": "background-image-text",
+          "disabled": true,
+          "settings": {
+            "focal_point": "bottom",
+            "layout": "left",
+            "height": 550,
+            "parallax": false
+          }
+        },
+        "16194500635e2e2d35": {
+          "type": "promo-grid",
+          "blocks": {
+            "95ee7881-6f87-497a-8b37-65a8307e81de": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "color_scheme": "3"
+              }
+            },
+            "58061451-10b9-4cc7-95b8-f03131795311": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "color_scheme": "3"
+              }
+            }
+          },
+          "block_order": [
+            "95ee7881-6f87-497a-8b37-65a8307e81de",
+            "58061451-10b9-4cc7-95b8-f03131795311"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1623090756d994291c": {
+          "type": "slideshow",
+          "blocks": {
+            "1623090756d994291c-0": {
+              "type": "hero",
+              "settings": {
+                "title_size": 56,
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "overlay_opacity": 0,
+                "focal_point": "center center"
+              }
+            },
+            "1623090756d994291c-1": {
+              "type": "hero",
+              "settings": {
+                "title_size": 55,
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "overlay_opacity": 0,
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1623090756d994291c-0",
+            "1623090756d994291c-1"
+          ],
+          "settings": {
+            "full_width": true,
+            "desktop_size": -10,
+            "mobile_size": 0,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 5
+          }
+        },
+        "16242877764ba69f0b": {
+          "type": "slideshow-split",
+          "blocks": {
+            "16242877764ba69f0b-0": {
+              "type": "slide",
+              "settings": {
+                "title_size": 45,
+                "link_text_2": "",
+                "text_position": "left",
+                "indent_image": false,
+                "focal_point": "bottom center",
+                "color_scheme": "1"
+              }
+            }
+          },
+          "block_order": [
+            "16242877764ba69f0b-0"
+          ],
+          "settings": {
+            "full_width": true,
+            "height": 550,
+            "height_mobile": 450,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        }
+      },
+      "content_for_index": [
+        "161789469679fffe6b",
+        "1499789718857",
+        "16194500635e2e2d35",
+        "1525295772132",
+        "1623090756d994291c",
+        "16154004051a1fa86e",
+        "16166970499d200586",
+        "16167068142513abfa",
+        "161789690258ed465f",
+        "1525115199973",
+        "1617897211fa46356d",
+        "16242877764ba69f0b"
+      ]
+    },
+    "Modern": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_price": "#1c1d1d",
+      "color_savings_text": "#ba4444",
+      "color_borders": "#e8e8e1",
+      "color_button": "#111111",
+      "color_button_text": "#ffffff",
+      "color_sale_tag": "#ba4444",
+      "color_cart_dot": "#ba4444",
+      "color_small_image_bg": "#ffffff",
+      "color_large_image_bg": "#0f0f0f",
+      "color_header": "#111212",
+      "color_header_text": "#ffffff",
+      "color_header_search": "#ffffff",
+      "color_footer": "#ffffff",
+      "color_footer_border": "#e8e8e1",
+      "color_footer_text": "#000000",
+      "color_scheme_1_bg": "#ba4444",
+      "color_scheme_1_text": "#ffffff",
+      "color_scheme_1_texture": "swirl",
+      "color_scheme_2_bg": "#ffffff",
+      "color_scheme_2_text": "#000000",
+      "color_scheme_2_texture": "paper.jpg",
+      "color_scheme_3_bg": "#fcf4f1",
+      "color_scheme_3_text": "#000000",
+      "color_scheme_3_texture": "squiggle",
+      "type_header_font_family": "harmonia_sans_n6",
+      "type_header_spacing": "50",
+      "type_header_base_size": 32,
+      "type_header_line_height": 1.1,
+      "type_header_capitalize": false,
+      "type_base_font_family": "century_gothic_n4",
+      "type_base_spacing": "50",
+      "type_base_size": 15,
+      "type_base_line_height": 1.6,
+      "type_navigation_style": "body",
+      "type_navigation_size": 14,
+      "type_navigation_capitalize": true,
+      "button_style": "square",
+      "cart_icon": "bag-minimal",
+      "icon_weight": "3px",
+      "icon_linecaps": "miter",
+      "superscript_decimals": true,
+      "product_grid_style": "simple",
+      "product_grid_image_margin": 10,
+      "collection_grid_shape": "circle",
+      "collection_grid_image": "product",
+      "collection_grid_image_margin": 15,
+      "vendor_enable": true,
+      "quick_shop_enable": true,
+      "quick_add_enable": true,
+      "product_grid_image_size": "square",
+      "product_grid_image_fill": false,
+      "product_hover_image": true,
+      "variant_type": "button",
+      "enable_payment_button": true,
+      "sku_enable": true,
+      "quantity_enable": true,
+      "inventory_enable": true,
+      "inventory_transfers_enable": true,
+      "surface_pickup_enable": true,
+      "product_zoom_enable": true,
+      "product_color_swatches": false,
+      "collection_color_swatches": false,
+      "product_contact": true,
+      "enable_product_reviews": true,
+      "cart_type": "dropdown",
+      "cart_additional_buttons": false,
+      "cart_notes_enable": false,
+      "cart_terms_conditions_enable": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "show_breadcrumbs": false,
+      "show_breadcrumbs_collection_link": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#111111",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "predictive_search_show_vendor": true,
+      "predictive_search_show_price": true,
+      "type_product_style": "body",
+      "type_product_capitalize": true,
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 0,
+      "color_image_overlay_text_shadow": 28,
+      "type_headers_align_text": false,
+      "type_body_align_text": false,
+      "color_announcement": "#000000",
+      "color_announcement_text": "#ffffff",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#e6e6e6",
+      "type_collection_font": "body",
+      "type_collection_size": 18,
+      "collection_grid_style": "below",
+      "collection_grid_text_align": "center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 10,
+      "collection_grid_gutter": true,
+      "breadcrumb": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "left",
+            "header_sticky": true,
+            "sticky_index": false,
+            "sticky_collection": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_capitalize_first": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": true,
+            "blog_image_size": "wide"
+          }
+        },
+        "1499789718857": {
+          "type": "featured-collections",
+          "blocks": {
+            "1499789718857-0": {
+              "type": "collection",
+              "settings": {
+                "title": ""
+              }
+            },
+            "1499789718857-1": {
+              "type": "collection",
+              "settings": {
+                "title": ""
+              }
+            },
+            "1499789718857-2": {
+              "type": "collection",
+              "settings": {
+                "title": ""
+              }
+            },
+            "1499789718857-3": {
+              "type": "collection",
+              "settings": {
+                "title": ""
+              }
+            },
+            "e2697eb6-4ee1-4531-8beb-f000e64b262c": {
+              "type": "collection",
+              "settings": {
+                "title": ""
+              }
+            },
+            "bdee223b-343e-40da-97f5-d2f936098982": {
+              "type": "collection",
+              "settings": {
+                "title": ""
+              }
+            }
+          },
+          "block_order": [
+            "1499789718857-0",
+            "1499789718857-1",
+            "1499789718857-2",
+            "1499789718857-3",
+            "e2697eb6-4ee1-4531-8beb-f000e64b262c",
+            "bdee223b-343e-40da-97f5-d2f936098982"
+          ],
+          "settings": {
+            "title": "Dive in",
+            "divider": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "enabled",
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "popup_title": "Save 10% off your first purchase",
+            "popup_text": "<p>Sign up today and we&#x27;ll send you a 10% discount code towards your first purchase.<\/p>",
+            "color_scheme": "3",
+            "enable_newsletter": true,
+            "button_label": "Optional button",
+            "enable_button": false
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+            "enable": true,
+            "collection_image_enable": true,
+            "parallax": false
+          }
+        },
+        "1525115199973": {
+          "type": "blog-posts",
+          "settings": {
+            "title": "From the journal",
+            "blog": "news",
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "wide",
+            "divider": false
+          }
+        },
+        "1525295772132": {
+          "type": "featured-collection",
+          "settings": {
+            "count": 10,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "footer-promotions": {
+          "type": "footer-promotions",
+          "blocks": {
+            "footer-promotions-0": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "color_scheme": "1"
+              }
+            },
+            "footer-promotions-1": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "color_scheme": "3"
+              }
+            },
+            "footer-promotions-2": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "color_scheme": "2"
+              }
+            }
+          },
+          "block_order": [
+            "footer-promotions-0",
+            "footer-promotions-1",
+            "footer-promotions-2"
+          ],
+          "settings": {
+            "hide_homepage": false,
+            "image_size": "wide"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "product_recommendations_heading": "You may also like"
+          }
+        },
+        "recently-viewed": {
+          "type": "recently-viewed",
+          "settings": {
+          }
+        },
+        "toolbar": {
+          "type": "toolbar",
+          "blocks": {
+            "0b066516-effd-470b-ba3b-fc9f69d6c6ae": {
+              "type": "announcement",
+              "settings": {
+              }
+            },
+            "cff431d4-9a3a-4622-a731-bd2d4c67a45c": {
+              "type": "announcement",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "0b066516-effd-470b-ba3b-fc9f69d6c6ae",
+            "cff431d4-9a3a-4622-a731-bd2d4c67a45c"
+          ],
+          "settings": {
+          }
+        },
+        "blog-sidebar": {
+          "type": "blog-sidebar",
+          "blocks": {
+            "ff7a549d-af1e-4e72-93c7-326f5ace6fbb": {
+              "type": "article",
+              "settings": {
+              }
+            },
+            "a9c19dcb-3172-4927-b454-954715dfdfbc": {
+              "type": "article",
+              "settings": {
+              }
+            },
+            "475da60e-4773-448e-9c02-92633e2e15f3": {
+              "type": "article",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "ff7a549d-af1e-4e72-93c7-326f5ace6fbb",
+            "a9c19dcb-3172-4927-b454-954715dfdfbc",
+            "475da60e-4773-448e-9c02-92633e2e15f3"
+          ],
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "enable_account_link": false
+              }
+            },
+            "fe6a67a0-686e-435b-a946-f28802053c97": {
+              "type": "contact",
+              "settings": {
+                "phone": "+1 800 123 1234",
+                "enable_social": true
+              }
+            },
+            "c296bc3e-1d7f-4750-b993-050176521596": {
+              "type": "payment",
+              "settings": {
+                "show_payment_icons": true,
+                "show_locale_selector": true,
+                "show_currency_selector": true
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "fe6a67a0-686e-435b-a946-f28802053c97",
+            "c296bc3e-1d7f-4750-b993-050176521596"
+          ],
+          "settings": {
+            "show_newsletter": true,
+            "newsletter_richtext": "<p>Subscribe today and get 10% off your first purchase<\/p>",
+            "show_copyright": true,
+            "copyright_text": "",
+            "policies_menu": "policies"
+          }
+        },
+        "password-header": {
+          "type": "password-header",
+          "settings": {
+            "desktop_logo_height": 100,
+            "mobile_logo_height": 60
+          }
+        },
+        "password-content": {
+          "type": "password-content",
+          "settings": {
+            "title": "Be the first to know",
+            "show_password_message": false,
+            "text": "",
+            "newsletter_enable": true,
+            "newsletter_placeholder": "Enter your email",
+            "show_share_buttons": true,
+            "show_image": true
+          }
+        },
+        "16166836436b96a4af": {
+          "type": "promo-grid",
+          "blocks": {
+            "9a0de8d9-d719-4516-a7d2-cb25ae0c0687": {
+              "type": "banner",
+              "settings": {
+                "color_scheme": "1"
+              }
+            }
+          },
+          "block_order": [
+            "9a0de8d9-d719-4516-a7d2-cb25ae0c0687"
+          ],
+          "settings": {
+            "full_width": true,
+            "gutter_size": 0,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1616683902f20dcab4": {
+          "type": "promo-grid",
+          "disabled": true,
+          "blocks": {
+            "1616683902f20dcab4-0": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "Spring Savings",
+                "textarea": "Take an extra 15% off all clearance make up and accessories",
+                "cta_text1": "Shop Sale",
+                "video_url": "",
+                "width": "100",
+                "height": 500,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "color_accent": "#d95d57"
+              }
+            }
+          },
+          "block_order": [
+            "1616683902f20dcab4-0"
+          ],
+          "settings": {
+            "full_width": true,
+            "gutter_size": 15,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1616684538a6424589": {
+          "type": "text-columns",
+          "blocks": {
+            "1616684538a6424589-0": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 650
+              }
+            },
+            "1616684538a6424589-1": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 650
+              }
+            },
+            "1616684538a6424589-2": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 650
+              }
+            }
+          },
+          "block_order": [
+            "1616684538a6424589-0",
+            "1616684538a6424589-1",
+            "1616684538a6424589-2"
+          ],
+          "settings": {
+            "align_text": "left",
+            "divider": false,
+            "color_scheme": "none"
+          }
+        },
+        "1617151606b67977d8": {
+          "type": "featured-collection",
+          "settings": {
+            "count": 5,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "161715166764325dd6": {
+          "type": "featured-collection",
+          "settings": {
+            "count": 5,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "16171517359a3ac16d": {
+          "type": "newsletter",
+          "settings": {
+            "color_scheme": "2"
+          }
+        },
+        "1617310925d02ece36": {
+          "type": "logo-list",
+          "blocks": {
+            "1617310925d02ece36-0": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "1617310925d02ece36-1": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "1617310925d02ece36-2": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "1617310925d02ece36-3": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "1617310925d02ece36-4": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "1617310925d02ece36-5": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "ddabf70c-c1ff-4c9e-8d85-b345786fb672": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "311e6ad2-7651-46be-b7ad-c7b7aad6809a": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "edc4748d-60b5-4867-9226-70d7ac8c340a": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "e595360b-6a4c-42d1-a8ed-2385f2849e53": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "7d8ce86d-a11f-432a-be0f-71f344f62f4b": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "c5038730-060a-400e-be45-dd3acf594d97": {
+              "type": "logo_image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1617310925d02ece36-0",
+            "1617310925d02ece36-1",
+            "1617310925d02ece36-2",
+            "1617310925d02ece36-3",
+            "1617310925d02ece36-4",
+            "1617310925d02ece36-5"
+          ],
+          "settings": {
+            "title": "Top brands",
+            "divider": false
+          }
+        },
+        "1617908311da4ac677": {
+          "type": "slideshow",
+          "blocks": {
+            "1617908311da4ac677-0": {
+              "type": "hero",
+              "settings": {
+                "title_size": 60,
+                "color_accent": "#ffffff",
+                "text_align": "vertical-bottom horizontal-left",
+                "overlay_opacity": 0,
+                "focal_point": "center center"
+              }
+            },
+            "1617908311da4ac677-1": {
+              "type": "hero",
+              "settings": {
+                "title_size": 60,
+                "color_accent": "#ffffff",
+                "text_align": "vertical-bottom horizontal-left",
+                "overlay_opacity": 0,
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1617908311da4ac677-0",
+            "1617908311da4ac677-1"
+          ],
+          "settings": {
+            "full_width": true,
+            "desktop_size": -20,
+            "mobile_size": 40,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "162310070308439548": {
+          "type": "text-and-image",
+          "disabled": true,
+          "settings": {
+            "image_width": 500,
+            "layout": "left",
+            "color_scheme": "none",
+            "divider": false
+          }
+        },
+        "1623111138960dc8ca": {
+          "type": "slideshow-split",
+          "blocks": {
+            "1623111138960dc8ca-1": {
+              "type": "slide",
+              "settings": {
+                "title_size": 50,
+                "text_position": "left",
+                "indent_image": false,
+                "focal_point": "center center",
+                "color_scheme": "1"
+              }
+            }
+          },
+          "block_order": [
+            "1623111138960dc8ca-1"
+          ],
+          "settings": {
+            "full_width": true,
+            "height": 550,
+            "height_mobile": 450,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "162311120948120390": {
+          "type": "slideshow-split",
+          "blocks": {
+            "162311120948120390-0": {
+              "type": "slide",
+              "settings": {
+                "title_size": 45,
+                "text_position": "right",
+                "indent_image": false,
+                "focal_point": "center center",
+                "color_scheme": "2"
+              }
+            }
+          },
+          "block_order": [
+            "162311120948120390-0"
+          ],
+          "settings": {
+            "full_width": true,
+            "height": 550,
+            "height_mobile": 450,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "16231124408322ffb1": {
+          "type": "slideshow-split",
+          "blocks": {
+            "16231124408322ffb1-0": {
+              "type": "slide",
+              "settings": {
+                "title_size": 40,
+                "text_position": "right",
+                "indent_image": false,
+                "focal_point": "center center",
+                "color_scheme": "2"
+              }
+            }
+          },
+          "block_order": [
+            "16231124408322ffb1-0"
+          ],
+          "settings": {
+            "full_width": true,
+            "height": 550,
+            "height_mobile": 400,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "1624288331947e9bda": {
+          "type": "testimonials",
+          "blocks": {
+            "1624288331947e9bda-0": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            },
+            "1624288331947e9bda-1": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            },
+            "1624288331947e9bda-2": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            },
+            "1624288331947e9bda-3": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            },
+            "1624288331947e9bda-4": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            }
+          },
+          "block_order": [
+            "1624288331947e9bda-0",
+            "1624288331947e9bda-1",
+            "1624288331947e9bda-2",
+            "1624288331947e9bda-3",
+            "1624288331947e9bda-4"
+          ],
+          "settings": {
+            "title": "Don't take our word for it",
+            "align_text": "center",
+            "round_images": true,
+            "color_scheme": "3"
+          }
+        }
+      },
+      "content_for_index": [
+        "1617908311da4ac677",
+        "16166836436b96a4af",
+        "1525295772132",
+        "162311120948120390",
+        "1499789718857",
+        "1623111138960dc8ca",
+        "1617310925d02ece36",
+        "1616683902f20dcab4",
+        "162310070308439548",
+        "1617151606b67977d8",
+        "1624288331947e9bda",
+        "1616684538a6424589",
+        "16171517359a3ac16d",
+        "161715166764325dd6",
+        "16231124408322ffb1",
+        "1525115199973"
+      ]
+    },
+    "Contemporary": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_price": "#1c1d1d",
+      "color_savings_text": "#ba4444",
+      "color_borders": "#e8e8e1",
+      "color_button": "#000000",
+      "color_button_text": "#ffffff",
+      "color_sale_tag": "#ba4444",
+      "color_cart_dot": "#ba4444",
+      "color_small_image_bg": "#ffffff",
+      "color_large_image_bg": "#e7e7e7",
+      "color_header": "#ffffff",
+      "color_header_text": "#000000",
+      "color_header_search": "#f7f7f7",
+      "color_footer": "#ffffff",
+      "color_footer_border": "#e8e8e1",
+      "color_footer_text": "#242430",
+      "color_scheme_1_bg": "#ffffff",
+      "color_scheme_1_text": "#000000",
+      "color_scheme_1_texture": "marble.jpg",
+      "color_scheme_2_bg": "#fff9ea",
+      "color_scheme_2_text": "#812f2b",
+      "color_scheme_2_texture": "paper.jpg",
+      "color_scheme_3_bg": "#56654e",
+      "color_scheme_3_text": "#fff6df",
+      "color_scheme_3_texture": "swirl",
+      "type_header_font_family": "itc_stepp_n7",
+      "type_header_spacing": "0",
+      "type_header_base_size": 50,
+      "type_header_line_height": 1.1,
+      "type_header_capitalize": false,
+      "type_base_font_family": "harmonia_sans_n4",
+      "type_base_spacing": "25",
+      "type_base_size": 17,
+      "type_base_line_height": 1.5,
+      "type_navigation_style": "body",
+      "type_navigation_size": 15,
+      "type_navigation_capitalize": true,
+      "edges": "square",
+      "button_style": "square",
+      "cart_icon": "cart",
+      "icon_weight": "4px",
+      "icon_linecaps": "miter",
+      "superscript_decimals": true,
+      "product_grid_style": "gridlines-thin",
+      "product_grid_image_margin": 5,
+      "collection_grid_shape": "square",
+      "collection_grid_image": "product",
+      "collection_grid_image_margin": 5,
+      "vendor_enable": false,
+      "quick_shop_enable": true,
+      "quick_add_enable": true,
+      "product_grid_image_size": "square",
+      "product_grid_image_fill": true,
+      "product_hover_image": true,
+      "variant_type": "button",
+      "enable_payment_button": true,
+      "sku_enable": true,
+      "quantity_enable": false,
+      "inventory_enable": true,
+      "inventory_transfers_enable": true,
+      "surface_pickup_enable": true,
+      "product_zoom_enable": true,
+      "sales_point_1": "Free worldwide shipping",
+      "sales_point_2_icon": "checkmark",
+      "product_color_swatches": true,
+      "collection_color_swatches": true,
+      "product_contact": false,
+      "cart_type": "dropdown",
+      "cart_additional_buttons": false,
+      "cart_collection": "all",
+      "cart_notes_enable": true,
+      "cart_terms_conditions_enable": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "show_breadcrumbs": true,
+      "show_breadcrumbs_collection_link": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#111111",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 0,
+      "color_image_overlay_text_shadow": 28,
+      "type_headers_align_text": false,
+      "type_body_align_text": true,
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#e6e6e6",
+      "type_collection_font": "body",
+      "type_collection_size": 18,
+      "collection_grid_style": "below",
+      "collection_grid_text_align": "center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 10,
+      "collection_grid_gutter": true,
+      "breadcrumb": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "below",
+            "mega_products": true,
+            "header_sticky": true,
+            "sticky_index": false,
+            "sticky_collection": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_capitalize_first": true,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "1499789718857": {
+          "type": "featured-collections",
+          "blocks": {
+            "deff6d8f-5200-4686-b6aa-bcfff90ddeef": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-1": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-2": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "e2697eb6-4ee1-4531-8beb-f000e64b262c": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-0": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-3": {
+              "type": "collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "deff6d8f-5200-4686-b6aa-bcfff90ddeef",
+            "1499789718857-1",
+            "1499789718857-2",
+            "e2697eb6-4ee1-4531-8beb-f000e64b262c",
+            "1499789718857-0",
+            "1499789718857-3"
+          ],
+          "settings": {
+            "title": "All your favourites",
+            "divider": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "enabled",
+            "popup_seconds": 60,
+            "popup_days": 30,
+            "popup_title": "Sign up and save",
+            "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>",
+            "color_scheme": "3",
+            "enable_newsletter": true,
+            "button_label": "Optional button",
+            "enable_button": false
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+            "enable": true,
+            "collection_image_enable": true,
+            "parallax": false
+          }
+        },
+        "1525115199973": {
+          "type": "blog-posts",
+          "settings": {
+            "blog": "news",
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "blog_image_size": "landscape",
+            "divider": false
+          }
+        },
+        "1525295772132": {
+          "type": "featured-collection",
+          "settings": {
+            "count": 5,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "footer-promotions": {
+          "type": "footer-promotions",
+          "blocks": {
+            "footer-promotions-2": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "color_scheme": "3"
+              }
+            },
+            "footer-promotions-0": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "color_scheme": "1"
+              }
+            },
+            "footer-promotions-1": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "color_scheme": "none"
+              }
+            }
+          },
+          "block_order": [
+            "footer-promotions-2",
+            "footer-promotions-0",
+            "footer-promotions-1"
+          ],
+          "settings": {
+            "hide_homepage": false,
+            "image_size": "square"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "product_recommendations_heading": "You may also like"
+          }
+        },
+        "recently-viewed": {
+          "type": "recently-viewed",
+          "settings": {
+          }
+        },
+        "toolbar": {
+          "type": "toolbar",
+          "settings": {
+            "toolbar_social": false,
+            "show_locale_selector": false,
+            "show_currency_selector": false
+          }
+        },
+        "16154004051a1fa86e": {
+          "type": "featured-collection",
+          "settings": {
+            "count": 5,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "blog-sidebar": {
+          "type": "blog-sidebar",
+          "blocks": {
+            "a9c19dcb-3172-4927-b454-954715dfdfbc": {
+              "type": "article",
+              "settings": {
+              }
+            },
+            "ff7a549d-af1e-4e72-93c7-326f5ace6fbb": {
+              "type": "article",
+              "settings": {
+              }
+            },
+            "a0382939-ffb8-4144-83cc-9565ad819150": {
+              "type": "article",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "a9c19dcb-3172-4927-b454-954715dfdfbc",
+            "ff7a549d-af1e-4e72-93c7-326f5ace6fbb",
+            "a0382939-ffb8-4144-83cc-9565ad819150"
+          ],
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "enable_account_link": false
+              }
+            },
+            "fe6a67a0-686e-435b-a946-f28802053c97": {
+              "type": "contact",
+              "settings": {
+                "phone": "+1 800 123 1234",
+                "enable_social": true
+              }
+            },
+            "c296bc3e-1d7f-4750-b993-050176521596": {
+              "type": "payment",
+              "settings": {
+                "show_payment_icons": true,
+                "show_locale_selector": true,
+                "show_currency_selector": true
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "fe6a67a0-686e-435b-a946-f28802053c97",
+            "c296bc3e-1d7f-4750-b993-050176521596"
+          ],
+          "settings": {
+            "show_newsletter": true,
+            "newsletter_richtext": "<p>Subscribe today and get 10% off your first purchase<\/p>",
+            "show_copyright": true
+          }
+        },
+        "16166970499d200586": {
+          "type": "promo-grid",
+          "blocks": {
+            "8fcbacfa-2b4f-4197-a9c7-d2c9cce20ef5": {
+              "type": "banner",
+              "settings": {
+                "heading": "Free worldwide shipping",
+                "color_scheme": "3"
+              }
+            },
+            "84d708d3-fa85-41cb-b184-2def6e310102": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "color_scheme": "none"
+              }
+            },
+            "ff6095f4-fe8a-452f-a564-f3df78725e16": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "color_scheme": "none"
+              }
+            }
+          },
+          "block_order": [
+            "8fcbacfa-2b4f-4197-a9c7-d2c9cce20ef5",
+            "84d708d3-fa85-41cb-b184-2def6e310102",
+            "ff6095f4-fe8a-452f-a564-f3df78725e16"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": true,
+            "space_below": true
+          }
+        },
+        "16167068142513abfa": {
+          "type": "logo-list",
+          "blocks": {
+            "16167068142513abfa-0": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "16167068142513abfa-1": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "16167068142513abfa-2": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "16167068142513abfa-3": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "052533e5-a371-4932-a016-34def42383db": {
+              "type": "logo_image",
+              "settings": {
+              }
+            },
+            "ba0ef081-a41c-4913-a3db-412ecb522875": {
+              "type": "logo_image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "16167068142513abfa-0",
+            "16167068142513abfa-1",
+            "16167068142513abfa-2",
+            "16167068142513abfa-3",
+            "052533e5-a371-4932-a016-34def42383db",
+            "ba0ef081-a41c-4913-a3db-412ecb522875"
+          ],
+          "settings": {
+            "divider": false
+          }
+        },
+        "password-header": {
+          "type": "password-header",
+          "settings": {
+            "desktop_logo_height": 100,
+            "mobile_logo_height": 60
+          }
+        },
+        "password-content": {
+          "type": "password-content",
+          "settings": {
+            "show_password_message": false,
+            "newsletter_enable": true,
+            "show_share_buttons": true,
+            "show_image": true
+          }
+        },
+        "161789469679fffe6b": {
+          "type": "slideshow-split",
+          "blocks": {
+            "161789469679fffe6b-0": {
+              "type": "slide",
+              "settings": {
+                "title_size": 80,
+                "text_position": "right",
+                "indent_image": false,
+                "focal_point": "center center",
+                "color_scheme": "1"
+              }
+            },
+            "95bf295f-5a93-4117-8b8d-23ef040778d9": {
+              "type": "slide",
+              "settings": {
+                "title_size": 70,
+                "text_position": "left",
+                "indent_image": false,
+                "focal_point": "center center",
+                "color_scheme": "2"
+              }
+            }
+          },
+          "block_order": [
+            "161789469679fffe6b-0",
+            "95bf295f-5a93-4117-8b8d-23ef040778d9"
+          ],
+          "settings": {
+            "full_width": true,
+            "height": 600,
+            "height_mobile": 450,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "161789690258ed465f": {
+          "type": "newsletter",
+          "settings": {
+            "color_scheme": "1"
+          }
+        },
+        "162396200786f8a51c": {
+          "type": "slideshow-split",
+          "blocks": {
+            "162396200786f8a51c-0": {
+              "type": "slide",
+              "settings": {
+                "title_size": 70,
+                "text_position": "left",
+                "indent_image": false,
+                "focal_point": "bottom center",
+                "color_scheme": "3"
+              }
+            }
+          },
+          "block_order": [
+            "162396200786f8a51c-0"
+          ],
+          "settings": {
+            "full_width": true,
+            "height": 650,
+            "height_mobile": 450,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "162402863370f49f13": {
+          "type": "slideshow",
+          "blocks": {
+            "162402863370f49f13-0": {
+              "type": "hero",
+              "settings": {
+                "title_size": 80,
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "overlay_opacity": 0,
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "162402863370f49f13-0"
+          ],
+          "settings": {
+            "full_width": true,
+            "desktop_size": -10,
+            "mobile_size": 20,
+            "style": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "1624029189039bf48d": {
+          "type": "promo-grid",
+          "blocks": {
+            "b5248e50-a97a-4824-a294-48e248088e73": {
+              "type": "advanced",
+              "settings": {
+                "width": "50",
+                "height": 320,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "color_accent": "#ffffff"
+              }
+            },
+            "89c8debe-a742-468b-8902-d1bb943e064c": {
+              "type": "advanced",
+              "settings": {
+                "width": "50",
+                "height": 300,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "color_accent": "#ffffff"
+              }
+            }
+          },
+          "block_order": [
+            "b5248e50-a97a-4824-a294-48e248088e73",
+            "89c8debe-a742-468b-8902-d1bb943e064c"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": true
+          }
+        },
+        "162404838555055802": {
+          "type": "featured-collection",
+          "settings": {
+            "count": 5,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1624286980ca6c2f1b": {
+          "type": "testimonials",
+          "blocks": {
+            "1624286980ca6c2f1b-3": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            },
+            "1624286980ca6c2f1b-1": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            },
+            "1624286980ca6c2f1b-2": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            },
+            "1624286980ca6c2f1b-0": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            },
+            "1624286980ca6c2f1b-4": {
+              "type": "testimonial",
+              "settings": {
+                "icon": "5-stars"
+              }
+            }
+          },
+          "block_order": [
+            "1624286980ca6c2f1b-3",
+            "1624286980ca6c2f1b-1",
+            "1624286980ca6c2f1b-2",
+            "1624286980ca6c2f1b-0",
+            "1624286980ca6c2f1b-4"
+          ],
+          "settings": {
+            "align_text": "center",
+            "round_images": true,
+            "color_scheme": "none"
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "title_enable": false,
+            "display_type": "all",
+            "sort": "alphabetical"
+          }
+        }
+      },
+      "content_for_index": [
+        "161789469679fffe6b",
+        "1525295772132",
+        "162404838555055802",
+        "162396200786f8a51c",
+        "1499789718857",
+        "1624029189039bf48d",
+        "162402863370f49f13",
+        "1624286980ca6c2f1b",
+        "16166970499d200586",
+        "16154004051a1fa86e",
+        "16167068142513abfa",
+        "161789690258ed465f",
+        "1525115199973"
+      ]
+    }
+  }
+}

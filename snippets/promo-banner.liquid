@@ -1,0 +1,38 @@
+<div class="new_promo">
+  {%- if section.settings.promo_text_mobile != blank -%}
+  <p class="medium-up--hide">
+    {% if section.settings.promo_btn_url != blank %}
+    	<a href="{{section.settings.promo_btn_url}}">
+	{% endif %}
+          {{section.settings.promo_text_mobile}}
+    {% if section.settings.promo_btn_url != blank %}
+    </a>
+    {%endif%}
+  </p>
+  <p class="small--hide">{{section.settings.promo_text   }} 
+    {%if section.settings.promo_btn_text != blank %}
+    <a style="color : {{section.settings.promo_btn_color}}; background: {{section.settings.promo_btn_bg}}" href="{{section.settings.promo_btn_url}}">{{section.settings.promo_btn_text}}</a>
+    {%endif%}
+  </p>
+  {%- else -%}
+  	<p class="">{{section.settings.promo_text}} 
+      {%if section.settings.promo_btn_text != blank %}
+      	<a style="color : {{section.settings.promo_btn_color}}; background: {{section.settings.promo_btn_bg}}" href="{{section.settings.promo_btn_url}}">{{section.settings.promo_btn_text}}</a>
+      {%endif%}
+  	</p>
+  {%- endif -%}
+</div>
+<script>
+  let promo2 = document.getElementById("promo_banner_sec")
+  let promo2_height= promo2.clientHeight
+  window.onscroll = function() {
+    if($(window).scrollTop() > 0) {
+      document.getElementById("SiteHeader").style.marginBottom =  `${promo2_height}px`
+      promo2.style.display = 'none'
+
+    } else {
+      document.getElementById("SiteHeader").style.marginBottom = '0px'
+      promo2.style.display = 'block'
+    }
+  }
+</script>

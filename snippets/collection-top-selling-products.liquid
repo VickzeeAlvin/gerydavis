@@ -1,0 +1,54 @@
+{% assign scope = collection.metafields.airf %}
+{% assign top_sellin = scope.top_sellin %}
+{% if top_sellin and top_sellin != blank %}
+
+  <div id="shopify-section-collection-featured-products" class="shopify-section index-section">
+    <div id="CollectionSection-collection-featured-products" data-section-id="collection-featured-products" data-section-type="collection-template">
+      {% assign top_sel_ti = collection.metafields.airf.top_sel_ti %}
+      {% if top_sel_ti and top_sel_ti != '&nbsp' %}
+          <div class="page-width">
+            <div class="section-header section-header--with-link">
+              <div>
+                <p class="section-header__title h2">
+                  {{ top_sel_ti }}
+                </p>
+              </div>
+            </div>
+          </div>
+      {% endif %}
+
+
+      <div class="page-width page-width--flush-small">
+        <div class="new-grid product-grid scrollable-grid--small" data-view="{% if top_sellin.rows.size == 4 %}small{% else %}scrollable-5{% endif %}">
+
+            {%- liquid
+              for row in top_sellin.rows 
+                  for row_field in row
+                    if row_field.key contains "p_name"
+                      assign product-name = scope[row_field.key]
+                    endif
+                    if row_field.key contains "collection"
+                      assign collection-handle = collections[scope[row_field.key]]
+                    endif
+                    if row_field.key contains "c_name"
+                      assign collection-name = scope[row_field.key]
+                    endif
+                    if row_field.key contains "product"
+                        assign product-handle = all_products[scope[row_field.key]]
+
+                        render 'product-grid-item-for-collection', product: product-handle, product_name: product-name, collection_handle: collection-handle, collection_name: collection-name
+
+                        if settings.quick_shop_enable
+                          render 'quick-shop-modal', product: product-handle
+                        endif
+                    endif
+                  endfor
+              endfor
+            -%}
+
+        </div>
+      </div>
+    </div>
+  </div>
+    
+{%- endif -%}

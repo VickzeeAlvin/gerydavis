@@ -1,0 +1,43 @@
+<div class="product_policys">
+  {% assign prot_polcy = product.metafields.airf.prot_polcy %}
+  {% if prot_polcy and prot_polcy != blank %}
+  {% assign separator = "###" %}
+  {% assign prot_polcy_namespaces = prot_polcy | split: separator %}
+  {% for namespace in prot_polcy_namespaces %}
+    {% assign custom_object = shop.metafields[namespace] %}
+    {% assign policy_tit = custom_object['policy_tit'] %}
+    {% assign policy_dis = custom_object['policy_dis'] %}
+    <div class="product_policy">
+      <div class="product_parent">
+        <div class="button_wrapper">
+          <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height {%if forloop.index == 1 %} is-open{%endif%} {{forloop.index}}" aria-controls="product_policy-{{section.id}}-{{forloop.index}}" aria-expanded="{%if forloop.index == 1 %}true{%else%}false{%endif%}">
+            <span class="collapsible-trigger__layout">
+              <span class="pro_heading">
+                {{ policy_tit }}
+              </span>
+              <span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+                <svg class="icon_arrow_down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="8" viewBox="0 0 12 8" fill="none" class="__web-inspector-hide-shortcut__">
+                  <rect x="12" width="7.3125" height="12" transform="rotate(90 12 0)" fill="url(#icon_arrow)"/>
+                  <defs>
+                    <pattern id="icon_arrow" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_1211:51" transform="scale(0.025641 0.015625)"/>
+                    </pattern>
+                    <image id="image0_1211:51" width="39" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAABACAYAAACZUm7XAAADP0lEQVRogb2aTYhNYRjHf3ObpCyUkslCWWLna0EWs0CxQIh8ZigTTRSNGMqU8Vk+iiumiDGmxvjYjCZESdkoUjTZjI2QBY2kSaTn9N7p3NO9555z3v+ZX01z78w5z/31Pu/9v/d9u3XFYpEIi4HNwAJgAvAW6AZ6gD/Ri/OkPlR7EtAFLIu8XgOwBDgKbAeejZVcwf2eCLyuIBZmOvAUWD3Wcv3AtIT39AEbc3QaxeQagYUp77vl5mWumNz+jC9wE9iSt9wij/tvABuEPmWY3HjPGhYza8VeASb3UVCnF1gjqFOGyV0X1bqjjhmTuySs16ccQZMbBtapCroRlAiWQtjmzF5FQYcJrvQtUgg9vgAc9C0Y4j6w1KdAIfL8JLBPYeYYqLFexxKVM84CO4WC/VlHsJKccdV9PFJhI7hCJWdcA7YKBR+kfRfHyeEWd2Xyp4qZWnLG3RxyMNEcTCKHy0Hl0jSQRDCpnHEPWO7nVEbNmEkjZzx0uzMVsTGTVs54AswDRkSCVVucRc54BcwBfvp5jVKxxVnljHfAXOCXv1tAv9vIj+IjZ3xwgj/83QJeAPNLT3zljEFgNvBFUKsOeAnMRCRnDDnBT4Ja5vQYoZzx2b1JhgS1pgJNSjnjqxN8L6jVrJYzvgOzXGD70JCHXIlvvgXqE1yTBcUObDgPOfuAsEpQp1vd1l6R2F/gvHLkZJtpt87+VsmpWmlsAh4hCuEeoViTO1IL8JW7Aqz3dwrYEz3x8mmrbR23+TsF7AIuR/+YVa7LzQ0FLZXEsspZXKiOWa2VF6v9M62cMi4qtjJMGjllXFRtZZik79ZOoVh7XCvDJBk5i4sdIrEjwLGkF9eSU8ZFK3AmzQ1xcp1CsZakrQxTbc4pWxkbF3FUGrnckz8p0ZE7JxQ75CNGZORs6Hf7OwVYXJzwLVKSaxWKpYqLOExuMnBKJHYY6BDVCuZcs6hWu1IMN3KKhVzWyjA2clM8a3TkIYaT89mZn3bzLBdM7nbGwrZOHshLDCdn+fYv5X3HXfzkSsEdOjemELQ2tuUtRmj5eu7O1QZjrh1xa6U0LuIIL19vgBluY2s/9sWqce4o1c7a7IsKimPVZAD/AX0titj2uj0NAAAAAElFTkSuQmCC"/>
+                  </defs>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+        <div id="product_policy-{{section.id}}-{{forloop.index}}" class="collapsible-content collapsible-content--all {%if forloop.index == 1 %}is-open{%endif%} ">
+          <div class="collapsible-content__inner ">
+              {{ policy_dis }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+</div>
+
+

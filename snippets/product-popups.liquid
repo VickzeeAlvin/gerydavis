@@ -1,0 +1,122 @@
+{% comment %}
+<div class="custom_pop" id="contact_us" style="display: none">
+  <div class="custom_popup_container">
+    <div class="custom_popup_wrapper">
+      <div class="cutom_popup_close"><img src="{{ 'gds-close-1.png' | asset_url }}"></div>
+      <div class="pop_content_wrapper">
+        <div class="form-vertical">
+          <h2 class="pop__up-heading">Contact Us</h2>
+          {%- assign form_id = 'contact-' | append: section.id -%}
+          {%- form 'contact', id: form_id -%}
+
+          {%- if form.posted_successfully? -%}
+          <p class="note note--success">
+            {{ 'contact.form.post_success' | t }}
+          </p>
+          {%- endif -%}
+          {{ form.errors | default_errors }}
+           
+          <div class="grid grid--small">
+            <div class="grid__item medium-up--one-whole">
+              <label for="ContactFormName-{{ section.id }}">{{ 'contact.form.name' | t }}</label>
+              <input type="text" id="ContactFormName-{{ section.id }}" class="input-full" name="contact[name]" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+            </div>
+
+            <div class="grid__item medium-up--one-whole">
+              <label for="ContactFormEmail-{{ section.id }}">{{ 'contact.form.email' | t }}</label>
+              <input type="email" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+            </div>
+           
+          </div>
+          {%- if section.settings.show_phone -%}
+          <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
+          <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+          {%- endif -%}
+          <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
+          <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+           <input type="hidden" class="input-full" name="contact[productName]" value="{{product.name}}">
+          <div class="pop_up_submit_btn">
+            <button type="submit" class="btn">
+              {{ 'contact.form.send' | t }}
+            </button>
+          </div>
+          {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+          {%- endform -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcomment %}
+
+{% assign spassocpod = product.metafields.airf['spassocpod'] %}
+{% if spassocpod and spassocpod != blank %}
+{% assign separator = "###" %}
+{% assign spassocpod_related_handles = spassocpod | split: separator %}
+<div class="custom_pop" id="shop_association" style="display:none">
+  <div class="custom_popup_container">
+    <div class="custom_popup_wrapper">
+      <!--       <div class="cutom_popup_close"><img src="https://cdn.shopify.com/s/files/1/0507/0379/4347/files/close.svg?v=1635417746"></div> -->
+      <div class="cutom_popup_close"><img src="{{ 'gds-close-1.png' | asset_url }}"></div>
+      <div class="pop_content_wrapper">
+        <div class="custom_popup_content">
+          SHOP THIS PRODUCT BY ASSOCIATION
+        </div>
+        <div class="pop_product">
+
+          {% assign scope = shop.metafields.airf %}
+          {% assign mapping = scope.mapping %}
+          {% assign mappings = '' %}
+          {% if mapping and mapping != blank %}
+            <script style="display:none;">
+              window.combination = {
+                {% for row in mapping.rows %}
+                  {% if forloop.last %} {% assign isLast = true %} {% endif %}
+                  {% for row_field in row %}
+                    {% assign mappingKey =  scope[row_field.key] | split: '=' | first | strip %}
+                    {% assign mappingValue =  scope[row_field.key] | split: '=' | last | strip %}				
+                    "{{mappingKey }}" : "{{mappingValue}}"{% if isLast == true %}{%else%},{%endif%}
+                  {% endfor %}
+                {% endfor %}
+              };
+            </script>
+          {% endif %}
+
+          <select id="product_list" name="productlist" form="productform">   
+            {% assign spassocpod = product.metafields.airf['spassocpod'] %}
+            {% if spassocpod and spassocpod != blank %}
+              {% assign separator = "###" %}
+              {% assign spassocpod_related_handles = spassocpod | split: separator %}
+              {% for handle in spassocpod_related_handles %}
+                {% assign related_product = all_products[handle] %}
+                {% unless related_product.empty? %}
+                    {% if forloop.first == true %}
+                    	{% assign first_prop = related_product.url %}
+                    {% endif %}
+                    <option value="{{ related_product.url }}">{{ related_product.title }}</option> 
+                {% endunless %}
+              {% endfor %}
+            {% endif %}
+          </select>
+        </div>
+        <a href="{{first_prop}}" class="popup_go_button">GO</a>
+        <div class="popup_tagline">Don't see your association, conference, league or association listed?</div>
+        <a href="/pages/contact" class="popup_learn_more">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+
+<div class="custom_pop" id="bold__popup_img" style="display:none">
+  <div class="custom_popup_container">
+    <div class="custom_popup_wrapper">
+      <div class="cutom_popup_close"><img src="{{ 'gds-close-1.png' | asset_url }}"></div>
+      <div class="pop_content_wrapper">
+        <img src="https://cdn.shopify.com/s/files/1/0507/0379/4347/files/product-placeholder.svg?v=1648599474" alt="Uniform Number" class="number-img" />
+      </div>
+    </div>
+  </div>
+</div>

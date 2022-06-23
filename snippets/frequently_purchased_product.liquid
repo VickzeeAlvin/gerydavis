@@ -1,0 +1,34 @@
+{% assign cross_prod = product.metafields.airf['cross_prod'] %}
+{% if cross_prod and cross_prod != blank %}
+    {% assign separator = "###" %}
+    {% assign cross_prod_related_handles = cross_prod | split: separator | reverse  %}
+    {% for handle in cross_prod_related_handles %}
+      {% assign related_product = all_products[handle] %}
+      {% unless related_product.empty? %}
+              <div class="purchased_wrapper">
+                <div class="purchased_title">
+                  {% assign cross_titl = product.metafields.airf.cross_titl %}
+                  {% if cross_titl and cross_titl != '&nbsp' %}
+                  	<span>{{ cross_titl }}</span>
+                  {% else %}
+                  	<span>Frequently Purchased With</span>
+                  {% endif %}
+                </div>
+                <a href="{{related_product.url}}">
+                  <div class="purchased_product">
+                    <div class="pro_image">
+                      <img src="{{related_product.featured_image | img_url: ''}}" alt="">
+                    </div>
+                    <div class="pro_data">
+                      <div class="product_title">{{related_product.title}}</div>
+                      <div class="product_price">{{related_product.price | money}}</div>
+                      <div class="product_availability">{{related_product.description | strip_html  | truncatewords: 4}}</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+      		{%break%}
+         {% endunless %}         
+    {% endfor %}
+{% endif %}
+

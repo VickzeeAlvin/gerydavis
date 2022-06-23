@@ -1,0 +1,112 @@
+<div class="rewards-mobile tabs_details" id="rewards">
+  <div class="page-width">
+	<div class="score-rewards-logo">
+      {%- if section.settings.logo != blank -%}
+     	{{section.settings.logo}}
+      {%- else -%}
+      	{{ 'logo' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--no-padding' }}
+      {%- endif -%}
+    </div>
+    {%- if section.settings.heading != blank -%}
+    	<h3>{{section.settings.heading}}</h3>
+    {%- endif -%}
+    
+    <div class="rewards__text-boxes">
+      {%- for block in section.blocks -%}
+      <div class="reward__text-box">
+        {%- if block.settings.image != blank -%}
+          {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img class="logo-bar__image lazyload"
+             data-src="{{ img_url }}"
+             data-widths="[160, 240, 720, 1020]"
+             data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+             data-sizes="auto"
+             alt="{{ block.settings.image.alt }}">
+        {%- else -%}
+          {{ 'logo' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--no-padding' }}
+        {%- endif -%}
+        {%- if block.settings.text != blank -%}
+        	<p>{{block.settings.text}}</p>
+        {%- endif -%}
+      </div>
+      {%- endfor -%}
+    </div>
+    
+    <div class="rewards-points-info">
+      {%- if section.settings.reward-points != blank -%}
+      	<p class="points-formula">{{section.settings.reward-points}}</p>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+      	<div class="points-info">{{section.settings.description}}</div>
+      {%- endif -%}
+      {%- if section.settings.button-text != blank -%}
+        <a href="{{ section.settings.button-link }}" class="btn btn--primary">
+          {{ section.settings.button-text }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Rewards - Mobile",
+	"class": "index-section-cart",
+    "settings": [
+		{
+          "type": "textarea",
+          "id": "logo",
+          "label": "Logo svg"
+        },
+		{
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+		{
+          "type": "text",
+          "id": "reward-points",
+          "label": "Reward Points"
+        },
+		{
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button-text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button-link",
+          "label": "Button Link"
+        }
+
+	],
+    "blocks": [
+      {
+        "type": "text_box",
+        "name": "Text Box",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rewards - Mobile"
+      }
+    ]
+  }
+{% endschema %}

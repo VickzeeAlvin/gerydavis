@@ -1,0 +1,174 @@
+{%- if section.settings.mode != 'disabled' -%}
+
+<div
+  id="NewsletterPopup-{{ section.id }}"
+  class="modal modal--square modal--mobile-friendly"
+  data-section-id="{{ section.id }}"
+  data-section-type="newsletter-popup"
+  data-delay-days="{{ section.settings.popup_days }}"
+  data-delay-seconds="{{ section.settings.popup_seconds }}">
+  <div class="modal__inner{% if section.settings.popup_image %} modal__inner--bg-image{% endif %}">
+    <div class="modal__centered">
+      <div class="modal__centered-content modal__centered-content--padded color-scheme-{{ section.settings.color_scheme }}">
+        {%- if section.settings.color_scheme != 'none' -%}
+          {%- render 'color-scheme-texture', color_scheme: section.settings.color_scheme -%}
+        {%- endif -%}
+
+        <div class="newsletter-popup">
+          {%- if section.settings.popup_title != blank -%}
+            <div class="h2">{{ section.settings.popup_title }}</div>
+          {%- endif -%}
+
+          {%- if section.settings.popup_text != blank -%}
+            <div class="rte">
+              <div class="enlarge-text">
+                {{ section.settings.popup_text }}
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.enable_newsletter -%}
+            {%- render 'newsletter-form', section_id: section.id, snippet_context: 'popup' -%}
+          {%- endif -%}
+
+          {%- if section.settings.enable_button -%}
+            <hr class="hr--clear">
+            <a href="{{ section.settings.button_link }}" class="btn js-modal-close">
+              {{ section.settings.button_label }}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <button type="button" class="btn btn--circle btn--icon modal__close js-modal-close">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M19 17.61l27.12 27.13m0-27.13L19 44.74"/></svg>
+        <span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t | json }}</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.newsletter-popup.name",
+  "class": "index-section--hidden",
+  "settings": [
+    {
+      "type": "select",
+      "id": "mode",
+      "label": "t:sections.newsletter-popup.settings.mode.label",
+      "default": "disabled",
+      "options": [
+        {
+          "value": "enabled",
+          "label": "t:sections.newsletter-popup.settings.mode.options.enabled.label"
+        },
+        {
+          "value": "disabled",
+          "label": "t:sections.newsletter-popup.settings.mode.options.disabled.label"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "popup_seconds",
+      "label": "t:sections.newsletter-popup.settings.popup_seconds.label",
+      "default": 30,
+      "min": 5,
+      "max": 60,
+      "step": 1,
+      "unit": "sec",
+      "info": "t:sections.newsletter-popup.settings.popup_seconds.info"
+    },
+    {
+      "type": "range",
+      "id": "popup_days",
+      "label": "t:sections.newsletter-popup.settings.popup_days.label",
+      "default": 30,
+      "info": "t:sections.newsletter-popup.settings.popup_days.info",
+      "min": 2,
+      "max": 30,
+      "step": 1,
+      "unit": "day"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.newsletter-popup.settings.header_content"
+    },
+    {
+      "type": "text",
+      "id": "popup_title",
+      "label": "t:sections.newsletter-popup.settings.popup_title.label",
+      "default": "Sign up and save"
+    },
+    {
+      "type": "richtext",
+      "id": "popup_text",
+      "label": "t:sections.newsletter-popup.settings.popup_text.label",
+      "default": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.</p>"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "t:sections.newsletter-popup.settings.color_scheme.label",
+      "default": "none",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.newsletter-popup.settings.color_scheme.options.none.label"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.newsletter-popup.settings.header_newsletter"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.newsletter-popup.settings.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_newsletter",
+      "label": "t:sections.newsletter-popup.settings.enable_newsletter.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.newsletter-popup.settings.header_button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.newsletter-popup.settings.button_label.label",
+      "default": "Optional button"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.newsletter-popup.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_button",
+      "label": "t:sections.newsletter-popup.settings.enable_button.label",
+      "default": false
+    }
+  ],
+  "blocks": []
+}
+{% endschema %}

@@ -1,0 +1,242 @@
+<div class="slide-nav__wrapper" data-level="1">
+  <ul class="slide-nav">
+    {%- for link in main_menu.links -%}
+      {%- liquid
+        assign link_index = forloop.index
+        assign child_list_handle = link.title | handleize | append: link_index
+
+        assign is_collection = false
+        assign have_image = false
+        if link.url contains '/collections/'
+          assign lang_code_string = request.locale.iso_code | prepend: '/' | downcase
+          assign subcollection_handle = link.url | remove: '/collections/' | remove: lang_code_string
+          assign subcollection_drop = collections[subcollection_handle]
+          assign have_image = subcollection_drop.products.first.featured_media.preview_image
+          assign is_collection = true
+        endif
+      -%}
+
+      {%- if have_image -%}
+        {%- capture collection_image -%}
+          <div class="slide-nav__image">
+            <img src="{{ have_image | img_url: '400x' }}" alt="{{ collections[subcollection_handle].title }}">
+          </div>
+        {%- endcapture -%}
+      {%- endif -%}
+
+      <li class="slide-nav__item">
+      	{% assign brand_list_menu = false %}
+        {% assign aa_handle = link.title | handleize | strip %}
+        {% assign aa_has_childrens =  linklists[aa_handle] %}
+        {% if link.url contains 'isbrands' and aa_has_childrens.links != blank %}
+          {% assign brand_list_menu = true %}
+        {% endif %}
+      {%- if link.levels > 0 -%}
+      	
+      <button type="button" class="slide-nav__button js-toggle-submenu" data-target="{{ child_list_handle }}" {% if link.active or link.child_active %}data-active="true"{% endif %}>
+        <span class="slide-nav__link">
+          {%- if have_image -%}
+          {{ collection_image }}
+          {%- endif -%}
+          <span>{{ link.title }}</span>
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+          <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
+        </span>
+      </button>
+
+      <ul class="slide-nav__dropdown" data-parent="{{ child_list_handle }}" data-level="2">
+        <li class="slide-nav__item">
+          <button type="button" class="slide-nav__button js-toggle-submenu">
+            <span class="slide-nav__link slide-nav__link--back">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+              <span>{{ link.title }}</span>
+            </span>
+          </button>
+        </li>
+
+        {% comment %}
+        If a collection, automatically add 'view all' link
+        {% endcomment %}
+        
+        {%- if is_collection -%}
+          <li class="slide-nav__item">
+            <a href="{{ link.url }}" class="slide-nav__link">
+              <span>{{ 'collections.general.all_of_collection' | t }}</span>
+              {%if link.links != blank%}
+              	<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+              {%endif%}
+            </a>
+          </li>
+        {%- endif -%}
+
+        {%- for childlink in link.links -%}
+        
+        {%- liquid
+          assign grand_child_list_handle = childlink.title | handleize
+          assign grand_child_link_id = grand_child_list_handle | append: link_index
+         -%}
+
+        <li class="slide-nav__item">
+            {% assign ab_handle = childlink.title | handleize | strip %}
+            {% assign has_childrens =  linklists[ab_handle] %}
+            {% if has_childrens.links != blank %}
+                {%assign grandchildmenu = has_childrens %}
+            {%else%}
+                {%assign grandchildmenu = blank %}
+            {%endif%}
+          {%- if grandchildmenu.links.size > 0 -%}
+          	{% assign emoji_icon = ''  %}
+            {% if childlink.title == 'Baseball & Softball' %}
+                {% assign emoji_icon = '⚾'  %}
+            {% elsif childlink.title == 'Basketball' %}
+                {% assign emoji_icon = '🏀'  %}
+            {% elsif childlink.title == 'Football' %}
+                {% assign emoji_icon = '🏈'  %}
+            {% elsif childlink.title == 'Lacrosse' %}
+                {% assign emoji_icon = '🥍'  %}
+            {% elsif childlink.title == 'Soccer' %}
+                {% assign emoji_icon = '⚽'  %}
+            {% elsif childlink.title == 'Swimming' %}
+                {% assign emoji_icon = '🏊'  %}
+            {% elsif childlink.title == 'Track & Field' %}
+                {% assign emoji_icon = '🏃‍♀️'  %}
+            {% elsif childlink.title == 'Volleyball' %}
+                {% assign emoji_icon = '🏐'  %}
+            {% elsif childlink.title == 'Wrestling' %}
+                {% assign emoji_icon = '🤼'  %}
+            {% endif %}
+            <button type="button" class="slide-nav__button js-toggle-submenu" data-target="{{ grand_child_link_id }}" {% if link.active or link.child_active %}data-active="true"{% endif %}>
+              <span class="slide-nav__link slide-nav__sublist-link">
+                <span>{{emoji_icon}} {{ childlink.title }}</span>
+                {%if grandchildmenu.links != blank%}
+                	<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+                {%endif%}
+                <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
+              </span>
+            </button>
+            <ul class="slide-nav__dropdown" data-parent="{{ grand_child_link_id }}" data-level="3">
+              
+              <li class="slide-nav__item">
+                <button type="button" class="slide-nav__button js-toggle-submenu" data-target="{{ child_list_handle }}">
+                  <span class="slide-nav__link slide-nav__link--back">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+                    <span>{{ childlink.title }}</span>
+                  </span>
+                </button>
+              </li>
+
+              {% comment %}
+              If a collection, automatically add 'view all' link
+              {%- if childlink.url contains '/collections/' -%}
+                <li class="slide-nav__item">
+                  <a href="{{ childlink.url }}" class="slide-nav__link">
+                    <span>{{ 'collections.general.all_of_collection' | t }}</span>
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+                  </a>
+                </li>
+              {%- endif -%}
+              {% endcomment %}
+              {%comment%}
+              {%- for grandchildlink in linklists[grand_child_list_handle].links -%}
+             
+                <li class="slide-nav__item">
+                  <a href="{{ grandchildlink.url }}" class="slide-nav__link">
+                    <span>{{ grandchildlink.title | escape }}</span>
+                  </a>
+                </li>
+              {%- endfor -%}
+              {%endcomment%}
+              {% for link in grandchildmenu.links %}
+                {%if grandchildmenu.title == link.title %}
+                  <li class="reverse__order">
+                    <ul>
+                      {% for sub_link in link.links %}
+                      <li class="mobile_main_child">
+                        <a href="{{sub_link.url}}">{{sub_link.title}}</a>
+                        {% if sub_link.links != blank %}
+                        <ul class="gradchildren_list">
+                          {% for grandsub_link in sub_link.links %}
+                          <li class="mobilesub_child">
+                            <a href="{{grandsub_link.url}}">{{grandsub_link.title}}</a>
+                          </li>
+                          {% endfor %}
+                        </ul>
+                        {%endif%}
+                      </li>
+                      {%- endfor -%}
+                    </ul>
+                  </li>
+                {%endif%}
+              	{% unless grandchildmenu.title == link.title %}
+                  <li class="mobileparent_children">
+                    <a href="{{link.url}}">{{link.title}}</a>
+                  </li>
+                {%endunless%}
+              {%- endfor -%}
+            </ul>
+          
+          {%- else -%}
+            <a href="{{ childlink.url }}" class="slide-nav__link">
+              <span>{{ childlink.title | escape }}</span>
+            </a>
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+
+      {% elsif brand_list_menu %}
+
+        <button type="button" class="slide-nav__button js-toggle-submenu" data-target="{{ child_list_handle }}" {% if link.active or link.child_active %}data-active="true"{% endif %}>
+          <span class="slide-nav__link">
+            {%- if have_image -%}
+              {{ collection_image }}
+            {%- endif -%}
+            <span>{{ link.title }}</span>
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+            <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
+          </span>
+        </button>
+
+        <ul class="slide-nav__dropdown" data-parent="{{ child_list_handle }}" data-level="2">
+          <li class="slide-nav__item">
+            <button type="button" class="slide-nav__button js-toggle-submenu">
+              <span class="slide-nav__link slide-nav__link--back">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+                <span>{{ link.title }}</span>
+              </span>
+            </button>
+          </li>
+          <li class="mobilebrand_lists">
+            {%assign brands_menu = link.title  | handleize | strip %}
+            {% assign brandslist = linklists[brands_menu] %}
+            <ul class="menu__logos">
+              {% for link in brandslist.links %}
+                {% if link.url contains 'collection' %}
+                  {% assign lang_code_string = request.locale.iso_code | prepend: '/' | downcase %}
+                  {% assign hh_handle = link.url | remove: '/collections/' | remove: lang_code_string %}
+                  {% assign collection = collections[hh_handle] %}
+                    {% assign profile_im = collection.metafields.airf.profile_im %}
+                    {% if profile_im and profile_im != '&nbsp' %}
+                      <li>
+                        <a href="{{link.url}}"><img alt="{{ profile_im.alt }}" class="lazyload" data-src="{{ profile_im }}" /></a>
+                      </li>
+                    {% endif %}  
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+
+      {%- else -%}
+        <a href="{{ link.url }}" class="slide-nav__link {{ link.title | handleize }}">
+          {%- if have_image -%}
+              {{ collection_image }}
+          {%- endif -%}
+          <span>{{ link.title | escape }}</span>
+        </a>
+      {%- endif -%}
+    </li>
+      
+    {%- endfor -%}
+  </ul>
+</div>
